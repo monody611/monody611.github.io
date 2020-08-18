@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-08-18T01:33:18.093Z</updated>
+  <updated>2020-08-18T02:01:24.526Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>payload</title>
-    <link href="http://yoursite.com/2020/08/18/payload/"/>
-    <id>http://yoursite.com/2020/08/18/payload/</id>
-    <published>2020-08-18T01:30:17.000Z</published>
-    <updated>2020-08-18T01:33:18.093Z</updated>
+    <title>termux</title>
+    <link href="http://yoursite.com/2020/08/18/termux/"/>
+    <id>http://yoursite.com/2020/08/18/termux/</id>
+    <published>2020-08-18T02:01:24.000Z</published>
+    <updated>2020-08-18T02:01:24.526Z</updated>
     
     
       
@@ -38,7 +38,29 @@
     
     
     
-    <category term="Markdown" scheme="http://yoursite.com/categories/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>payload</title>
+    <link href="http://yoursite.com/2020/08/18/payload/"/>
+    <id>http://yoursite.com/2020/08/18/payload/</id>
+    <published>2020-08-18T01:30:17.000Z</published>
+    <updated>2020-08-18T02:06:01.777Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;开启端口&quot;&gt;&lt;a href=&quot;#开启端口&quot; class=&quot;headerlink&quot; title=&quot;开启端口&quot;&gt;&lt;/a&gt;开启端口&lt;/h2&gt;&lt;p&gt;打开终端，安装ufw防火墙，开启5555端口&lt;/p&gt;
+&lt;figure class=&quot;highlight</summary>
+        
+      
+    
+    
+    
+    <category term="Payload" scheme="http://yoursite.com/categories/Payload/"/>
     
     
     <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
