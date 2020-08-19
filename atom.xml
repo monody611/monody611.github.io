@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-08-18T02:01:24.526Z</updated>
+  <updated>2020-08-19T03:09:00.368Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Android 自动化测试</title>
+    <link href="http://yoursite.com/2020/08/19/adb/"/>
+    <id>http://yoursite.com/2020/08/19/adb/</id>
+    <published>2020-08-18T23:02:46.000Z</published>
+    <updated>2020-08-19T03:09:00.368Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;uiautomator2&quot;&gt;&lt;a href=&quot;#uiautomator2&quot; class=&quot;headerlink&quot; title=&quot;uiautomator2&quot;&gt;&lt;/a&gt;uiautomator2&lt;/h1&gt;&lt;h2 id=&quot;建立连接&quot;&gt;&lt;a href=&quot;#建立连接&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+    
+    <category term="adb" scheme="http://yoursite.com/tags/adb/"/>
+    
+    <category term="uiautomator2" scheme="http://yoursite.com/tags/uiautomator2/"/>
+    
+  </entry>
   
   <entry>
     <title>termux</title>
