@@ -569,14 +569,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-08-19
+                    2020-08-22
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    815
+                    857
                 </div>
                 
 
@@ -624,7 +624,11 @@
 <h3 id="滑动事件"><a href="#滑动事件" class="headerlink" title="滑动事件"></a>滑动事件</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"> //Swipe</span><br><span class="line">d.swipe(sx, sy, ex, ey)</span><br><span class="line">d.swipe(sx, sy, ex, ey, 0.5) <span class="comment"># swipe for 0.5s(default)</span></span><br><span class="line"></span><br><span class="line">//Drag</span><br><span class="line">d.drag(sx, sy, ex, ey)</span><br><span class="line">d.drag(sx, sy, ex, ey, 0.5) <span class="comment"># swipe for 0.5s(default)</span></span><br><span class="line"> </span><br><span class="line">//Swipe points</span><br><span class="line"><span class="comment"># swipe from point(x0, y0) to point(x1, y1) then to point(x2, y2) ,time will speed 0.2s bwtween two points</span></span><br><span class="line">d.swipe((x0, y0), (x1, y1), (x2, y2), 0.2)</span><br></pre></td></tr></tbody></table></figure>
 
 <hr>
-<h2 id="练手小实例"><a href="#练手小实例" class="headerlink" title="练手小实例"></a>练手小实例</h2><figure class="highlight py"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> uiautomator2 <span class="keyword">as</span> u2</span><br><span class="line">d = u2.connect(<span class="string">'192.168.1.65:7912'</span>)</span><br><span class="line">d.debug=<span class="literal">True</span></span><br><span class="line">sess = d.session(<span class="string">"cn.xuexi.android"</span>) <span class="comment"># open xuexiqiangguo</span></span><br><span class="line"><span class="comment">#12 points read the article</span></span><br><span class="line">time.sleep(<span class="number">2</span>)</span><br><span class="line">d(text=<span class="string">"北京"</span>).click()</span><br><span class="line">time.sleep(<span class="number">3</span>)</span><br><span class="line">d.click(<span class="number">0.114</span>, <span class="number">0.271</span>)</span><br><span class="line">time.sleep(<span class="number">2</span>)</span><br><span class="line">d.click(<span class="number">0.063</span>, <span class="number">0.064</span>)</span><br><span class="line">time.sleep(<span class="number">5</span>)</span><br><span class="line">d(text=<span class="string">"要闻"</span>).click()</span><br><span class="line">time.sleep(<span class="number">3</span>)</span><br><span class="line"><span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">7</span>):</span><br><span class="line">    time.sleep(<span class="number">5</span>)</span><br><span class="line">    d.click(<span class="number">0.387</span>, <span class="number">0.362</span>)</span><br><span class="line">    d.swipe(<span class="number">0.451</span>, <span class="number">0.824</span>, <span class="number">0.468</span>, <span class="number">0.356</span>, <span class="number">1</span>) </span><br><span class="line">    time.sleep(<span class="number">5</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">10</span>):</span><br><span class="line">        time.sleep(<span class="number">5</span>)</span><br><span class="line">        d.swipe(<span class="number">0.451</span>, <span class="number">0.874</span>, <span class="number">0.451</span>, <span class="number">0.106</span> ,<span class="number">1</span>) </span><br><span class="line">        <span class="keyword">if</span> d(text=<span class="string">"观点"</span>):</span><br><span class="line">            d.click(<span class="number">0.076</span>, <span class="number">0.066</span>)</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    d.swipe(<span class="number">0.451</span>, <span class="number">0.824</span>, <span class="number">0.468</span>, <span class="number">0.680</span>, <span class="number">1</span>) </span><br><span class="line">    time.sleep(<span class="number">5</span>)</span><br><span class="line">    </span><br><span class="line"><span class="comment">#12 points visual and aural learning</span></span><br><span class="line">d(text=<span class="string">"电视台"</span>).click()</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">7</span>):</span><br><span class="line">    d.click(<span class="number">0.493</span>, <span class="number">0.392</span>)</span><br><span class="line">    time.sleep(<span class="number">5</span>)</span><br><span class="line">    d.click(<span class="number">0.74</span>, <span class="number">0.271</span>)</span><br><span class="line">    d.swipe(<span class="number">0.336</span>, <span class="number">0.271</span>, <span class="number">0.736</span>, <span class="number">0.271</span>, <span class="number">1</span>) </span><br><span class="line">    <span class="keyword">if</span> d(text=<span class="string">"重新播放"</span>):</span><br><span class="line">        d.click(<span class="number">0.068</span>, <span class="number">0.068</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        time.sleep(<span class="number">10</span>)</span><br><span class="line">    time.sleep(<span class="number">2</span>)</span><br><span class="line">    d.click(<span class="number">0.068</span>, <span class="number">0.068</span>)</span><br><span class="line">    d.swipe(<span class="number">0.527</span>, <span class="number">0.771</span>, <span class="number">0.527</span>, <span class="number">0.371</span>) </span><br><span class="line"></span><br><span class="line"><span class="comment"># print(d.info)</span></span><br></pre></td></tr></tbody></table></figure>
+<h2 id="练手小实例"><a href="#练手小实例" class="headerlink" title="练手小实例"></a>练手小实例</h2><h3 id="run-adb"><a href="#run-adb" class="headerlink" title="run adb"></a>run adb</h3><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">start adb  //启动adb</span><br><span class="line">adb devices//查看电脑是否连接到手机</span><br><span class="line">python -m weditor//启动weditor</span><br><span class="line">//use wifi link,pc terminal have to execute the following command</span><br><span class="line">adb tcpip 5555  //open PID 5555</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="run-code"><a href="#run-code" class="headerlink" title="run code"></a>run code</h3><figure class="highlight py"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> uiautomator2 <span class="keyword">as</span> u2</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line">d = u2.connect(<span class="string">'192.168.1.65:7912'</span>)</span><br><span class="line">d.debug=<span class="literal">True</span></span><br><span class="line">sess = d.session(<span class="string">"cn.xuexi.android"</span>) <span class="comment"># open xuexiqiangguo</span></span><br><span class="line"><span class="comment">#12 points read the article</span></span><br><span class="line">time.sleep(<span class="number">2</span>)</span><br><span class="line">d(text=<span class="string">"北京"</span>).click()</span><br><span class="line">time.sleep(<span class="number">3</span>)</span><br><span class="line">d.click(<span class="number">0.114</span>, <span class="number">0.271</span>)</span><br><span class="line">time.sleep(<span class="number">2</span>)</span><br><span class="line">d.click(<span class="number">0.063</span>, <span class="number">0.064</span>)</span><br><span class="line">time.sleep(<span class="number">5</span>)</span><br><span class="line">d(text=<span class="string">"要闻"</span>).click()</span><br><span class="line">time.sleep(<span class="number">3</span>)</span><br><span class="line"><span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">7</span>):</span><br><span class="line">    time.sleep(<span class="number">5</span>)</span><br><span class="line">    d.click(<span class="number">0.387</span>, <span class="number">0.362</span>)</span><br><span class="line">    d.swipe(<span class="number">0.451</span>, <span class="number">0.824</span>, <span class="number">0.468</span>, <span class="number">0.356</span>, <span class="number">1</span>) </span><br><span class="line">    time.sleep(<span class="number">5</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">10</span>):</span><br><span class="line">        time.sleep(<span class="number">5</span>)</span><br><span class="line">        d.swipe(<span class="number">0.451</span>, <span class="number">0.874</span>, <span class="number">0.451</span>, <span class="number">0.106</span> ,<span class="number">1</span>) </span><br><span class="line">        <span class="keyword">if</span> d(text=<span class="string">"观点"</span>):</span><br><span class="line">            d.click(<span class="number">0.076</span>, <span class="number">0.066</span>)</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    d.swipe(<span class="number">0.451</span>, <span class="number">0.824</span>, <span class="number">0.468</span>, <span class="number">0.680</span>, <span class="number">1</span>) </span><br><span class="line">    time.sleep(<span class="number">5</span>)</span><br><span class="line">    </span><br><span class="line"><span class="comment">#12 points visual and aural learning</span></span><br><span class="line">d(text=<span class="string">"电视台"</span>).click()</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">7</span>):</span><br><span class="line">    d.click(<span class="number">0.493</span>, <span class="number">0.392</span>)</span><br><span class="line">    time.sleep(<span class="number">5</span>)</span><br><span class="line">    d.click(<span class="number">0.74</span>, <span class="number">0.271</span>)</span><br><span class="line">    d.swipe(<span class="number">0.336</span>, <span class="number">0.271</span>, <span class="number">0.736</span>, <span class="number">0.271</span>, <span class="number">1</span>) </span><br><span class="line">    <span class="keyword">if</span> d(text=<span class="string">"重新播放"</span>):</span><br><span class="line">        d.click(<span class="number">0.068</span>, <span class="number">0.068</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        time.sleep(<span class="number">10</span>)</span><br><span class="line">    time.sleep(<span class="number">2</span>)</span><br><span class="line">    d.click(<span class="number">0.068</span>, <span class="number">0.068</span>)</span><br><span class="line">    d.swipe(<span class="number">0.527</span>, <span class="number">0.771</span>, <span class="number">0.527</span>, <span class="number">0.371</span>) </span><br><span class="line"></span><br><span class="line"><span class="comment"># print(d.info)</span></span><br></pre></td></tr></tbody></table></figure>
+
+
 
 <hr>
 <h1 id="adb"><a href="#adb" class="headerlink" title="adb"></a>adb</h1><ul>
@@ -920,31 +924,31 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2020/08/19/adb/">
+                <a href="/2020/08/28/kali-update/">
                     <div class="card-image">
                         
+                        <img src="/images/2.jpg" class="responsive-img" alt="kali-update">
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Android 自动化测试">
-                        
-                        <span class="card-title">Android 自动化测试</span>
+                        <span class="card-title">kali-update</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            uiautomator2建立连接1.通过WiFi连接设备12import uiautomator2 as u2d = u2.connect('192.168.1.92')
-2.通过USB连接设备12import uiautomator2 a
+                            123//删除C++快捷方式sudo update-alternatives --remove-all gccsudo update-alternatives --remove-all g++
+
+
+隐写工具outguess1234git c
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-19
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-08-28
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -953,20 +957,15 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Android/">
-                        <span class="chip bg-color">Android</span>
+                    <a href="/tags/outguess/">
+                        <span class="chip bg-color">outguess</span>
                     </a>
                     
-                    <a href="/tags/adb/">
-                        <span class="chip bg-color">adb</span>
-                    </a>
-                    
-                    <a href="/tags/uiautomator2/">
-                        <span class="chip bg-color">uiautomator2</span>
+                    <a href="/tags/kali/">
+                        <span class="chip bg-color">kali</span>
                     </a>
                     
                 </div>
@@ -1213,7 +1212,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">1.5k</span>&nbsp;字
+                class="white-color">1.7k</span>&nbsp;字
             
             
             
