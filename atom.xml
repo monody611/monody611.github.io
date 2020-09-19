@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-09-19T20:52:12.917Z</updated>
+  <updated>2020-09-19T21:06:38.841Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2020/09/20/privilgeescalation/"/>
     <id>http://yoursite.com/2020/09/20/privilgeescalation/</id>
     <published>2020-09-19T17:25:09.000Z</published>
-    <updated>2020-09-19T20:52:12.917Z</updated>
+    <updated>2020-09-19T21:06:38.841Z</updated>
     
     
       
@@ -35,6 +35,10 @@
     
     
     
+    <category term="privilge escalation" scheme="http://yoursite.com/tags/privilge-escalation/"/>
+    
+    <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+    
   </entry>
   
   <entry>
@@ -42,7 +46,7 @@
     <link href="http://yoursite.com/2020/08/28/kali-update/"/>
     <id>http://yoursite.com/2020/08/28/kali-update/</id>
     <published>2020-08-28T00:05:50.000Z</published>
-    <updated>2020-09-19T14:52:45.444Z</updated>
+    <updated>2020-09-19T21:04:16.582Z</updated>
     
     
       
@@ -67,7 +71,7 @@
     <link href="http://yoursite.com/2020/08/19/adb/"/>
     <id>http://yoursite.com/2020/08/19/adb/</id>
     <published>2020-08-18T23:02:46.000Z</published>
-    <updated>2020-08-29T11:19:24.562Z</updated>
+    <updated>2020-09-19T21:09:29.393Z</updated>
     
     
       
@@ -94,7 +98,7 @@
     <link href="http://yoursite.com/2020/08/18/termux/"/>
     <id>http://yoursite.com/2020/08/18/termux/</id>
     <published>2020-08-18T02:01:24.000Z</published>
-    <updated>2020-08-18T02:01:24.526Z</updated>
+    <updated>2020-09-19T21:06:29.331Z</updated>
     
     
       
@@ -111,6 +115,10 @@
     
     
     
+    
+    <category term="privilge escalation" scheme="http://yoursite.com/tags/privilge-escalation/"/>
+    
+    <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
     
   </entry>
   
@@ -139,27 +147,6 @@
     <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
     
     <category term="Payload" scheme="http://yoursite.com/tags/Payload/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/1970/01/01/hello-world/"/>
-    <id>http://yoursite.com/1970/01/01/hello-world/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2020-08-18T00:56:39.260Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
     
   </entry>
   
