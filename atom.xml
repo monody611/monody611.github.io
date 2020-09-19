@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-09-15T11:31:16.207Z</updated>
+  <updated>2020-09-19T20:52:12.917Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>linux提权</title>
+    <link href="http://yoursite.com/2020/09/20/privilgeescalation/"/>
+    <id>http://yoursite.com/2020/09/20/privilgeescalation/</id>
+    <published>2020-09-19T17:25:09.000Z</published>
+    <updated>2020-09-19T20:52:12.917Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;NFS&quot;&gt;&lt;a href=&quot;#NFS&quot; class=&quot;headerlink&quot; title=&quot;NFS&quot;&gt;&lt;/a&gt;NFS&lt;/h2&gt;&lt;h2 id=&quot;Cron&quot;&gt;&lt;a href=&quot;#Cron&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>kali-update</title>
     <link href="http://yoursite.com/2020/08/28/kali-update/"/>
     <id>http://yoursite.com/2020/08/28/kali-update/</id>
     <published>2020-08-28T00:05:50.000Z</published>
-    <updated>2020-09-15T11:31:16.207Z</updated>
+    <updated>2020-09-19T14:52:45.444Z</updated>
     
     
       
