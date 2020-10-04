@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-09-19T21:06:38.841Z</updated>
+  <updated>2020-10-03T13:10:31.487Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ecjtu</title>
+    <link href="http://yoursite.com/2020/10/03/ecjtu/"/>
+    <id>http://yoursite.com/2020/10/03/ecjtu/</id>
+    <published>2020-10-03T09:40:49.000Z</published>
+    <updated>2020-10-03T13:10:31.487Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;202.101.209.157 //企业云盘&lt;br&gt; 202.101.209.187 //&lt;a href=&quot;https://mobile.ecjtu.edu.cn/#/&quot;&gt;https://mobile.ecjtu.edu.cn/#/&lt;/a&gt; </summary>
+        
+      
+    
+    
+    
+    
+    <category term="mysql" scheme="http://yoursite.com/tags/mysql/"/>
+    
+  </entry>
+  
+  <entry>
     <title>linux提权</title>
     <link href="http://yoursite.com/2020/09/20/privilgeescalation/"/>
     <id>http://yoursite.com/2020/09/20/privilgeescalation/</id>
     <published>2020-09-19T17:25:09.000Z</published>
-    <updated>2020-09-19T21:06:38.841Z</updated>
+    <updated>2020-09-20T08:54:10.628Z</updated>
     
     
       
@@ -42,11 +65,36 @@
   </entry>
   
   <entry>
+    <title>windows提权</title>
+    <link href="http://yoursite.com/2020/09/20/windows-privilge-escalation/"/>
+    <id>http://yoursite.com/2020/09/20/windows-privilge-escalation/</id>
+    <published>2020-09-19T17:25:09.000Z</published>
+    <updated>2020-09-20T09:22:53.911Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;0x01-查看windows版本号&quot;&gt;&lt;a href=&quot;#0x01-查看windows版本号&quot; class=&quot;headerlink&quot; title=&quot;0x01 查看windows版本号&quot;&gt;&lt;/a&gt;0x01 查看windows版本号&lt;/h2&gt;&lt;figure</summary>
+        
+      
+    
+    
+    
+    
+    <category term="privilge escalation" scheme="http://yoursite.com/tags/privilge-escalation/"/>
+    
+    <category term="windows 10" scheme="http://yoursite.com/tags/windows-10/"/>
+    
+  </entry>
+  
+  <entry>
     <title>kali-update</title>
     <link href="http://yoursite.com/2020/08/28/kali-update/"/>
     <id>http://yoursite.com/2020/08/28/kali-update/</id>
     <published>2020-08-28T00:05:50.000Z</published>
-    <updated>2020-09-19T21:04:16.582Z</updated>
+    <updated>2020-10-04T09:18:56.837Z</updated>
     
     
       
@@ -127,15 +175,16 @@
     <link href="http://yoursite.com/2020/08/18/payload/"/>
     <id>http://yoursite.com/2020/08/18/payload/</id>
     <published>2020-08-18T01:30:17.000Z</published>
-    <updated>2020-08-18T16:29:02.353Z</updated>
+    <updated>2020-09-20T13:26:10.682Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;开启端口&quot;&gt;&lt;a href=&quot;#开启端口&quot; class=&quot;headerlink&quot; title=&quot;开启端口&quot;&gt;&lt;/a&gt;开启端口&lt;/h2&gt;&lt;p&gt;打开终端，安装ufw防火墙，开启5555端口&lt;/p&gt;
-&lt;figure class=&quot;highlight</summary>
+    <summary type="html">&lt;p&gt;#Android payload&lt;/p&gt;
+&lt;h2 id=&quot;开启端口&quot;&gt;&lt;a href=&quot;#开启端口&quot; class=&quot;headerlink&quot; title=&quot;开启端口&quot;&gt;&lt;/a&gt;开启端口&lt;/h2&gt;&lt;p&gt;打开终端，安装ufw防火墙，开启5555端口&lt;/p&gt;
+&lt;figure</summary>
         
       
     
@@ -147,6 +196,27 @@
     <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
     
     <category term="Payload" scheme="http://yoursite.com/tags/Payload/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/1970/01/01/hello-world/"/>
+    <id>http://yoursite.com/1970/01/01/hello-world/</id>
+    <published>1970-01-01T00:00:00.000Z</published>
+    <updated>2020-09-19T21:15:41.946Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
     
   </entry>
   

