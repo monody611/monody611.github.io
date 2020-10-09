@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-10-03T13:10:31.487Z</updated>
+  <updated>2020-10-09T13:00:06.483Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>kali-tools</title>
+    <link href="http://yoursite.com/2020/10/10/kali-tools/"/>
+    <id>http://yoursite.com/2020/10/10/kali-tools/</id>
+    <published>2020-10-09T16:16:21.000Z</published>
+    <updated>2020-10-09T13:00:06.483Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;dirbuster&quot;&gt;&lt;a href=&quot;#dirbuster&quot; class=&quot;headerlink&quot; title=&quot;dirbuster&quot;&gt;&lt;/a&gt;dirbuster&lt;/h2&gt;&lt;p&gt;文件路径:</summary>
+        
+      
+    
+    
+    
+    
+    <category term="dirbuster" scheme="http://yoursite.com/tags/dirbuster/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MysqlPE</title>
+    <link href="http://yoursite.com/2020/10/05/mysqlpe/"/>
+    <id>http://yoursite.com/2020/10/05/mysqlpe/</id>
+    <published>2020-10-04T20:50:32.000Z</published>
+    <updated>2020-10-04T20:59:21.188Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;mysql通常使用php连接,连接文件一般为:&lt;br&gt; conn.php ,config.php , common.inc.php,config.inc.php&lt;/p&gt;
+&lt;script&gt;
+       </summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>ecjtu</title>
@@ -94,7 +140,7 @@
     <link href="http://yoursite.com/2020/08/28/kali-update/"/>
     <id>http://yoursite.com/2020/08/28/kali-update/</id>
     <published>2020-08-28T00:05:50.000Z</published>
-    <updated>2020-10-04T09:18:56.837Z</updated>
+    <updated>2020-10-09T19:54:39.932Z</updated>
     
     
       
