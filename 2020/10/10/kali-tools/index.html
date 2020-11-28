@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="kali-tools, Hexo">
+    <meta name="keywords" content="kali-tools, q0o0p">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>kali-tools | Hexo</title>
+    <title>kali-tools | q0o0p</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -29,8 +29,8 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.0.2"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<meta name="generator" content="Hexo 5.0.2"><link rel="alternate" href="/atom.xml" title="q0o0p" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-dark.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
@@ -43,7 +43,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">Hexo</span>
+                    <span class="logo-span">q0o0p</span>
                 </a>
             </div>
             
@@ -194,7 +194,7 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">Hexo</div>
+        <div class="logo-name">q0o0p</div>
         <div class="logo-desc">
             
             Never really desperate, only the lost of the soul.
@@ -562,14 +562,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-10-09
+                    2020-11-16
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    117
+                    292
                 </div>
                 
 
@@ -591,16 +591,32 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="dirbuster"><a href="#dirbuster" class="headerlink" title="dirbuster"></a>dirbuster</h2><p>文件路径: <code>root@q0o0p:/usr/share/dirbuster</code></p>
-<pre class=" language-bash"><code class="language-bash">//字典目录
+                <h1 id="扫目录工具"><a href="#扫目录工具" class="headerlink" title="扫目录工具"></a>扫目录工具</h1><h2 id="dirbuster"><a href="#dirbuster" class="headerlink" title="dirbuster"></a>dirbuster</h2><p>文件路径: <code>root@q0o0p:/usr/share/dirbuster</code></p>
+<pre class="line-numbers language-bash"><code class="language-bash">//字典目录
 <span class="token function">cd</span> /usr/share/dirbuster/wordlists/
 <span class="token function">ls</span>
 apache-user-enum-1.0.txt  directory-list-2.3-medium.txt
 apache-user-enum-2.0.txt  directory-list-2.3-small.txt
 directories.jbrofuzz      directory-list-lowercase-2.3-medium.txt
 directory-list-1.0.txt    directory-list-lowercase-2.3-small.txt
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><img src=""></p>
+<h2 id="Nikto"><a href="#Nikto" class="headerlink" title="Nikto"></a>Nikto</h2><ul>
+<li>nikto常用命令<br>```bash<br>-upodate                         升级，更新插件<br>-host                               扫描目标URl<br>-id username:password  http认证接口<br>-list-plugins                     列出所有可用的插件<br>-evasion                          IDS/IPS逃避技术（实例演示里有详细信息）<br>-port                                指定端口（默认80）</li>
+<li>ssl                                 使用SSL<br>-useproxy                       使用http代理<br>-vhost  域名                    当一个IP拥有多个网站时 使用<pre><code></code></pre>
+</li>
+</ul>
+<p>nikto交互参数（扫描过程中使用）</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">v</span>             显示详细信息
+d             显示调试信息
+e             显示http错误信息
+p             显示扫描进度
+r              显示重定向信息
+c             显示cookie
+a             显示身份认证过程
+q             退出程序
+N            扫描下一个目标
+P            暂停扫描<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -644,7 +660,7 @@ directory-list-1.0.txt    directory-list-lowercase-2.3-small.txt
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/10/10/kali-tools/">http://yoursite.com/2020/10/10/kali-tools/</a>
+                    <a href="http://q0o0p.top/2020/10/10/kali-tools/">http://q0o0p.top/2020/10/10/kali-tools/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1130,35 +1146,93 @@ directory-list-1.0.txt    directory-list-lowercase-2.3-small.txt
     
 
     
+        <style>
+    .mvaline-card {
+        margin: 1.5rem auto;
+    }
+
+    .mvaline-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+</style>
+
+<div class="card mvaline-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="mvcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/minivaline/dist/MiniValine.min.js"></script>
+<script>
+    new MiniValine({
+        el: '#mvcomments',
+        appId: 'zhM0AOiqle17oPoE84CoYw1e-gzGzoHsz',
+        appKey: 'itmzT1JbXfAjVwMqDhGPzU45',
+        mode: 'DesertsP',
+        placeholder: 'Write a Comment',
+        pathname: window.location.pathname,
+        lang: '',
+        adminEmailMd5: 'de8a7aa53d07e6b6bceb45c64027763d',
+        tagMeta: ["管理员", "小伙伴", "访客"],
+        master: ["de8a7aa53d07e6b6bceb45c64027763d"],
+        friends: ["b5bd5d836c7a0091aa8473e79ed4c25e", "adb7d1cd192658a55c0ad22a3309cecf", "3ce1e6c77b4910f1871106cb30dc62b0", "cfce8dc43725cc14ffcd9fb4892d5bfc"],
+        math: true,
+        md: true,
+        enableQQ: false,
+        NoRecordIP: false,
+        visitor: true,
+        maxNest: 6,
+        pageSize: 6,
+        serverURLs: '',
+        emoticonUrl: ["https://cdn.jsdelivr.net/npm/alus@latest", "https://cdn.jsdelivr.net/gh/MiniValine/qq@latest", "https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest", "https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest", "https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest", "https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest"],
+    });
+</script>
+
+    
 
     
 
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2020/10/10/kali-tools/">
+                <a href="/2020/10/11/web-crawler/">
                     <div class="card-image">
                         
-                        <img src="/images/6.jpg" class="responsive-img" alt="kali-tools">
                         
-                        <span class="card-title">kali-tools</span>
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="web-crawler">
+                        
+                        <span class="card-title">web-crawler</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            This is the content of
+                            爬虫步骤
+1.抓取目标url
+2.使用python代码发请求获取数据
+3.解析获取到的数据   找新的url回到第一步(自动化)
+4.数据持久化
+
+python3爪巴虫模块
+原生模块:urlib , request
+
+http请求方式
+
+
+
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-10
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-10-11
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1166,15 +1240,6 @@ directory-list-1.0.txt    directory-list-lowercase-2.3-small.txt
                             
                         </span>
                     </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/dirbuster/">
-                        <span class="chip bg-color">dirbuster</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -1418,7 +1483,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">4.7k</span>&nbsp;字
+                class="white-color">6k</span>&nbsp;字
             
             
             

