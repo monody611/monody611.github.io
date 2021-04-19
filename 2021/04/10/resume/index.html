@@ -1,0 +1,2428 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="kali-tools, q0o0p">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>kali-tools | q0o0p</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.0.2"><link rel="alternate" href="/atom.xml" title="q0o0p" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-dark.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">q0o0p</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Index</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>Contact</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-list" style="zoom: 0.6;"></i>
+      
+      <span>Medias</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/musics">
+          
+          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Musics</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/movies">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Movies</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/books">
+          
+          <i class="fas fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Books</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/galleries">
+          
+          <i class="fas fa-image" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Galleries</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">q0o0p</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Index
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			Contact
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-list"></i>
+			
+			Medias
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/musics " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Musics</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/movies " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Movies</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/books " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-book" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Books</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/galleries " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-image" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Galleries</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/6.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">kali-tools</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/android/">
+                                <span class="chip bg-color">android</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2021-04-10
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2021-04-20
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    21.8k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    85 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="学习逆向的主要原因-从多个方面考虑过-："><a href="#学习逆向的主要原因-从多个方面考虑过-：" class="headerlink" title="学习逆向的主要原因(从多个方面考虑过)："></a>学习逆向的主要原因(从多个方面考虑过)：</h2><p>破解、脱壳、反逆向、反破解 APP，实现各种功能，二次打包。</p>
+<h3 id="从开发的角度考虑："><a href="#从开发的角度考虑：" class="headerlink" title="从开发的角度考虑："></a>从开发的角度考虑：</h3><p>破解反编译别人的APP，进行学习分析，<br>甚至还可以反编译后进行修改再次打包等等，测试加强自己应用的安全性，<br>总之，广阔天地，大有作为！</p>
+<h3 id="商业角度"><a href="#商业角度" class="headerlink" title="商业角度"></a>商业角度</h3><p>几个月前看到手机加速度处理器还能监听语音，通过广告算法进行广告推荐，从而找到某些app商城总能准确的推荐你想要的东西的真正原因，这种方法很巧妙，对于商家来说这是一种牟利手段，<br>当然也可以从逆向的角度去思考更好的去加固APP，用于保护APP的安全。</p>
+<h3 id="个人角度"><a href="#个人角度" class="headerlink" title="个人角度"></a>个人角度</h3><p>如果不去尝试反编译寻找原因,就不会了解到目前的技术发展,也不能知道推荐广告,窃取个人隐私的真正原因.<br>但对于个人来说，这是一种隐私的侵犯，个人不能改变什么但可以去逆向分析保护个人隐私。</p>
+<h3 id="从安全的角度考虑："><a href="#从安全的角度考虑：" class="headerlink" title="从安全的角度考虑："></a>从安全的角度考虑：</h3><p>灰色产业页也有着广泛的用途，查找应用的弱点进行攻击，或者对应用植入病毒，添加广告重新打包。WEB安全则可以提权，获得主动权，威胁更大。<br>反编译， APP病毒木马分析，这样才能写安全软件，负责企业应用的安全工作，“以子之矛，攻子之盾”.保护手机系统的安全。反方向就是逃避检测规则，做到免杀。<br>目前也了解过一些安全公司，在做扫描器开发，学逆向也可以将自己的逆向思维运用到里面，自动化逆向分析， APP客户端安全测试，扫描漏洞，之前了解过国外开源的Android漏洞扫描框架ModSF，里面运用的就是一个逆向思维，反编译分析代码，使用SAST（白盒测试）将国内外已经公布过的Android漏洞进行源代码的检测，逆向是不断进化的，目前的常见的壳也在不断的更新，越来越具有难度，但只要手机上能运行，壳程序就会调用解密函数，就有解决的方法，这种办法需要不断尝试和积累经验。</p>
+<p>逆向很有用途，开发和逆向是一场打不完的战争。<br>物联网方向:<br> ARM汇编指令集就是转换为最底层的机器语言，由CPU去执行的。<br> 物联网也是基于ARM汇编的底层，IOT安全也是未来的趋势。<br>找实习希望能有更好的学习资源，学到更多的新技术，应用到实际的生活中。</p>
+<p>想到前些年高中的时候，有个安卓恶作剧软件“QQ悄悄话”，打开之后会把手机调到最大音量，然后播放不可描述的声音。别人感觉这是一个恶作剧，当我看到这样一个恶作剧软件的时候，我就觉得应该去分析这个恶搞app是如何去实现的，这种情况又该怎么去防范。<br>到了大学就开始下定决心学习编程，大一的时候不怎么懂，就去找了一些技术博客很多都是关于java开发的，而且当时了解到一点app也是使用java开发，就开始从这个方向学起，当时一个人零基础学比较吃力，但主要对技术很感兴趣，也从来未曾放弃过，后面加了一个社团又有了更多的了解，当时大一有了一点点java基础以后就开始想着选一个具体的方向去发展，也尝试过几个方向，最后选择了这个比较感兴趣的，随着arm芯片的不断发展和迭代，cpu的计算和处理能力也在不断增强，能做的也不仅是简单的看视频玩游戏等娱乐功能，手机刷kali hunter也能去做渗透测试，虽然不及pc，但手机携带方便，能有意想不到的用处和发展。</p>
+<hr>
+<p>原生 so 动态库可用 C 或 C++ 开发，除了前面介绍的代码特性，so 动态库还可用 JNI 接口函数来实现 Java 层与 Native 层的通信</p>
+<p>各大厂商的加固方案都会选择将加固的代码放到native层，主要因为native层的逆向分析的难度更大，而且代码执行效率高，对性能影响小。但是总有些大牛，对这些方法是无感的，为了加大难度，这些厂商对so文件进行加固，比如代码膨胀、ELF文件格式破坏、字节码加密等等,so文件本质上也是一种ELF文件</p>
+<p>打开libsmsdk.so，找到JNI_Onload函数，导入jni.h文件，找到RegisterNatives函数。</p>
+<p>app算法分析中都喜欢从登录处开始入手，但这次因为安装在模拟器 的 app 点登录后直接崩溃， so ，换了个入口点。 很 多 app 最终调用的算法函数名称存在 encrypt 、 decrypt 关键字， 用 jadx 反编译 apk ， 全局搜索 关键字 “decrypt”.</p>
+<hr>
+<h2 id="除去广告"><a href="#除去广告" class="headerlink" title="除去广告"></a>除去广告</h2><p>一、删除广告网络权限（去除广告）,在AndroidManifest.xml中删除如下权限信息：<br>与网络权限有关的五种</p>
+<ol>
+<li><p>允许应用程序改变网络状态<br>CHANGE_NETWORK_STATE</p>
+</li>
+<li><p>允许应用程序改变WiFi的状态<br>CHANGE_WIFI_STATE</p>
+</li>
+<li><p>允许应用程序改变有关网络的访问状态<br>ACCESS_NETWORK_STATE</p>
+</li>
+<li><p>允许应用程序访问WiFi网卡的网络信息<br>ACCESS_WIFI_STATE</p>
+</li>
+<li><p>允许应用程序完全使用网络（不能删除，会导致app无法运行）</p>
+</li>
+</ol>
+<p>二、修改app入口页面去广告<br>检查AndroidManifest.xml是否同时包括<br><action android:name="android.intent.action.VIEW"><br><category android:name="android.intent.category.DEFAULT"><br>可以看到游戏的入口页面</category></action></p>
+<pre class="line-numbers language-js"><code class="language-js">android<span class="token punctuation">:</span><span class="token operator">=</span><span class="token string">"com.popcap.pvz2cthd360.wxapi.WXEntryActivity"</span>
+android<span class="token punctuation">:</span>name<span class="token operator">=</span><span class="token string">"com.popcap.pvz2cthd360.SexyAppActivity"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>adb shell dumpsys activity top //查看当前页面入口<br><img src="1.png"></p>
+<p>将app入口页面替换成当前入口页面（没有广告的入口页面）</p>
+<p>三、更改图标及apk名字<br>AndroidKiller中搜索<code>android:icon -&gt; 看到ic_launcher -&gt; 在.MF文件中搜索 -&gt; 找到icon路径</code></p>
+<p>java -jar apktool d q0o0p.apk<br>目录下面生成一个dist目录，里面就是重打包之后的apk</p>
+<p>四、 应用分身（修改apk包名）<br>找到AndroidManifest.xml文件<br><code>package=""</code>修改包名<br>修改proivder中的”android:authorities”属性值<br>注意：<br>（1）只修改包名会引发内容提供冲突<br>修改方案：<br>  修改proivder中的”android:authorities”属性值<br>（2）签名不一致导致无法运行<br>修改方案：<br>  使用相同的工具，统一进行签名<br>（3）只修改内部包名，导致程序崩溃<br>修改方案：<br>  全局修改</p>
+<hr>
+<h2 id="游戏内购"><a href="#游戏内购" class="headerlink" title="游戏内购"></a>游戏内购</h2><p>payInfo<br>java层看到: Landroid/content/pm/PackageInfo;-&gt;signatures:[Landroid/content/pm/Signature;<br>ida打开-&gt; libarmeabi-v7a<br>so -&gt;libSrc.so<br>-&gt;ALT+T呼出文本搜索框 -&gt; Landroid/content/pm/Signature</p>
+<h3 id="1-搜索方法名"><a href="#1-搜索方法名" class="headerlink" title="1. 搜索方法名"></a>1. 搜索方法名</h3><ul>
+<li>和游戏方法名<br>onResult,onchinabilling,resulton,Paycenter,Callback</li>
+<li>联通游戏方法名<br>OnPayResult,PayResult,Activity,result,callback</li>
+<li>电信爱游戏方法名<br>buySuccess/paySuccess -&gt;支付成功<br>buyCannel/payCancel -&gt; 支付取消<br>buyFailed/payFailed -&gt; 支付失败</li>
+<li>移动mm方法名<br>onBillingFinish,Billing,CallBack,onresult<br>“9000” -&gt; 支付宝搜索字符串<br>handle/message -&gt; 支付宝银行卡方法名<br>onfishedon,Activiyresult -&gt; 360支付<br>notifyDeliverGoods -&gt; 4399</li>
+</ul>
+<h3 id="2-支付接口"><a href="#2-支付接口" class="headerlink" title="2. 支付接口"></a>2. 支付接口</h3><ul>
+<li>电信支付接口<br>logcat字符串定位(Egame支付成功/Egame支付取消/order id)=&gt;搜素字符串,向上分析,回溯分析/函数名替换</li>
+<li>联通支付接口<br>logcat字符串定位(Unicom支付取消/Unicom支付成功)=&gt;在下面类修改处理,可以用goto或switch方法</li>
+<li>移动支付接口<br>logcat字符串定位(购买道具: []成功/购买道具: []失败)=&gt;在下面类修改</li>
+</ul>
+<h3 id="3-会产生费用的危险属性"><a href="#3-会产生费用的危险属性" class="headerlink" title="3. 会产生费用的危险属性"></a>3. 会产生费用的危险属性</h3><p>危险权限<br>android.permisson.SEND_SMS<br>android.permisson.CALL_PHOME</p>
+<h3 id="4-特征码"><a href="#4-特征码" class="headerlink" title="4. 特征码"></a>4. 特征码</h3><ul>
+<li>中国移动<br>46000,46002,46007,46020</li>
+<li>中国联通<br>46001,46006,46010</li>
+<li>中国电信<br>46003,46005,46011</li>
+</ul>
+<hr>
+<h2 id="游戏内购实例"><a href="#游戏内购实例" class="headerlink" title="游戏内购实例"></a>游戏内购实例</h2><p>if-nez变更为if-eqz</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">if</span><span class="token operator">-</span>gt 大于
+
+<span class="token keyword">if</span><span class="token operator">-</span>ge 大于等于
+
+<span class="token keyword">if</span><span class="token operator">-</span>lt 小于
+
+<span class="token keyword">if</span><span class="token operator">-</span>le 小于等于
+<span class="token string">"if-eq vA, vB, :cond_**"</span>   如果vA等于vB则跳转到<span class="token operator">:</span>cond_<span class="token operator">*</span><span class="token operator">*</span>
+<span class="token string">"if-ne vA, vB, :cond_**"</span>   如果vA不等于vB则跳转到<span class="token operator">:</span>cond_<span class="token operator">*</span><span class="token operator">*</span>
+<span class="token string">"if-lt vA, vB, :cond_**"</span>    如果vA小于vB则跳转到<span class="token operator">:</span>cond_<span class="token operator">*</span><span class="token operator">*</span>
+<span class="token string">"if-ge vA, vB, :cond_**"</span>   如果vA大于等于vB则跳转到<span class="token operator">:</span>cond_<span class="token operator">*</span><span class="token operator">*</span>
+<span class="token string">"if-gt vA, vB, :cond_**"</span>   如果vA大于vB则跳转到<span class="token operator">:</span>cond_<span class="token operator">*</span><span class="token operator">*</span>
+<span class="token string">"if-le vA, vB, :cond_**"</span>    如果vA小于等于vB则跳转到<span class="token operator">:</span>cond_<span class="token operator">*</span><span class="token operator">*</span>
+<span class="token string">"if-eqz vA, :cond_**"</span>   如果vA等于<span class="token number">0</span>则跳转到<span class="token operator">:</span>cond_<span class="token operator">*</span><span class="token operator">*</span>
+<span class="token string">"if-nez vA, :cond_**"</span>   如果vA不等于<span class="token number">0</span>则跳转到<span class="token operator">:</span>cond_<span class="token operator">*</span><span class="token operator">*</span>
+<span class="token string">"if-ltz vA, :cond_**"</span>    如果vA小于<span class="token number">0</span>则跳转到<span class="token operator">:</span>cond_<span class="token operator">*</span><span class="token operator">*</span>
+<span class="token string">"if-gez vA, :cond_**"</span>   如果vA大于等于<span class="token number">0</span>则跳转到<span class="token operator">:</span>cond_<span class="token operator">*</span><span class="token operator">*</span>
+<span class="token string">"if-gtz vA, :cond_**"</span>   如果vA大于<span class="token number">0</span>则跳转到<span class="token operator">:</span>cond_<span class="token operator">*</span><span class="token operator">*</span>
+<span class="token string">"if-lez vA, :cond_**"</span>    如果vA小于等于<span class="token number">0</span>则跳转到<span class="token operator">:</span>cond_<span class="token operator">*</span><span class="token operator">*</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java"><code class="language-java">①基本数据类型
+
+smali类型<span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span>java类型
+
+V<span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token keyword">void</span>
+Z<span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token keyword">boolean</span>
+B<span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token keyword">byte</span>
+S<span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token keyword">short</span>
+C<span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token keyword">char</span>
+I<span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token keyword">int</span>
+J<span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token keyword">long</span> （<span class="token number">64</span>位 需要<span class="token number">2</span>个寄存器存储）
+F<span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token keyword">float</span>
+D<span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token keyword">double</span> （<span class="token number">64</span>位 需要<span class="token number">2</span>个寄存器存储）
+②对象
+smali对象<span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span>                 java对象
+Lpackage<span class="token operator">/</span>name<span class="token operator">/</span>ObjectName<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token keyword">package</span><span class="token punctuation">.</span>name<span class="token punctuation">.</span>ObjectName
+Ljava<span class="token operator">/</span>lang<span class="token operator">/</span>String<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span>String
+L 表示对象类型
+
+<span class="token keyword">package</span><span class="token operator">/</span>name 表示包名
+<span class="token punctuation">;</span> 表示结束③数组
+smali数组<span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span>java数组
+<span class="token punctuation">[</span>I<span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> 一维数组
+<span class="token punctuation">[</span><span class="token punctuation">[</span>I<span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> 二维数组
+<span class="token punctuation">[</span>Ljava<span class="token operator">/</span>lang<span class="token operator">/</span>String<span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> String<span class="token punctuation">[</span><span class="token punctuation">]</span> 对象数组
+注：每一维最多<span class="token number">255</span>个④类字段<span class="token operator">/</span>变量
+Lpackage<span class="token operator">/</span>name<span class="token operator">/</span>ObjectName<span class="token punctuation">;</span>——<span class="token operator">></span>FieldName<span class="token operator">:</span>Ljava<span class="token operator">/</span>lang<span class="token operator">/</span>String<span class="token punctuation">;</span>
+smali字段<span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span>java字段
+<span class="token keyword">public</span> f1<span class="token operator">:</span>Z<span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token keyword">public</span> <span class="token keyword">boolean</span> f1<span class="token punctuation">;</span>
+<span class="token keyword">public</span> f2<span class="token operator">:</span>I<span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token keyword">public</span> <span class="token keyword">int</span> f2<span class="token punctuation">;</span>
+<span class="token keyword">public</span> f3<span class="token operator">:</span>L<span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span>java<span class="token operator">/</span>lang<span class="token operator">/</span>String<span class="token punctuation">;</span> <span class="token keyword">public</span> String f3<span class="token punctuation">;</span>
+<span class="token number">1</span><span class="token punctuation">.</span>赋值
+
+静态<span class="token keyword">static</span>
+<span class="token keyword">const</span><span class="token operator">-</span>string v0<span class="token punctuation">,</span> <span class="token string">"Hello Smali"</span>
+sput<span class="token operator">-</span>object v0<span class="token punctuation">,</span> Lcom<span class="token operator">/</span>MyActivity<span class="token punctuation">;</span><span class="token operator">-</span><span class="token operator">></span>name<span class="token operator">:</span>Ljava<span class="token operator">/</span>lang<span class="token operator">/</span>String<span class="token punctuation">;</span>
+相当于java代码 MyActivity<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">"Hello Smali"</span>
+非静态instance
+<span class="token punctuation">.</span>local v0<span class="token punctuation">,</span> act<span class="token operator">:</span>Lcom<span class="token operator">/</span>MyActivity<span class="token punctuation">;</span>
+<span class="token keyword">const</span><span class="token operator">/</span><span class="token number">4</span> v1<span class="token punctuation">,</span> <span class="token number">0x2</span>
+
+iput v1<span class="token punctuation">,</span> v0<span class="token punctuation">,</span> Lcom<span class="token operator">/</span>MyActivity<span class="token punctuation">;</span><span class="token operator">-</span><span class="token operator">></span>name<span class="token operator">:</span>Ljava<span class="token operator">/</span>lang<span class="token operator">/</span>String<span class="token punctuation">;</span>
+相当于java代码 act<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">"Hello Smali"</span>
+<span class="token number">2</span><span class="token punctuation">.</span>取值
+静态<span class="token punctuation">(</span><span class="token keyword">static</span> fields<span class="token punctuation">)</span>
+sget<span class="token operator">-</span>object v0<span class="token punctuation">,</span> Lcom<span class="token operator">/</span>MyActivity<span class="token punctuation">;</span><span class="token operator">-</span><span class="token operator">></span>name<span class="token operator">:</span>Ljava<span class="token operator">/</span>lang<span class="token operator">/</span>String<span class="token punctuation">;</span>
+
+相当于java代码 v0 <span class="token operator">=</span> MyActivity<span class="token punctuation">.</span>name<span class="token punctuation">;</span>
+
+非静态<span class="token punctuation">(</span>instance fields<span class="token punctuation">)</span>
+
+<span class="token punctuation">.</span>local v0<span class="token punctuation">,</span> act<span class="token operator">:</span>Lcom<span class="token operator">/</span>MyActivity<span class="token punctuation">;</span>
+
+iget<span class="token operator">-</span>object v1<span class="token punctuation">,</span> v0 Lcom<span class="token operator">/</span>MyActivity<span class="token punctuation">;</span><span class="token operator">-</span><span class="token operator">></span>name<span class="token operator">:</span>Ljava<span class="token operator">/</span>lang<span class="token operator">/</span>String<span class="token punctuation">;</span>
+
+相当于java代码 v1 <span class="token operator">=</span> act<span class="token punctuation">.</span>name<span class="token punctuation">;</span>⑤类方法<span class="token operator">/</span>函数
+
+smali方法<span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span>java方法
+
+<span class="token function">myMethod</span><span class="token punctuation">(</span><span class="token punctuation">[</span>I<span class="token punctuation">)</span>Ljava<span class="token operator">/</span>lang<span class="token operator">/</span>String<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span><span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> <span class="token operator">&amp;</span>nbsp<span class="token punctuation">;</span> String <span class="token function">myMethod</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">//Java代码</span>
+
+<span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">onCreate</span><span class="token punctuation">(</span>Bundle savedInstanceState<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+
+<span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">onCreate</span><span class="token punctuation">(</span>savedInstanceState<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">setContentView</span><span class="token punctuation">(</span>R<span class="token punctuation">.</span>layout<span class="token punctuation">.</span>activity_main<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+#samli代码
+
+<span class="token punctuation">.</span>method <span class="token keyword">protected</span> <span class="token function">onCreate</span><span class="token punctuation">(</span>Landroid<span class="token operator">/</span>os<span class="token operator">/</span>Bundle<span class="token punctuation">;</span><span class="token punctuation">)</span>V
+
+<span class="token punctuation">.</span>locals <span class="token number">1</span>
+
+<span class="token punctuation">.</span>parameter <span class="token string">"savedInstanceState"</span>
+
+<span class="token punctuation">.</span>prologue
+
+<span class="token punctuation">.</span>line <span class="token number">8</span>
+
+invoke<span class="token operator">-</span><span class="token keyword">super</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>p0<span class="token punctuation">,</span> p1<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span> Landroid<span class="token operator">/</span>app<span class="token operator">/</span>Activity<span class="token punctuation">;</span><span class="token operator">-</span><span class="token operator">></span><span class="token function">onCreate</span><span class="token punctuation">(</span>Landroid<span class="token operator">/</span>os<span class="token operator">/</span>Bundle<span class="token punctuation">;</span><span class="token punctuation">)</span>V
+
+<span class="token punctuation">.</span>line <span class="token number">9</span>
+
+<span class="token keyword">const</span><span class="token operator">/</span>high16 v0<span class="token punctuation">,</span> <span class="token number">0x7f03</span>
+
+invoke<span class="token operator">-</span>virtual <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>p0<span class="token punctuation">,</span> v0<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span> Lcom<span class="token operator">/</span>fusijie<span class="token operator">/</span>helloworld<span class="token operator">/</span>MainActivity<span class="token punctuation">;</span><span class="token operator">-</span><span class="token operator">></span><span class="token function">setContentView</span><span class="token punctuation">(</span>I<span class="token punctuation">)</span>V
+
+<span class="token punctuation">.</span>line <span class="token number">10</span>
+
+<span class="token keyword">return</span><span class="token operator">-</span><span class="token keyword">void</span>
+
+<span class="token punctuation">.</span>end method
+
+#是smali注释
+
+<span class="token punctuation">.</span>method和<span class="token punctuation">.</span>end method 类似Java大括号<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">.</span>locals 指定方法中非参寄存器总数<span class="token punctuation">,</span>出现在方法第一行
+
+<span class="token punctuation">.</span>registers 指定方法中寄存器总数
+
+<span class="token punctuation">.</span>prologue 表示代码开始
+
+<span class="token punctuation">.</span>line 表示java源码行号<span class="token punctuation">,</span>用于调试
+
+invoke<span class="token operator">-</span><span class="token keyword">static</span> 调用<span class="token keyword">static</span>方法<span class="token operator">/</span>函数
+
+invoke<span class="token operator">-</span><span class="token keyword">super</span> 调用父类方法
+
+invoke<span class="token operator">-</span>direct 调用<span class="token keyword">private</span>方法
+
+invoke<span class="token operator">-</span>virtual 调用<span class="token keyword">protected</span>或<span class="token keyword">public</span>方法
+
+<span class="token keyword">return</span><span class="token operator">-</span><span class="token keyword">void</span> 表示方法结束返回<span class="token keyword">void</span>
+
+p0 在静态方法中表示当前对象实例
+
+p1 表示当前onCreate方法参数
+
+v0 表示本地<span class="token punctuation">(</span>局部<span class="token punctuation">)</span>变量<span class="token punctuation">,</span>存放在locals寄存器
+
+move<span class="token operator">-</span>result 获取方法返回基本数据类型
+
+move<span class="token operator">-</span>result<span class="token operator">-</span>object 获取方法返回对象
+
+<span class="token keyword">const</span><span class="token operator">/</span><span class="token number">4</span> v2<span class="token punctuation">,</span> <span class="token number">0x0</span>
+
+invoke<span class="token operator">-</span>virtual <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>p0<span class="token punctuation">,</span> v2<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span> Lcom<span class="token operator">/</span>Activity<span class="token punctuation">;</span><span class="token operator">-</span><span class="token operator">></span><span class="token function">getPreferences</span><span class="token punctuation">(</span>I<span class="token punctuation">)</span>Landroid<span class="token operator">/</span>content<span class="token operator">/</span>SharedPreferences<span class="token punctuation">;</span>
+
+move<span class="token operator">-</span>result<span class="token operator">-</span>object v1
+
+v1保存的就是调用<span class="token function">getPreferences</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span>方法返回的SharedPreferences实例
+
+invoke<span class="token operator">-</span>virtual <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>v2<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span> Ljava<span class="token operator">/</span>lang<span class="token operator">/</span>String<span class="token punctuation">;</span><span class="token operator">-</span><span class="token operator">></span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span>I
+
+move<span class="token operator">-</span>result v2
+
+v2保存的则是调用String<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span>返回的整型
+
+注<span class="token operator">:</span> Long和Double类型是<span class="token number">64</span>位<span class="token punctuation">,</span>需要<span class="token number">2</span>个寄存器存储参数
+
+例如<span class="token operator">:</span>
+
+<span class="token function">myMethod</span><span class="token punctuation">(</span>IJ<span class="token punctuation">)</span>V<span class="token punctuation">;</span>
+
+参数
+
+P1 <span class="token function">I</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span>
+
+P2<span class="token punctuation">,</span>P3 <span class="token function">J</span><span class="token punctuation">(</span><span class="token keyword">long</span><span class="token punctuation">)</span>⑥条件判断语句<span class="token punctuation">(</span><span class="token keyword">if</span><span class="token punctuation">)</span>
+
+<span class="token keyword">if</span><span class="token operator">-</span>eq p1<span class="token punctuation">,</span> v0<span class="token punctuation">,</span> <span class="token operator">:</span>c1
+
+<span class="token operator">:</span>c1
+
+invoke<span class="token operator">-</span>direct <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>p0<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span> Lcom<span class="token operator">/</span>paul<span class="token operator">/</span>test<span class="token operator">/</span>a<span class="token punctuation">;</span><span class="token operator">-</span><span class="token operator">></span><span class="token function">d</span><span class="token punctuation">(</span><span class="token punctuation">)</span>V
+
+解读：如果p1和v0相等<span class="token punctuation">,</span>则执行c1流程
+
+<span class="token keyword">if</span><span class="token operator">-</span>ne p1<span class="token punctuation">,</span> v0<span class="token punctuation">,</span> <span class="token operator">:</span>c2
+
+<span class="token operator">:</span>c2
+
+invoke<span class="token operator">-</span>direct <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>p0<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">,</span> Lcom<span class="token operator">/</span>paul<span class="token operator">/</span>test<span class="token operator">/</span>a<span class="token punctuation">;</span><span class="token operator">-</span><span class="token operator">></span><span class="token function">c</span><span class="token punctuation">(</span><span class="token punctuation">)</span>V<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<hr>
+<h2 id="定位关键代码"><a href="#定位关键代码" class="headerlink" title="定位关键代码"></a>定位关键代码</h2><p>（1）资源反馈法<br>如：错误提示，运行提示 -&gt; 搜索字符串<br>String.xml -&gt; R.java -&gt; id -&gt;smail或IDA中搜索<br>（2）特征函数法<br>调用相关api函数完成<br>（3）顺序查看法<br>AndroidManifest.xml -&gt; 主Activity界面 -&gt; 掌握软件执行流程<br>（4）代码注入法<br>插桩（插入log/查看logcat/分析加解密）解密程序数据的时候使用<br>（5）栈跟踪法（动态调试/函数调用流程）<br>输出运行时栈调用跟踪信息，查看函数调用序列，理解方法的执行流程。</p>
+<p>搜索关键信息找不到：</p>
+<ul>
+<li><p>字符串在so层</p>
+</li>
+<li><p>字符串被加密了</p>
+</li>
+<li><p>结合服务器，服务器返回，本地显示</p>
+</li>
+</ul>
+<p>AndroidManifest.xml中（android：name=””）获取主页面信息 -&gt; smail文件中查找该页面 -&gt; 找到OnCreat()方法 -&gt;<br>起始位置插入代码（.locals 7 下一行，右键插入代码，toast输出，这是一个消息提示）-&gt;<br>点击保存，并进行回编译（这就是代码注入法,根据提示信息知道app是否可以逆向分析）-&gt;<br>手机端获取广告页Activity(adb shell dumpsys activity top ) -&gt; 在主页中找到广告页activity -&gt;<br>将StatrtActivity（由一个页面跳转到另一个页面）整行注释（AndroidKiller使用Shift+3注释[#号]）</p>
+<h2 id="DDMS-工具使用（虚拟机调试监控服务）"><a href="#DDMS-工具使用（虚拟机调试监控服务）" class="headerlink" title="DDMS 工具使用（虚拟机调试监控服务）"></a>DDMS 工具使用（虚拟机调试监控服务）</h2><h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><ol>
+<li>提供截屏</li>
+<li>查看线程和堆栈信息</li>
+<li>查看logcat日志<br>去广告：<br>打开DDMS -&gt; 添加过滤器 -&gt; 浏览日志信息，找到https://广告链接</li>
+</ol>
+<p>-&gt; 替换为127.0.0.1</p>
+<h3 id="真机调试"><a href="#真机调试" class="headerlink" title="真机调试"></a>真机调试</h3><ul>
+<li>使用mprop<br>getprop ro.product.cpu.abi<br>下载mprop :<a target="_blank" rel="noopener" href="https://github.com/wpvsyou/mprop/blob/master/arm64-v8a/mprop">https://github.com/wpvsyou/mprop/blob/master/arm64-v8a/mprop</a><br>adb -s fea4b345 push mprop /data/local/tmp</li>
+</ul>
+<p>手机端:<br>chmod 755 mprop<br>./mprop ro.debuggable 1</p>
+<ul>
+<li><p>magisk(重启失效)</p>
+<pre class="line-numbers language-bash"><code class="language-bash">adb shell <span class="token comment" spellcheck="true">#adb进入命令行模式</span>
+<span class="token function">su</span> <span class="token comment" spellcheck="true">#切换至超级用户</span>
+magisk resetprop ro.debuggable 1
+stop<span class="token punctuation">;</span>start<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">#一定要通过该方式重启</span>
+getprop ro.debuggable <span class="token comment" spellcheck="true">#显示1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>MagiskHide Props Config模块修改(永久有效)<br>Magisk中搜索MagiskHide Props Config模块并安装</p>
+</li>
+</ul>
+<h2 id="log插桩调试smail代码"><a href="#log插桩调试smail代码" class="headerlink" title="log插桩调试smail代码"></a>log插桩调试smail代码</h2><h3 id="应用程序入口页面插入信息"><a href="#应用程序入口页面插入信息" class="headerlink" title="应用程序入口页面插入信息"></a>应用程序入口页面插入信息</h3><p>将apk拖入AndroidKiller<br>工程信息栏找到入口 -&gt; 找到OnCreate函数<br>在<code>.prologue</code>(代码开始的位置) 下一行插入 -&gt; 右键 -&gt; 插入代码 -&gt; log信息输出</p>
+<h3 id="程序入口点插入log信息"><a href="#程序入口点插入log信息" class="headerlink" title="程序入口点插入log信息"></a>程序入口点插入log信息</h3><p>工程管理器 -&gt; AndroidMainfest.xml -&gt; application -&gt;<br>android:name= “程序入口点” -&gt; smail中找到 -&gt; OnCreat()<br>-&gt; .prologue 下面插入log信息 -&gt; DDMS添加过滤器（主要填写过滤器名字和包名信息）查看 -&gt; 根据插入的日志信息进行筛选（应用程序执行入口页面早于程序入口页面）</p>
+<p><code>注意: 局部变量寄存器个数为0或不够使用时，需要进行修改，否则app会停止运行</code></p>
+<h2 id="栈跟踪法（动态调试）"><a href="#栈跟踪法（动态调试）" class="headerlink" title="栈跟踪法（动态调试）"></a>栈跟踪法（动态调试）</h2><p>adb shell dumpsys activity top //获取包名<br>打开DDMS并添加过滤器（上层是被调用者，下层是调用者，从下往上调用）<br>打开AndroidKiller -&gt; 工程信息 -&gt; 入口 -&gt; 函数loadData -&gt; .prologue下面右键插入StackTrace栈跟踪</p>
+<h2 id="app-去除弹窗"><a href="#app-去除弹窗" class="headerlink" title="app 去除弹窗"></a>app 去除弹窗</h2><p>AndroidKiller -&gt; 工程管理器 -&gt; 打开apktool.yml(工程配置信息) -&gt;<br>更改versionCode:’999’(版本信息是否大于当前发布的最新版本)</p>
+<h2 id="Method-Profiling方法剖析"><a href="#Method-Profiling方法剖析" class="headerlink" title="Method Profiling方法剖析"></a>Method Profiling方法剖析</h2><p>基于热点分析和性能优化，除了可以记录每一个函数占用cpu的时间外，还可以跟踪所有函数调用关系，并提供比栈跟踪法更详尽的函数调用序列报告。</p>
+<p>DDMS -&gt; 第五个按钮，Profilling Options -&gt;<br> 第一个默认设置过滤方法的个数，默认1000条，第二个没有过滤,选中第一个开始捕捉 -&gt; 手机端，验证码输入捕捉，输入完成后，DDMS暂停捕捉，停止以后等待一下<br> -&gt; 弹出页面（Name：函数调用流程）-&gt; find:OnClick</p>
+<p> 根据DDMS中的路径AndroidKiller找到该方法<br> 当前执行方法</p>
+<ul>
+<li>Parent（父节点）<br>当前方法的上层调用</li>
+<li>Children （子节点）<br>当前方法的下层调用</li>
+</ul>
+<h2 id="AndroidStudio-smalidea插件动态调试"><a href="#AndroidStudio-smalidea插件动态调试" class="headerlink" title="AndroidStudio + smalidea插件动态调试"></a>AndroidStudio + smalidea插件动态调试</h2><p>导入完整的smali代码<br>设置所需条件<br>设置断点<br>移动设备连接至PC端，运行待调试的apk<br>运行至代码处的断点时，触发断点</p>
+<hr>
+<h2 id="对称加密算法"><a href="#对称加密算法" class="headerlink" title="对称加密算法"></a>对称加密算法</h2><p> （1）DES（Data Encryption Standard）：数据加密标准，速度较快，适用于加密大量数据的场合。<br> （2）3DES（Triple DES）：是基于DES，对一块数据用三个不同的密钥进行三次加密，强度更高。<br> （3）AES（Advanced Encryption Standard）：高级加密标准，是下一代的加密算法标准，速度快，安全级别高；</p>
+<p>对称加密算法的特点主要有：<br> （1）加密方和解密方使用同一个密钥；<br> （2）加解密的速度比较快，适合数据比较长时使用；<br> （3）密钥传输的过程不安全，且容易被破解，密钥管理也比较麻烦。</p>
+<h2 id="非对称加密（Asymmetric-Key-Algorithms）"><a href="#非对称加密（Asymmetric-Key-Algorithms）" class="headerlink" title="非对称加密（Asymmetric Key Algorithms）"></a>非对称加密（Asymmetric Key Algorithms）</h2><p>所谓非对称，是指该算法需要一对密钥，使用其中一个加密，则需要用另一个才能解密。把密钥分为公钥和私钥，公钥是公开的所有人都可以认领，私钥是保密的只有一个人知道。</p>
+<p>非对称加密算法主要有：<br> （1）RSA：由 RSA 公司发明，是一个支持变长密钥的公共密钥算法，需要加密的文件块的长度也是可变的；<br> （2）DSA（Digital Signature Algorithm）：数字签名算法，是一种标准的 DSS（数字签名标准）；<br> （3）ECC（Elliptic Curves Cryptography）：椭圆曲线密码编码学。</p>
+<p>假如发送方有一对密钥：私钥（KA）和公钥（KPA），接收方也生成一对密钥：私钥（KB）和公钥（KPB），其中（KPA）和（KPB）是公开的。发送方用接收方的公钥对消息加密，加密过程如下<br>E=ENC（M，KPB）<br>接收方接收到密文后使用自己的私钥进行解密，解密过程如下：</p>
+<p>M=ENC（E，KB）<br>这样，即使密文被中间人截获，由于其不知道接收方的私钥，无法破解密文，所以消息仍然是安全的。</p>
+<h2 id="消息摘要（Message-Digest）"><a href="#消息摘要（Message-Digest）" class="headerlink" title="消息摘要（Message Digest）"></a>消息摘要（Message Digest）</h2><p>消息摘要可以将消息哈希成一个长度固定的唯一值。值唯一的意思是不同的消息转换的摘要是不同的，并且能够确保唯一。该过程不可逆，即不能通过摘要反推明文。常用的消息摘要算法有MD5、SHA1、SHA256、SHA512等。</p>
+<h2 id="数字签名（Digital-Signature）"><a href="#数字签名（Digital-Signature）" class="headerlink" title="数字签名（Digital Signature）"></a>数字签名（Digital Signature）</h2><p>有了RSA，我们可以将其用于网络传输数据的加密。比如A要发送一封Email给B，他不想让任何其他人在传输中看到Email的内容，做法就是使用B的公钥对Email加密，只有B的私钥能够解密（B的私钥唯一性保证信件不会泄露）。</p>
+<p>某天出意外了，有黑客冒充A给B发送Email，并且也用B的公钥加密，导致B无法区分这封邮件是否来自A。怎么办？此时A可以用自己的私钥加密Email，那么B收到邮件后如果用A的公钥可以解密邮件，那么证明这封信肯定来自于A。</p>
+<p>通过这个例子我想我们基本明白非对称加密了的作用了。总结如下：<br> （1）公钥的作用：对内容本身加密，保证不被其他人看到；<br> （2）私钥的作用：证明内容的来源；<br> （3）公钥和私钥是配对关系，公钥加密就用私钥解密，反之亦然，用错的密钥来尝试解密会报错。</p>
+<p>仔细思考会发现，假设A用自己的私钥对Email加密发送，会存在下面的问题：对文件本身加密可能是个耗时过程，比如这封Email足够大，那么私钥加密整个文件以及拿到文件后的解密无疑是巨大的开销。使用数字签名可以解决这个问题。<br> （1）A先对这封Email执行哈希运算得到消息摘要；<br> （2）然后A用自己的私钥对消息摘要加密，生成数字签名；<br> （3）把数字签名加在Email正文后面，一起发送给B。当然，为了防止邮件被窃听，对邮件内容使用B的公钥进行加密，但这个不属于数字签名范畴；<br> （4）B收到邮件后用A的公钥对数字签名解密，成功则代表Email确实来自A，失败说明有人冒充，此时数字签名起到了身份认证的作用；<br> （5）B对邮件正文通过自己的私钥解密后执行哈希运算得到摘要；<br> （6）B会对比第4步数字签名的Hash值和自己运算得到的Hash值，一致则说明邮件未被篡改。此时数字签名用于数据完整性的验证。</p>
+<h2 id="Base64密文有如下特点："><a href="#Base64密文有如下特点：" class="headerlink" title="Base64密文有如下特点："></a>Base64密文有如下特点：</h2><ul>
+<li>字符串只可能包含A-Z，a-z，0-9，+，/，=字符 </li>
+<li>字符串长度是4的倍数 </li>
+<li>=只会出现在字符串最后，可能没有或者一个等号或者两个等号<br>转前： s 1 3<br>先转成ascii：对应 115 49 51<br>2进制： 01110011 00110001 00110011<br>6个一组（4组） 011100 110011 000100 110011<br>然后才有后面的 011100 110011 000100 110011<br>然后计算机是8位8位的存数 6不够，自动就补两个高位0了<br>所有有了 高位补0<br>科学计算器输入 00011100 00110011 00000100 00110011<br>得到 28 51 4 51<br>查对下照表 c z E z</li>
+</ul>
+<p>正则</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">boolean</span> <span class="token function">isBase64</span><span class="token punctuation">(</span>String str<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token number">2</span> String base64Pattern <span class="token operator">=</span> <span class="token string">"^([A-Za-z0-9+/]&amp;#123;4&amp;#125;)*([A-Za-z0-9+/]&amp;#123;4&amp;#125;|[A-Za-z0-9+/]&amp;#123;3&amp;#125;=|[A-Za-z0-9+/]&amp;#123;2&amp;#125;==)$"</span><span class="token punctuation">;</span>
+<span class="token number">3</span> <span class="token keyword">return</span> Pattern<span class="token punctuation">.</span><span class="token function">matches</span><span class="token punctuation">(</span>base64Pattern<span class="token punctuation">,</span> str<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token number">4</span> <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>java代码判断：</p>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">boolean</span> <span class="token function">isBase64</span><span class="token punctuation">(</span>String str<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>str <span class="token operator">==</span> null <span class="token operator">||</span> str<span class="token punctuation">.</span><span class="token function">trm</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> <span class="token keyword">else</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>str<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">%</span> <span class="token number">4</span> <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">char</span><span class="token punctuation">[</span><span class="token punctuation">]</span> strChars <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">toCharArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">char</span> c<span class="token operator">:</span>strChars<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>c <span class="token operator">>=</span> <span class="token string">'a'</span> <span class="token operator">&amp;&amp;</span> c <span class="token operator">&lt;=</span> <span class="token string">'z'</span><span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token punctuation">(</span>c <span class="token operator">>=</span> <span class="token string">'A'</span> <span class="token operator">&amp;&amp;</span> c <span class="token operator">&lt;=</span> <span class="token string">'Z'</span><span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token punctuation">(</span>c <span class="token operator">>=</span> <span class="token string">'0'</span> <span class="token operator">&amp;&amp;</span> c <span class="token operator">&lt;=</span> <span class="token string">'9'</span><span class="token punctuation">)</span>
+                <span class="token operator">||</span> c <span class="token operator">==</span> <span class="token string">'+'</span> <span class="token operator">||</span> c <span class="token operator">==</span> <span class="token string">'/'</span> <span class="token operator">||</span> c <span class="token operator">==</span> <span class="token string">'='</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                <span class="token keyword">continue</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> <span class="token keyword">else</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<hr>
+<h2 id="JNI"><a href="#JNI" class="headerlink" title="JNI"></a>JNI</h2><p>Java通过JNI机制来支持内地代码的使用。想要比较好地理解JNI是比较难的，因为它包含了两种语言和运行时机制。<br>jni.h文件定义了JNI（Java Native Interface）所支持的类型与接口。通过预编译命令可以支持C和C++。jni.h文件还依赖jni_md.h文件，jni_md.h文件定义了机器相关的jbyte, jint和jlong对应的本地类型。</p>
+<p>JNI 全称 Java Native Interface，Java 本地化接口，可以通过 JNI 调用系统提供的 API。操作系统，无论是 Linux，Windows 还是 Mac OS，或者一些汇编语言写的底层硬件驱动都是 C/C++ 写的。Java和C/C++不同 ，它不会直接编译成平台机器码，而是编译成虚拟机可以运行的Java字节码的.class文件，通过JIT技术即时编译成本地机器码，所以有效率就比不上C/C+</p>
+<h3 id="JNI-Onload"><a href="#JNI-Onload" class="headerlink" title="JNI_Onload()"></a>JNI_Onload()</h3><p>Dalvik虚拟机加载C库时，第一件事是调用JNI_OnLoad()函数，所以在JNI_OnLoad()里面进行一些初始化工作，如(动态注册JNI函数-&gt; aX2，aX4，aX6，aZ3，aY2_0 的传参和返回值都是jstring类型。初步判断这些是加解密函数。-&gt; 使用Frida hook java.net.SocketOutputStream.socketWrite函数，并打印调用栈 -&gt; 根据堆栈找到对应的函数)等等.<br>Java JNI有两种方法，一种是通过javah,获取一组带签名函数，然后实现这些函数。<br>这种方法很常用，也是官方推荐的方法。<br>还有一种就是JNI_OnLoad方法。<br>​<br>当Android的VM(Virtual Machine)执行到C组件(即<em>so档)里的System.loadLibrary()函数时，<br>首先会去执行C组件里的JNI_OnLoad()函数。<br>它的用途有二：<br>. 告诉VM此C组件使用那一个JNI版本。<br>  如果你的</em>.so档没有提供JNI_OnLoad()函数，VM会默认该*.so档是使用最老的JNI 1.1版本。<br>  由于新版的JNI做了许多扩充，如果需要使用JNI的新版功能，<br>  例如JNI 1.4的java.nio.ByteBuffer,就必须藉由JNI_OnLoad()函数来告知VM。</p>
+<p>注册本地函数，可以加快java层调用本地函数的效率。</p>
+<pre class="line-numbers language-C++"><code class="language-C++">JNIEXPORT jint JNI_OnLoad(JavaVM* vm, void* reserved)&#123;
+    __android_log_print(ANDROID_LOG_INFO, "native", "Jni_OnLoad");
+    return JNI_VERSION_1_4;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>当虚拟机释放该C库时，则会调用JNI_OnUnload()函数来进行善后清除动作。</p>
+<pre class="line-numbers language-C++"><code class="language-C++">JNIEXPORT void JNI_OnUnload(JavaVM* vm, void* reserved)&#123;
+    __android_log_print(ANDROID_LOG_INFO, "native", "JNI_OnUnload");
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h2 id="花指令"><a href="#花指令" class="headerlink" title="花指令"></a>花指令</h2><p>真实的代码中插入一些垃圾代码<br>花指令使用原程序代码中没有使用的寄存器(ESI和EDX)</p>
+<p>替换与原有指令等价的指令<br>mov op1, op2可以替换为 push op2/pop op1这两条指令。<br>jmp label可以替换为 push label/ret这两条指令，IDA将不会显示被引用的label。<br>call label可以替换为push label_after_call_instruction/push label/ref这三条指令。<br>push op可以替换为 sub esp, 4(或者8)/mov [esp], op这两条指令。</p>
+<p>逻辑其实特别清晰，就是先跳转到junk1，再call junk2，call junk2的时候会把地址0x004118D3压栈，然后进入junk2中执行retn指令又会把地址0x004118D3 pop到eip中，然后接下来程序继续正常执行。</p>
+<p>真正的复杂程序里这种花指令的数量很多，人工nop很耗时，同时极容易出错，所以我们真正应该掌握的是自动化的方法，编写脚本匹配花指令模板进行去除，整块nop掉即可。<br>去除花指令<br>这里是我们要去除的花指令模板</p>
+<pre class="line-numbers language-C"><code class="language-C">#define JUNKCODE __asm&#123;
+    __asm jmp junk1 
+    __asm __emit 0x12 
+    __asm junk2: 
+    __asm ret 
+    __asm __emit 0x34 
+    __asm junk1: 
+    __asm call junk2  
+&#125;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>这里是idapython编写的ida匹配模板去除花指令脚本</p>
+<pre class="line-numbers language-py"><code class="language-py">def nop(addr, endaddr):
+    while addr < endaddr:
+        PatchByte(addr, 0x90)
+        addr += 1
+
+def undefine(addr, endaddr):
+    while addr < endaddr:
+        MakeUnkn(addr, 0)
+        addr += 1
+
+def dejunkcode(addr, endaddr):
+    while addr < endaddr:
+        MakeCode(addr)
+        # 匹配模板
+        if GetMnem(addr) == 'jmp' and GetOperandValue(addr, 0) == addr + 5 and Byte(addr+2) == 0x12:
+            next = addr + 10
+            nop(addr, next)
+            addr = next
+            continue
+        addr += ItemSize(addr)
+
+dejunkcode(0x00411820, 0x00411957)
+undefine(0x00411820, 0x00411957)
+MakeFunction(0x00411820, -1)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>在ida中运行脚本，然后可以发现那段花指令已经成功nop掉了</p>
+<h3 id="特殊花指令"><a href="#特殊花指令" class="headerlink" title="特殊花指令"></a>特殊花指令</h3><p>还有一类较特殊的花指令，它不会影响反汇编和反编译，只是单纯的混淆视听</p>
+<p>譬如我们程序需要将某个特定值（这里假设是0x12）压栈，正常操作应该是：</p>
+<p>push    0x12<br>加入花指令后，这个操作可以变成这样：</p>
+<p>push    0x26<br>xor dword ptr ss:[esp], 0x34<br>我们很容易可以看出来这两种写法是等效的，当我们要压栈的数据是一些很明显的特征值的时候，这种花指令可以很好的保护我们的特征值，防止算法特征被迅速识别</p>
+<p>当然这里只是一个简单的例子，这种花指令复杂起来将会使得分析难度大大提升。</p>
+<h2 id="java代码混淆"><a href="#java代码混淆" class="headerlink" title="java代码混淆"></a>java代码混淆</h2><p>对函数名，变量名，类名，字段名进行批量重命名，混淆会增加阅读代码的时间，不会影响代码的逻辑。</p>
+<h3 id="ProGuard"><a href="#ProGuard" class="headerlink" title="ProGuard"></a>ProGuard</h3><p>检测和移除未使用的类,字段名,方法和属性<br>优化字节码,移除未使用到的代码指令</p>
+<h3 id="资源混淆"><a href="#资源混淆" class="headerlink" title="资源混淆"></a>资源混淆</h3><p>MT管理器绕过资源文件的触发(捕鱼达人)<br>MT管理器 -&gt; data/app/程序包名<br>-&gt; 点击.apk查看<br>-&gt; 点击.dex文件<br>-&gt; dex编辑器++<br>-&gt;反编译完成(里面的方法修改后会出现星号)<br>-&gt; 修改完成把保存并退出(绿色表示修改成功)<br>-&gt; 双击覆盖安装</p>
+<p>MT管理器原理: 基于压缩包进行反编译,可以反编译单独的dex</p>
+<hr>
+<h2 id="so解密"><a href="#so解密" class="headerlink" title="so解密"></a>so解密</h2><p>可以调用他的so然后直接解密出来数据即可，修改arm指令等，我们把这个应用的so拷贝到项目中，然后构建一个native类和方法，最后调用解密方法。<br>##ida调试崩溃</p>
+<ol>
+<li>附加进程检测<br>发现调试崩溃的时候找ptrace()-&gt; 防止被他人ptrace附加进程和be_attached_check()-&gt;防止附加操作，这两个函数调用非常独立    ，直接nop掉这两个函数。在线转换arm为hex,在十六进制编辑器中修改成转换后的值<br>NOP指令对应的HEX值是C046，保存以后用ida查看。</li>
+<li>签名校验<br>知道so中有没有签名校验，可以直接Shift+F12查找字符串内容”signatures”<br>直接修改v3的初始值1，更据情况修改，MOVS R6，#0-》MOVS R6，#1（不能直接将strcmp改为cmp，strcmp有三个返回值-1，0，1；有些函数需要返回值为0才能通过签名检测）<br>根据ida中的地址值去十六进制编辑器中修改。修改成功f5查看伪代码就变成了对不对返回值都为1</li>
+</ol>
+<h3 id="工具检测"><a href="#工具检测" class="headerlink" title="工具检测"></a>工具检测</h3><p>找到这两个函数直接nop掉，BLX-&gt;NOP<br>在线转换arm为hex,在十六进制编辑器中修改成转换后的值<br>NOP指令对应的HEX值是C046，保存以后用ida查看</p>
+<p>##</p>
+<h2 id="IDA-动态调试"><a href="#IDA-动态调试" class="headerlink" title="IDA 动态调试"></a>IDA 动态调试</h2><p>1.运行android_server -&gt;<br>2. 端口转发 -&gt;<br>3.adb shell am start -D -n cn.wjdiankong.awwechathack/.MainActivity 调试运行程序 -&gt;<br>4.打开ida的附加进程 —&gt;<br>5.debugger option设置 suspend (三个)<br>-&gt; 6.等待调试jdb连接jdb -connect com.sun.jdi.SocketAttach:hostname=127.0.0.1,port=8600这里的端口号需要从DDMS中查看，是个红色小蜘蛛 -&gt;<br>7. IDA中运行程序或者按F9这里可以一路往下按，因为会加载很多系统so文件，一路按下去直到加载到了我们自己的so，这里没有检测直接过去即可<br>8. 在Module中找到需要调试的so文件，找到之后双击进入so文件。<br>9. 找到需要调试的函数，通过静态分析so找到那个需要调试的函数地址<br>10. 看到这里双开IDA的好处是动静结合非常方便，这时候我们只需要查看函数调用前的参数值也就是那几个MOV指令的寄存器值，R0寄存器保存的是需要解密的内容</p>
+<p>动态调试的时候，和静态分析时看到的代码差别很大。IDA在动态调试状态下不会将所有东西解析出来。</p>
+<h2 id="IDA静态调试"><a href="#IDA静态调试" class="headerlink" title="IDA静态调试"></a>IDA静态调试</h2><p>特点：改变程序执行流程，鼠标右键可以修改为任意值</p>
+<p>没有收到Java_xxx这样的函数，说明他可能用了动态注册，所以就去搜JNI_OnLoad函数，所以这里注意大家以后如果打开so之后发现没有Java_xxx这样的函数开头一般都是在JNI_OnLoad中采用了动态注册方式，所以只需要找到JNI_OnLoad函数，然后找到RegisterNatives函数即可，不过在这个过程中我们需要转换JNIEnv指针信息</p>
+<p>这里如果看到类似于vXX+YY这样的，选中vXX变量，然后按Y按键，然后替换成JNIEnv<em>即可，我们如果手动注册过Native方法，都知道RegisterNatives函数的三个参数含义：jint RegisterNatives(jclass clazz, const JNINativeMethod</em> methods, jint nMethods)第一个参数：需要注册native函数的上层Java类第二个参数：注册的方法结构体信息第三个参数：需要注册的方法个数这里当然是重点看第二个参数，这里当然也需要知道方法结构体信息</p>
+<hr>
+<h1 id="反调试"><a href="#反调试" class="headerlink" title="反调试"></a>反调试</h1><p> Tracerpid不等于0<br> Ptrace自身.<br> IsDebuggerConnect。</p>
+<h2 id="签名验证"><a href="#签名验证" class="headerlink" title="签名验证"></a>签名验证</h2><p>签名修改后安装出现闪退(存在签名验证)<br>(1) 阅读签名验证源码<br>打开文件 -&gt; 开始分析java层 -&gt; 重新打包,回编译<br>获取包管理,从而获取签名信息<br>关键词:<br>signatures，Landroid/content/pm/Signature，GetPackageInfo，<br>(2) 分析以及过掉签名验证<br>安装程序包 -&gt; 对程序包重新签名 -&gt; 安装签名过后的程序 -&gt; 开始分析<br>打开就提示错误(没有提示错误从入口界面开始分析) -&gt; 逻辑检查 OnCreate -&gt;native(so层检测)<br>-&gt; IDA打开lib目录下的so文件<br>-&gt; 搜索JNI_onload(没有JNI_onload,不是采用动态组成)<br>-&gt; 在搜索java_(有结果,双击分析)<br>-&gt; 看到getSignHashCode(点击)<br>-&gt; 看到getPackageManager , getPackageInfo , getPackageName(签名三兄弟)<br>-&gt; 还有signatures,hashcode(一块一块的函数的调用)<br>-&gt; F5看伪代码<br>-&gt; 上一层只传一个R0(env),第二个参数在java层代码,没有被static修饰,说明obj<br>-&gt; 右键Hide-casts 隐藏类型</p>
+<h2 id="模拟器检测"><a href="#模拟器检测" class="headerlink" title="模拟器检测"></a>模拟器检测</h2><h2 id="运行调试端口检测-kill程序"><a href="#运行调试端口检测-kill程序" class="headerlink" title="运行调试端口检测,kill程序"></a>运行调试端口检测,kill程序</h2><p>端口检测方法C语言:</p>
+<pre class="line-numbers language-c"><code class="language-c"><span class="token keyword">void</span> <span class="token function">check</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+  FILE<span class="token operator">*</span> pfile<span class="token operator">=</span><span class="token constant">NULL</span><span class="token punctuation">;</span>
+  <span class="token keyword">char</span> buf<span class="token punctuation">[</span><span class="token number">0x1000</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token comment" spellcheck="true">//执行命令 </span>
+  <span class="token keyword">char</span><span class="token operator">*</span> strCatTcp <span class="token operator">=</span> <span class="token string">"cat /proc/net/tcp |grep :5D8A"</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//android_server默认使用端口号(十六进制)</span>
+  <span class="token keyword">char</span><span class="token operator">*</span> strNetstat<span class="token operator">=</span><span class="token string">"netstat |grep :23946"</span><span class="token punctuation">;</span>
+  pfile <span class="token operator">=</span> <span class="token function">popen</span><span class="token punctuation">(</span>strCatTcp<span class="token punctuation">,</span><span class="token string">"r"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">int</span> pid<span class="token operator">=</span><span class="token function">getpid</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token constant">NULL</span> <span class="token operator">=</span>pfile<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+      <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"打开命令失败!\n"</span><span class="token punctuation">,</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">return</span><span class="token punctuation">;</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+  <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token function">fgets</span><span class="token punctuation">(</span>buf<span class="token punctuation">,</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span>buf<span class="token punctuation">)</span><span class="token punctuation">,</span>pfile<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//执行到这里判断调试状态</span>
+      <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"执行cat /proc/net/tcp |grep :5D8A的结果是: \n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%s\n"</span><span class="token punctuation">,</span>buf <span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">int</span> ret <span class="token operator">=</span><span class="token function">kill</span><span class="token punctuation">(</span>pid<span class="token punctuation">,</span>SIGKILL<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+  <span class="token function">pclose</span><span class="token punctuation">(</span>pfile<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+  <span class="token keyword">int</span> x <span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token keyword">int</span> y<span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+  <span class="token keyword">int</span> key<span class="token punctuation">;</span>
+  x<span class="token operator">=</span>x<span class="token operator">^</span>y<span class="token punctuation">;</span>
+  y<span class="token operator">=</span>x<span class="token operator">^</span>y<span class="token punctuation">;</span>
+  <span class="token keyword">int</span> X<span class="token operator">=</span>x<span class="token operator">^</span>y<span class="token punctuation">;</span>
+  <span class="token keyword">int</span> Y<span class="token operator">=</span>x<span class="token operator">^</span>y<span class="token punctuation">;</span> 
+  Y<span class="token operator">=</span>Y<span class="token operator">&lt;&lt;</span><span class="token number">1</span><span class="token punctuation">;</span>
+  <span class="token keyword">int</span> X0<span class="token operator">=</span>x<span class="token operator">^</span>y<span class="token punctuation">;</span>
+  <span class="token keyword">int</span> Y0<span class="token operator">=</span>x<span class="token operator">&amp;</span>y<span class="token punctuation">;</span>
+  Y0<span class="token operator">=</span>Y0 <span class="token operator">&lt;&lt;</span> <span class="token number">1</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>Y0<span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span>
+  <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    key<span class="token operator">=</span>x0<span class="token operator">+</span><span class="token number">4543</span><span class="token punctuation">;</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+  <span class="token keyword">int</span> encrypt <span class="token operator">=</span> num <span class="token operator">^</span> key<span class="token punctuation">;</span>
+  <span class="token keyword">int</span> decrypt <span class="token operator">=</span> encrypt <span class="token operator">^</span> key<span class="token punctuation">;</span>
+  <span class="token function">check</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"加密前\n"</span><span class="token punctuation">,</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"加密后\n"</span><span class="token punctuation">,</span>encrypt<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"解密后\n"</span><span class="token punctuation">,</span>decrypt<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>过滤端口检测的方法:</p>
+<pre class="line-numbers language-bash"><code class="language-bash">android_server -p指定端口号<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="进程名称检测"><a href="#进程名称检测" class="headerlink" title="进程名称检测"></a>进程名称检测</h2><p>进程名称检测C语言:</p>
+<pre class="line-numbers language-c"><code class="language-c"><span class="token keyword">void</span> <span class="token function">check</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> <span class="token keyword">int</span> bufsize <span class="token operator">=</span> <span class="token number">1024</span><span class="token punctuation">;</span>
+  <span class="token keyword">char</span> <span class="token function">filename</span><span class="token punctuation">(</span>bufsize<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">char</span> <span class="token function">line</span><span class="token punctuation">(</span>bufsize<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">char</span> <span class="token function">name</span><span class="token punctuation">(</span>bufsize<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">char</span> <span class="token function">nameline</span><span class="token punctuation">(</span>bufsize<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">int</span> pid <span class="token operator">=</span> <span class="token function">getpid</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment" spellcheck="true">//先读取Tracepid值</span>
+  <span class="token function">sprintf</span><span class="token punctuation">(</span>filename<span class="token punctuation">,</span><span class="token string">"/proc/%d/status"</span><span class="token punctuation">,</span>pid<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  FILE <span class="token operator">*</span>fd<span class="token operator">=</span><span class="token function">fopen</span><span class="token punctuation">(</span>filename<span class="token punctuation">,</span><span class="token string">"r"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>fd<span class="token operator">!=</span><span class="token constant">NULL</span><span class="token punctuation">)</span>
+  <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token function">fgets</span><span class="token punctuation">(</span>line<span class="token punctuation">,</span>bufsize<span class="token punctuation">,</span>fd<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">strstr</span><span class="token punctuation">(</span>line<span class="token punctuation">,</span><span class="token string">"Tracepid"</span><span class="token punctuation">)</span><span class="token operator">!=</span><span class="token constant">NULL</span><span class="token punctuation">)</span>
+        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+          <span class="token keyword">int</span> statue <span class="token operator">=</span> <span class="token function">atoi</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>line<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>statue <span class="token operator">!=</span><span class="token number">0</span><span class="token punctuation">)</span>
+          <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token function">sprint</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span><span class="token string">"/proc/%d/cmdline"</span><span class="token punctuation">,</span>statue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            FILE <span class="token operator">*</span>fdname <span class="token operator">=</span><span class="token function">fopen</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span><span class="token string">'r'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>fdname<span class="token operator">!=</span><span class="token number">0</span><span class="token punctuation">)</span>
+            <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+              <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token function">fgets</span><span class="token punctuation">(</span>nameline<span class="token punctuation">,</span>bufsize<span class="token punctuation">,</span>fdname<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">strstr</span><span class="token punctuation">(</span>nameline<span class="token punctuation">,</span><span class="token string">"android_server"</span><span class="token punctuation">)</span><span class="token operator">!=</span><span class="token constant">NULL</span><span class="token punctuation">)</span>
+                  <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                    <span class="token keyword">int</span> ret<span class="token operator">=</span><span class="token function">kill</span><span class="token punctuation">(</span>pid<span class="token punctuation">,</span>SIGKILL<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+              <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token function">fclose</span><span class="token punctuation">(</span>fdname<span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+  <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+  <span class="token function">fclose</span><span class="token punctuation">(</span>fd<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>IDA调试可执行文件<br>IDA -&gt; Debugger -&gt; Run -&gt; Remote ARMLinux…<br>-&gt; 以下信息必填:<br>  Application: 文件路径+文件名<br>  Directory: 程序所在路径<br>  Hostname: 127.0.0.1  , Port: 运行android_server转发端口号<br>-&gt; ok之后程序处于挂起状态<br>-&gt; (android shell端执行)ps | grep 该程序名称(查看端口号,第一个数字字符串)<br>-&gt; cat /proc/端口号/status (此进程详细信息)</p>
+<p>过掉反调试<br>(1) 动态调试把tracepid函数的返回值改为零,或者直接nop掉该函数<br>(2) 刷机,修改系统内核,永久绕过反调试</p>
+<h2 id="轮循检测"><a href="#轮循检测" class="headerlink" title="轮循检测"></a>轮循检测</h2><p>反调试方法之一,保护程序代码会一直监视进程的tracepid是否发生变化,<br>不断轮循检测Tracepid的值,假如为0 -&gt; 没有被调试<br>假如不为0,说明当前进程正在被调试.</p>
+<h2 id="self-debugger反调试原理"><a href="#self-debugger反调试原理" class="headerlink" title="self-debugger反调试原理"></a>self-debugger反调试原理</h2><ul>
+<li>原理<br>(1) 当前进程就是父进程,也就是即将被调试的进程<br>(2) 通过父进程fork一个子进程<br>(3) 该子进程实现调试器功能<br>(4) 作为调试器的子进程附加父进程而禁止其他调试器来调试父进程</li>
+</ul>
+<ul>
+<li>过滤self-debugger反调试<br>附加它的子进程<br>如果添加子进程后,直接用IDA附加调试,调试不上(可能有IDA反调试),双开IDA,找到创建进程的位置,<br>直接在Fork函数下断即可.</li>
+</ul>
+<h2 id="java层反调试"><a href="#java层反调试" class="headerlink" title="java层反调试"></a>java层反调试</h2><p><code>java层动态调试需要满足:</code><br><code>(1) 在AndroidMainfest.xml文件中,application标签下,Android:debuggable=true</code><br><code>(2) 系统默认调试,在build.prop(boot.img) , ro.debuggabel=1</code></p>
+<ul>
+<li><p>百度加固演示<br>将样本拖入jdax-gui进行反编译(会调用Debug.isDebuggerConnected函数检测程序室友被调试反调)</p>
+</li>
+<li><p>绕过java层反调试方法<br>AndroidKiller中搜索isDebugger… </p>
+</li>
+<li><blockquote>
+<p>smail文件中找到判断语句(如: if nez 改为-&gt; if eqz不相等跳转改为相等跳转)</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>保存 -&gt; 打包 -&gt; 签名</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="MT管理器"><a href="#MT管理器" class="headerlink" title="MT管理器"></a>MT管理器</h2><p>基于压缩包反编译，可以绕过对资源文件的触发</p>
+<hr>
+<h2 id="java层"><a href="#java层" class="headerlink" title="java层"></a>java层</h2><h3 id="Java层逆向？"><a href="#Java层逆向？" class="headerlink" title="Java层逆向？"></a>Java层逆向？</h3><p>JAVA开发（JAVA层） 主要用于协议部分，算法这一块需要用到，有部分还有C写的，只要接触到SO文件分析的都有C的影子。<br>系统源码分析部分，APP的启动分析。</p>
+<h3 id="能否简单介绍一下smali代码？"><a href="#能否简单介绍一下smali代码？" class="headerlink" title="能否简单介绍一下smali代码？"></a>能否简单介绍一下smali代码？</h3><p> Dex文件反编译后的文件，得到Smali代码，可以用于分析代码、分析逻辑，知道别人软件的这个功能是怎么实现的。<br> Dex文件还可以反编译为JAR包，JAR包就是JAVA代码。<br>APP一、二代加固。一代加固主要是隐藏JAVA代码（DEX文件）。二代加固主要是隐藏DEX文件里面的关键核心部分。C在加固部分应用得最多。<br>学习C的目的是让你更理解汇编指令。<br>SO文件是用C和C++写的代码编译后的文件。APP程序运行的时候安卓系统有接口调用SO文件。<br>NDK主要的功能就是让JAVA能够去访问底层的C++代码，是C代码和JAVA代码的一个调用。</p>
+<h3 id="为什么用Smali代码不用JAVA代码分析"><a href="#为什么用Smali代码不用JAVA代码分析" class="headerlink" title="为什么用Smali代码不用JAVA代码分析"></a>为什么用Smali代码不用JAVA代码分析</h3><p> 就是因为JAVA代码混淆比较严重，主要混淆是“函数名”，“类名”，“变量”，“包名”。<br> 混淆机制是安卓程序员开发的，用于保护代码安全。混淆是属于内部保护机制，内部保护是通过内部去处理的，程序是按照正常流程去运行的，不存在加固后的解壳环节。内部保护安全性还是比较弱，没有外部保护的安全高。<br>Smali代码和JAVA代码的关联就是Smali代码不易懂，开发比较负责，JAVA代码开发效率高。Smali代码属于中间层处理系统，底层是汇编。Dalvik指令集取到一个转换的工作，转换为ARM汇编语言。</p>
+<hr>
+<h2 id="常用调试工具"><a href="#常用调试工具" class="headerlink" title="常用调试工具"></a>常用调试工具</h2><p>Smali、Dedexer、Dexdump、Apktool、Dex2jar、jd-gui。<br>ida动态调式和代码跟踪<br>IDA工具分析的ARM汇编，IDA打开SO文件看到的就是ARM汇编指令。</p>
+<h3 id="JADX"><a href="#JADX" class="headerlink" title="JADX"></a>JADX</h3><p>介绍一个反编译利器 JADX ，它可以直接将 Apk 反编译成 Java 代码进行查看，毕竟 smali 代码不是那么人性化。<br>直接就可以看到对应的 Java 代码，理清逻辑之后再去阅读 smali 代码进行修改，事半功倍。支持反编译 Java 代码的工具还有很多，例如基于 Python 实现的 Androgurad 等等。</p>
+<h3 id="DexExtractor"><a href="#DexExtractor" class="headerlink" title="DexExtractor"></a>DexExtractor</h3><p>功能：<br>用于破解邦邦加密的安卓dex文件提取器<br>github主页<br>lambdalang/DexExtractor<br>使用说明<br>4.4的虚拟机 编译好了libdvm。<br>代码github上，脱梆梆的壳，别的没测试<br>把dexdump出来，然后base64解码下，然后odex2dex，没了<br>system.img 有空上传<br>作者编译好的镜像文件system.img的下载地址<br>system-arm_md5_6395c2f1451dbbed027d7293ab39a6e7.img.tar.gz<br>启动模拟器加上sdcard<br>注意<br>apk没有写权限的反编译了加上write就好了。<br>支持<br>梆梆加固<br>爱加密（新版本没事）<br>其他，暂时没测试</p>
+<h3 id="InDroid"><a href="#InDroid" class="headerlink" title="InDroid"></a>InDroid</h3><ul>
+<li>romangol/InDroid: Dalvik vm Instrumentation OS</li>
+<li>作者：GoSSIP小组</li>
+<li>功能：基于Dalvik VM的插桩分析框架</li>
+<li>原理：<br>直接修改AOSP上的Dalvik VM解释器，在解释器解释执行Dalvik字节码时，插入监控的代码，这样就可以获取到所有程序运行于Dalvik上的动态信息，如执行的指令、调用的方法信息、参数返回值、各种Java对象的数据等等。InDroid只需要修改AOSP的dalvik vm部分代码，编译之后，可直接将编译生成的新libdvm.so刷入任何AOSP支持的真机设备上</li>
+</ul>
+<h3 id="drizzleDumper"><a href="#drizzleDumper" class="headerlink" title="drizzleDumper"></a>drizzleDumper</h3><p>听别人提到过，自己没用过。</p>
+<ul>
+<li>功能：一款基于内存搜索的Android脱壳工具<br>可以从运行中的安卓app中，利用ptrace机制，导出dex文件<br>github主页<br>DrizzleRisk/drizzleDumper: drizzleDumper是一款基于内存搜索的Android脱壳工具<br>机制和原理<br>root设备之后，通过ptrace附加需要脱壳的apk进程，然后在脱壳的apk进程的内存中进行dex文件的特征搜索，当搜索到dex文件时，进行dex文件的内存dump<br>使用步骤<br>将 \armeabi 下的drizzleDumper push进手机<br>进入shell，赋给可执行权限<br>运行drizzleDumper [包名] [等待时间,默认为0]<br>运行需要脱壳程序<br>使用举例<pre class="line-numbers language-bash"><code class="language-bash">$<span class="token operator">></span>adb push F:\drizzleDumper /data/local/tmp
+$<span class="token operator">></span>chmod 755 drizzleDumper
+$<span class="token operator">></span>./drizzleDumper xyz.sysorem.crackme<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
+<h3 id="IDA"><a href="#IDA" class="headerlink" title="IDA"></a>IDA</h3><ul>
+<li>IDA 动态调试环境搭建<br>将F:\AndroidTools\IDA_Pro_v7.5_Portable\dbgsrv路径下的android_server<br>push到模拟器上<pre class="line-numbers language-bash"><code class="language-bash">adb push F:\AndroidTools\IDA_Pro_v7.5_Portable\dbgsrv\android_server /data/local/tmp<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+模拟器终端运行android_server<pre class="line-numbers language-bash"><code class="language-bash">adb shell
+<span class="token function">su</span> 
+<span class="token function">cd</span> /data/local/tmp
+<span class="token function">chmod</span> 777 android_server
+./android_server //端口被占用使用./android_server -p31928 修改端口
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
+<pre><code>![](3.png)
+```bash
+ //端口转发,必须与android_server运行的端口一致
+adb forward tcp:23946 tcp:23946</code></pre>
+<p>打开IDA -&gt; Debugger -&gt; Attach -&gt; Remote ARMLinux/Android debugger<br>-&gt; hostname:127.0.0.1<br>-&gt; 端口填写以上端口 -&gt; 点击ok<br>-&gt; 呈现所有手机上运行中的程序的一个线程(搜索要调试的应用,当然首先模拟器要打开此app)<br>选择以后点击ok<br>-&gt; debugger<br>-&gt; debugger option<br>-&gt;勾选 Suspend on process,<br>Suspend on thread,Suspend on library<br><img src="4.png"></p>
+<ul>
+<li><p>IDA 窗口介绍<br>空格 : 视图切换<br>IDA-view-PC : 反汇编窗口<br>Hex-view : 十六进制编辑窗口<br>Outout windows : 输出窗口<br>general register : 寄存器窗口<br>Stack view : 栈视图<br>View -&gt; Open subviews -&gt; String : 字符串编辑窗口 (Shift+F12)<br>可以看到此程序所有常量字符串列表(分析方向之一)<br>Search -&gt;Search : 字符串查找窗口<br>Jump -&gt; Jump Address : 地址跳转<br>File -&gt; Script file : 脚本执行窗口(选择执行的脚本)<br>右键点击函数名 -&gt; List cross refereaces to (Ctrl+x) : 交叉引用</p>
+</li>
+<li><p>IDA 快捷键<br>F2: 下断点<br>F7: 单步步入(点击可以继续往下走)<br>F8: 单步步过(不执行函数直接过去)<br>F4: 运行到光标所在(程序运行到光标所在之处)<br>G: 可以直接跳到一个地址<br>U: 把一个数据解析成未定义的数据(Udefine)<br>C: 将数据解析成汇编指令<br>P: 将汇编指令识别成函数<br>Ctrl+F: 搜素指令<br>F5: 将汇编识别为伪代码<br>Alt+G: 判断当前的系统的指令是Thumb还是ARM<br>Ctrl+S: 查看系统中所有的模块<br>X: 交叉引用(可以看到所有对此字符串或函数的一个引用)</p>
+</li>
+<li><p>修改寄存器的值<br>(1) 选中寄存器,右键选择<code>Modify value</code> 可以改为任意值<br>(2) 选中寄存器,直接<code>Zero value</code>选项,置零 </p>
+</li>
+<li><p>篡改内存数据<br>例如 IDA View-PC<br>ADD R2,PC,R2<br>Hex View<br>右键 -&gt; Synchrogazer with -&gt; R2 -&gt; F2修改十六进制的值在次使用F2提交</p>
+</li>
+<li><p>NOP函数或代码<br>可用于过反调试,将该函数值置为零<br>(1) 选中函数或代码,来到十六进制窗口<br>(2) 鼠标右键,选择Synchrogazer with 同步寄存器<br>(3) 选中目标,右键 -&gt; Edit(F2)修改<br>(4) 继续右键 -&gt; Edit(F2)提交<br>程序执行到此处会编译执行下一条,紧接着读取下一条,修改需要隔三条进行修改<br>(三级流水线)</p>
+</li>
+<li><p>改变程序执行流程<br>改变引起跳转指令的执行流程<br>如: BLX R3<br>  CMP R0 ,#0  :BLX执行完毕会把返回值放到R0寄存器,CMP把R0和0进行比较<br>  BNE loc_75566433   :不等于则跳转<br>BNE<br>改变BNE指令执行条件,从而无法跳转目的地址,进而执行无法跳转目的地址</p>
+<ul>
+<li>IDA 检测(关键文件检测)<br>data/local/tmp 目录下存在android_server 所运行的程序kill<br>IDA静态分析,打开后看到 sub_588: main函数(双击) -&gt; 看到字符串(tab一下)</li>
+</ul>
+</li>
+<li><blockquote>
+<p>C语言查看代码逻辑 -&gt; 字符串右键, 交叉引用</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h2 id="加壳过程"><a href="#加壳过程" class="headerlink" title="加壳过程"></a>加壳过程</h2><p>  加壳的另一种常用的方式是在二进制的程序中植入一段代码，在运行的时候优先取得程序的控制权，做一些额外的工作。大多数病毒就是基于此原理。加壳的程序经常想尽办法阻止外部程序或软件对加壳程序的反汇编分析或者动态分析，以达到它不可告人的目的。这种技术也常用来保护软件版权，防止被软件破解。 </p>
+<p>src.apk：源APK。<br>des.apk：壳APK。<br>DexFixed.jar：Dex工具。<br>classes.dex：des.apk中的classes.dex。<br>res：源APK中的文件夹。<br>resources.arsc：源APK中的文件。<br>用DEXFixed.jar工具把src.apk和classes.dex进行合并，生成一个新的Dex，替换到壳APK中。</p>
+<p>image-20210402144136070</p>
+<p>替换壳APK中的classes.dex、res、resources.arsc。</p>
+<p>apk重新签名。</p>
+<p>正常运行。</p>
+<h2 id="脱壳"><a href="#脱壳" class="headerlink" title="脱壳"></a>脱壳</h2><h3 id="常见的壳"><a href="#常见的壳" class="headerlink" title="常见的壳"></a>常见的壳</h3><p>通常是看lib文件夹下so库特征，以下是市面上常见的不同厂商对APP的加固特征：<br>爱加密：libexec.so,libexecmain.so，ijiami.dat<br>梆梆： libsecexe.so,libsecmain.so , libDexHelper.so libSecShell.so<br>360：libprotectClass.so,libjiagu.so，libjiagu_art.so，libjiagu_x86.so<br>百度：libbaiduprotect.so<br>腾讯：libshellx-2.10.6.0.so，libBugly.so，libtup.so, libexec.so，libshell.so，stub_tengxun<br>网易易盾：libnesec.so<br>娜迦： libchaosvmp.so , libddog.solibfdog.so<br>通付盾：libegis.so<br>网秦：libnqshield.so</p>
+<p>一代整体型壳：采用Dex整体加密，动态加载运行的机制；<br>二代函数抽取型壳：粒度更细，将方法单独抽取出来，加密保存，解密执行；<br>三代VMP、Dex2C壳：独立虚拟机解释执行、语义等价语法迁移，强度最高。</p>
+<p>先说最难的Dex2C目前是没有办法还原的，只能跟踪进行分析；VMP虚拟机解释执行保护的是映射表，只要心思细、功夫深，是可以将映射表还原的；二代壳函数抽取目前是可以从根本上进行还原的，dump出所有的运行时的方法体，填充到dump下来的dex中去的，这也是fart的核心原理；最后也就是目前我们推荐的几个内存中搜索和dump出dex的Frida工具，在一些场景中可以满足大家的需求。</p>
+<h3 id="脱壳机制原理"><a href="#脱壳机制原理" class="headerlink" title="脱壳机制原理"></a>脱壳机制原理</h3><p>smali层：只做了一些简单的混淆<br>Native 层：<br>和如下内容相关<br>各种so库<br>比如libdvm.so<br>对应着内部函数调用：<br>.init<br>.init_array<br>JNI_Onload<br>分析修改ELF头信息<br>sub_xxx函数<br>比如：sub_78614CD0<br>R2寄存器<br>最后分析出：<br>ClassLoader<br>loadDex<br>multidex<br>（作者）QEver<br>写的一个IDA的脚本=一个dex脱壳脚本<br>配合kill方法，可以实现脱绝大部分运行于dalvik上的dex壳<br>可以dump导出正确的dex文件<br>脱壳注意事项和说明:<br>不是所有的加固的安卓apk都能成功脱壳的。<br>没有加固的：直接用Jadx即可导出源码<br>比如老旧的Android的apk，很多都没有加固<br>可以hook导出dex，再dex转jar，jar转java源码<br>新一代的360加固保：用art模式+dex2oat相关机制</p>
+<h3 id="360-脱壳"><a href="#360-脱壳" class="headerlink" title="360 脱壳"></a>360 脱壳</h3><p>APK运行后，会首先加载libjiagu.so，并执行其JNI_Onload方法。该方法最终会调用到__fun_a_18，这个方法进行了控制流混淆<br>在ClassLinker::DefineClass函数处得到dex_file的begin和size，然后DUMP出原来的classes.dex。我看到有人在dex2oat的地方DUMP，但我觉得如果360 HOOK execv，阻止dex2oat对原classes.dex作oat转换的话，会不会就脱不出来了呢？不过我对Android虚拟机不太了解，可能有更好的DUMP点。</p>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3><p><a target="_blank" rel="noopener" href="https://github.com/r0ysue/frida_dump">https://github.com/r0ysue/frida_dump</a><br>frida -U –no-pause -f com.xxxxxx.xxxxxx  -l dump_dex.js<br>其核心逻辑原理就是下面一句话magic.indexOf(“dex”) == 0，只要文件头中含有魔数dex，就把它dump下来。</p>
+<p> DexClassLoader：objection<br>安卓只能使用继承自BaseDexClassLoader的两种ClassLoader，一种是PathClassLoader，用于加载系统中已经安装的apk；一种就是DexClassLoader，加载未安装的jar包或apk。</p>
+<p>可以用objcetion直接在堆上暴力搜索所有的dalvik.system.DexClassLoader实例<br>连热补丁都被搜出来了，在某些一代壳上效果不错。</p>
+<p>##ART<br>ART 是一种执行效率更高且更省电的运行机制，执行的是本地机器码，这些本地机器码是从dex字节码转换而来。ART采用的是AOT（Ahead-Of-Time）编译，应用在第一次安装的时候，字节码就会预先编译成机器码存储在本地。在App运行时，ART模式就较Dalvik模式少了解释字节码的过程，所以App的运行效率会有所提高，占用内存也会相应减少。谷哥在5.0以后的Android版本中默认了ART模式启动，就是希望Android能摆脱卡顿这个毛病。</p>
+<p>Dalvik<br>Dalvik 虚拟机采用的是JIT（Just-In-Time）编译模式，意思为即时编译，我们知道apk被安装到手机中时，对应目录会有dex或odex和apk文件，apk文件存储的是资源文件，而dex或odex（经过优化后的dex文件内部存储class文件）内部存储class文件，每次运行app时虚拟机会将dex文件解释翻译成机器码，这样才算是本地可执行代码，之后被系统运行。</p>
+<p>Dalvik虚拟机可以看做是一个Java VM，他负责解释dex文件为机器码，如果我们不做处理的话，每次执行代码，都需要Dalvik将dex代码翻译为微处理器指令，然后交给系统处理，这样效率不高。为了解决这个问题，Google在2.2版本添加了JIT编译器，当App运行时，每当遇到一个新类，JIT编译器就会对这个类进行编译，经过编译后的代码，会被优化成相当精简的原生型指令码（即native code），这样在下次执行到相同逻辑的时候，速度就会更快。</p>
+<p>两者的区别<br>Dalvik每次都要编译再运行，Art只会安装时启动编译<br>Art占用空间比Dalvik大（原生代码占用的存储空间更大），就是用“空间换时间”<br>Art减少编译，减少了CPU使用频率，使用明显改善电池续航<br>Art应用启动更快、运行更快、体验更流畅、触感反馈更及时</p>
+<p>JavaVM和JNIEnv创建流程分析</p>
+<pre><code>安卓中zygote是所有Java层进程的鼻祖。zygote启动的时候会创建art虚拟机。JavaVM和JNIEnv初始化的流程也会在zygote启动的时候完成。</code></pre>
+<hr>
+<h2 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h2><h3 id="ART虚拟机，和JVM-DVM有什么不同？"><a href="#ART虚拟机，和JVM-DVM有什么不同？" class="headerlink" title="ART虚拟机，和JVM/DVM有什么不同？"></a>ART虚拟机，和JVM/DVM有什么不同？</h3><p>首先了解JIT（Just In Time，即时编译技术）和AOT(Ahead Of Time，预编译技术)两种编译模式。</p>
+<p>JIT以JVM为例，javac把程序源码编译成JAVA字节码，JVM通过逐条解释字节码将其翻译成对应的机器指令，逐条读入，逐条解释翻译，执行速度必然比C/C++编译后的可执行二进制字节码程序慢，为了提高执行速度，就引入了JIT技术，JIT会在运行时分析应用程序的代码，识别哪些方法可以归类为热方法，这些方法会被JIT编译器编译成对应的汇编代码，然后存储到代码缓存中，以后调用这些方法时就不用解释执行了，可以直接使用代码缓存中已编译好的汇编代码。这能显著提升应用程序的执行效率。（安卓Dalvik虚拟机在2.2中增加了JIT）<br>相对的AOT就是指C/C++这类语言，编译器在编译时直接将程序源码编译成目标机器码，运行时直接运行机器码。</p>
+<p>Dalvik虚拟机执行的是dex字节码，ART虚拟机执行的是本地机器码</p>
+<p>Dalvik执行的是dex字节码，依靠JIT编译器去解释执行，运行时动态地将执行频率很高的dex字节码翻译成本地机器码，然后在执行，但是将dex字节码翻译成本地机器码是发生在应用程序的运行过程中，并且应用程序每一次重新运行的时候，都要重新做这个翻译工作，因此，及时采用了JIT，Dalvik虚拟机的总体性能还是不能与直接执行本地机器码的ART虚拟机相比。</p>
+<p>安卓运行时从Dalvik虚拟机替换成ART虚拟机，并不要求开发者重新将自己的应用直接编译成目标机器码，也就是说，应用程序仍然是一个包含dex字节码的apk文件。所以在安装应用的时候，dex中的字节码将被编译成本地机器码，之后每次打开应用，执行的都是本地机器码。移除了运行时的解释执行，效率更高，启动更快。（安卓在4.4中发布了ART运行时）</p>
+<p>ART优点：<br>①系统性能显著提升<br>②应用启动更快、运行更快、体验更流畅、触感反馈更及时<br>③续航能力提升<br>④支持更低的硬件</p>
+<p>ART缺点<br>①更大的存储空间占用，可能增加10%-20%<br>②更长的应用安装时间</p>
+<p>总的来说ART就是“空间换时间”</p>
+<h3 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h3><p>onCreate - onStart - onResume - onPause - onStop - onDestory - onRestart</p>
+<h3 id="Android的入口函数"><a href="#Android的入口函数" class="headerlink" title="Android的入口函数"></a>Android的入口函数</h3><p>继承了application类中的attachContext,onCreate</p>
+<h2 id="Android系统架构如下："><a href="#Android系统架构如下：" class="headerlink" title="Android系统架构如下："></a>Android系统架构如下：</h2><p>android采用自下而上的分层架构，</p>
+<ul>
+<li>linux内核层，</li>
+<li>硬件抽象层，</li>
+<li>运行时和c语言库，</li>
+<li>程序框架层和应用层。<br>Android以linux内核为基础实现硬件设备驱动，进程和内存管理，网络协议栈、电源管理等核心系统功能。android基于移动设备在linux的基础上补充了内存管理，匿名共享内存和进程间通信binder。<br>HAL(Hardware Abstraction Layer)规定了一套应用层对硬件层的读写和配置的统一接口，本质上是将硬件的驱动分为用户空间和内核空间，其中内核驱动程序运行在内核空间，HAL运行在用户空间。上图中的Stub，以so库的形式存在，可以理解为proxy。上层通过调用标识获得HAL的相关Stub，进而取得相应操作。</li>
+</ul>
+<h2 id="Android安全机制"><a href="#Android安全机制" class="headerlink" title="Android安全机制"></a>Android安全机制</h2><p>系统中的文件的访问权限是通过<code>用户ID（UID）和用户组ID（GID）</code>来控制的。换句话说，就是Linux的安全机制是基于UID和GID来实现的。Android在Linux内核提供的基于UID和GID的安全机制的基础上，又实现了一套称为Permission的安全机制(三个基本角色：用户-&gt;进程-&gt;文件)<br>一个UID可以对应多个GID,用户属性划分为三组：Owner、Group和Other。</p>
+<p>android安全机制覆盖到各个层面，求开放的同时也保护用户的数据，应用程序和设备的安全。主要安全模型如下： </p>
+<h3 id="进程沙箱隔离机制"><a href="#进程沙箱隔离机制" class="headerlink" title="进程沙箱隔离机制"></a>进程沙箱隔离机制</h3><p>  进程沙箱隔离机制，使得Android应用程序在安装时被赋予独特的用户标识（UID），并永久保持。应用程序及其运行的Dalvik虚拟机运行在独立的Linux进程空间，与其它应用程序完全隔离。 </p>
+<h3 id="应用程序签名机制"><a href="#应用程序签名机制" class="headerlink" title="应用程序签名机制"></a>应用程序签名机制</h3><p>有特例程序共享uid；<br>应用签名机制：规定APK文件必须被开发者进行数字签名，以便标识应用程序作者和在应用程序之间的信任关系。在安装应用程序APK时，系统安装程序首先检查APK是否被签名，有签名才能安装。当应用程序升级时，需要检查新版应用的数字签名与已安装的应用程序的签名是否相同，否则，会被当做一个新的应用程序。Android开发者有可能把安装包命名为相同的名字，通过不同的签名可以把他们区分开来，也保证签名不同的包不被替换，同时防止恶意软件替换安装的应用。</p>
+<h3 id="权限声明机制"><a href="#权限声明机制" class="headerlink" title="权限声明机制"></a>权限声明机制</h3><p>权限声明机制：要想获得在对象上进行操作，就需要把权限和此对象的操作进行绑定。不同级别要求应用程序行使权限的认证方式也不一样，Normal级申请就可以使用，Dangerous级需要安装时由用户确认，Signature和Signatureorsystem级则必须是系统用户才可用。<br>访问控制机制：确保文件系统和永和数据不受非法访问。 </p>
+<h3 id="访问控制机制"><a href="#访问控制机制" class="headerlink" title="访问控制机制"></a>访问控制机制</h3><h3 id="进程通信机制"><a href="#进程通信机制" class="headerlink" title="进程通信机制"></a>进程通信机制</h3><p>进程间通信机制binder，基于共享内存的Binder实现，提供轻量级的远程进程调用（RPC）。通过接口描述语言（AIDL）定义接口与交换数据的类型，确保进程间通信的数据不会溢出越界。 </p>
+<h3 id="内存通信机制"><a href="#内存通信机制" class="headerlink" title="内存通信机制"></a>内存通信机制</h3><p>  内存管理机制，基于Linux的低内存管理机制，设计实现了独特的LMK，将进程重要性分级、分组，当内存不足时，自动清理级别进程所占用的内存空间。同时，引入的Ashmem内存机制，使得Android具备清理不再使用共享内存区域的能力。</p>
+<p>正是因为Android采用多层架构，在保护信息安全的同时，也保证开放平台的灵活性。</p>
+<h3 id="SELinux"><a href="#SELinux" class="headerlink" title="SELinux"></a>SELinux</h3><p>SE Android</p>
+<p>看源码见<a target="_blank" rel="noopener" href="http://blog.csdn.net/luoshengyang/article/details/37613135">http://blog.csdn.net/luoshengyang/article/details/37613135</a><br>Android是一个基于Linux内核的系统，像传统的Linux系统一样，Android也有用户的概念。只不过这些用户不需要登录，也可以使用Android系统。Android系统将每一个安装在系统的APK都映射为一个不同的Linux用户。也就是每一个APK都有一个对应的UID和GID，这些UID和GID在APK安装的时候由系统安装服务PackageManagerService分配。Android沙箱隔离机制就是建立在Linux的UID和GID基础上。</p>
+<p>这种基于Linux UID/GID的安全机制存在什么样的问题呢？</p>
+<p>Linux将文件的权限划分为读、写和执行三种，分别用字母r、w和x表示。每一个文件有三组读、写和执行权限，分别针对文件的所有者、文件所有者所属的组以及除了所有者以及在所有者所属组的用户之外所有其它用户。这样，如果一个用户想要将一个自己创建的文件交给另外一个用户访问，那么只需要相应地设置一下这个文件的其它用户权限位就可以了。所以，在Linux系统中，文件的权限控制在所有者的手中。因此，这种权限控制方式就称为自主式的，正式的英文名称为Discretionary Access Control，简称为DAC。</p>
+<p>在理想情况下，DAC机制是没有问题的。然而，一个用户可能会不小心将自己创建的文件的权限位错误地修改为允许其它用户访问。如果这个用户是一个特权用户，并且它错误操作的文件是一个敏感的文件，那么就会产生严重的安全问题。这种误操作的产生方式有三种：</p>
+<p>用户执行了错误的命令<br>负责执行用户命令的程序有Bug<br>负责执行用户命令的程序受到攻击<br>后来，Linux内核采用了必要的访问控制机制：SE Linux（Security-Enhanced Linux），它采用了一种强制存取控制MAC（Mandatory Access Control）策略的实现方式，目的在于通过限制系统中的任何进程以及用户对资源的访问，保护内核安全。而SE Android（Security-Enhanced Android）是Android与SE Linux的结合，由美国NSA在2012年推出的Android操作系统安全强化套件，以支持在Android平台上使用SE Linux。</p>
+<p>目前SE Android系统中的策略机制主要有三种：</p>
+<p>安装时MAC（install-time MAC）<br>权限取消（permission revocation）<br>权限标签传播（tag propagation）<br>安装时MAC通过查找MAC策略配置来检查应用程序的权限。权限取消可以为已安装的应用取消权限，该机制在应用程序运行的权限检查时通过查找权限取消列表来取消应用的某些权限。权限标签传播是一种污点跟踪方式的应用，Android系统的权限作为抽象的标签映射到MAC策略配置文件中。</p>
+<p>SE Android安全机制所要保护的对象是系统中的资源，这些资源分布在各个子系统中。实际上，系统中需要保护的资源非常多，除了文件之外，还有进程、socket和IPC等。SE Android是一个复杂的安全模型，本文就不进一步分析了。</p>
+<p>如何解决这些安全问题</p>
+<p>Android应用会遇到各种各样的安全性问题，如何从宏观上了解各种安全隐患，积极采取适当的防御措施便变得尤为重要。那么，Android应用面临哪些安全问题呢？</p>
+<p>病毒<br>关键信息泄露<br>APP重打包<br>进程被劫持<br>数据在传输过程遭劫持<br>Webview漏洞<br>病毒不用多说了，都是一些恶意软件。关键信息泄露，可能有些开发者并不十分留意。虽然Java代码可以做混淆，但是Android的几大组件的创建方式是依赖注入的方式，因此不能被混淆。而且目前常用的一些反编译工具比如apktool等能够毫不费劲地还原Java里的明文信息，native里的库信息也可以通过objdump或IDA获取。因此一旦Java或native代码里存在明文敏感信息，基本上就是毫无安全而言的。重打包即通过反编译后重新加入恶意的代码逻辑，重新打包一个APK文件。进程被劫持一般通过进程注入或者调试进程的方式来hook进程，改变程序运行的逻辑和顺序，从而获取程序运行的内存信息。hook需要获取root权限或者跟被hook进程相同的权限。如果手机没被root，被劫持的可能性还是较小。数据在传输过程遭劫持，一般来说是由于数据明文传输或没使用HTTPS。Webview漏洞一般由于JS注入。</p>
+<p>现实中，出现的问题可能比上面提及的还要多。总的来说，应该从以下几个方面来应对Android开发的常见安全问题：</p>
+<p>应用权限控制。通过控制应用程序的权限防止恶意应用对系统造成破坏，采取的措施包括合理使用系统内置权限和应用程序自定义权限。<br>应用程序签名。采用数字签名为应用程序签名。<br>应用加固。应用加固包括病毒扫描、防注入、防调试、防篡改四个模块，目前行业内已经出现了很多的应用加固解决方案，如360应用加固、腾讯云应用加固、百度应用加固等等。<br>静态代码分析。通过静态代码分析工具lint监测安全隐患，对代码进行优化。<br>防火墙。必要时为Android设备安装防火墙，以防止远程网络攻击。<br>数据存储加密。采用加密的方式保护应用程序敏感数据，如利用SQLCipher加密SQLite数据库。<br>应用程序组件开发的安全要点。Activity, Service, Content Provider, Broadcast Receiver等组件在代码层面应采取的安全措施。它们每一个都可以通过隐式的Intent方式打开，所以这些组件只要不是对外公开的必须在AndroidManifest里面注明exported为false，禁止其它程序访问我们的组件。对于要和外部交互的组件，应当添加访问权限的控制，还需要要对传递的数据进行安全的校验。</p>
+<p>当然，还有Android NDK(Native Development Kit)，使得应用程序可以不依赖Dalvik虚拟机进行开发。Android运行时核心库提供android.os, android.net, android.media等核心API，而Dalvik虚拟机依赖Linux内核，实现进程隔离与线程调度管理、安全与异常管理、垃圾回收等功能，并被改进以适应低内存、低处理器速度的移动设备环境。</p>
+<p>再往上就是应用程序框架层了。一系列的Android应用程序所需的类库，使得开发人员可以快速地进行程序开发，也可以通过继承实现个性化的扩展。如Activity Manager负责主线程ActivityThread的创建、Activity生命周期的维护，并为窗口提供交互的接口。</p>
+<p>应用层就是与用户直接交互的应用程序，如SMS短信、图片浏览器、地图以及开发人员所开发的应用程序。</p>
+<hr>
+<h2 id="apk打包过程"><a href="#apk打包过程" class="headerlink" title="apk打包过程"></a>apk打包过程</h2><ol>
+<li>appt.exe 生成R.java类文件</li>
+<li>aidl.exe 把.aidl转成.java文件（如果没有则跳过这一步）</li>
+<li>javac.exe 编译.java文件生成class文件。</li>
+<li>dx.bat 命令行生成classes.dex文件</li>
+<li>appt.exe生成资源包文件（包括res，assets，AndroidManifest.xml</li>
+<li>apkbuilder.bat 生成未签名的apk安装文件 </li>
+<li>arsigner.exe 对未签名的包进行apk签名。</li>
+</ol>
+<h2 id="adb的相关使用"><a href="#adb的相关使用" class="headerlink" title="adb的相关使用"></a>adb的相关使用</h2><pre class="line-numbers language-bash"><code class="language-bash">adb shell dumpsys activity <span class="token function">top</span> //显示当前页的activity.
+adb shell dumpsys package 包名 //获取包信息
+adb shell dumpsys meminfo 包名 //获取当前应用程序的内存数据
+adb shell dumpsys dbinfo packagename //获取数据库文件
+adb shell  pm list packages //列出当前所有已安装的程序包名
+adb shell pm path packagename //获取指定程序所在的路径
+adb shell dumpsys window <span class="token operator">|</span> findstr mCurrentFocus //当前应用包名<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="app重新打包过程"><a href="#app重新打包过程" class="headerlink" title="app重新打包过程"></a>app重新打包过程</h3><pre><code>#apktool反编译
+java -jar Apktool_2.5.0.jar d zwdzjs.apk
+
+
+# 重新打包
+java -jar Apktool_2.5.0.jar b zwdzjs
+
+# 生成key
+keytool -genkey -alias q0o0p.keystore -keyalg RSA -validity 20000 -keystore q0o0p.keystore
+
+
+# 使用上面生成的key进行签名
+jarsigner -verbose -keystore q0o0p.keystore -signedjar zwdzjs_signed.apk zwdzjs.apk q0o0p.keystore</code></pre>
+<p>首先记得去除签名，用WinRAR打开apk，找到META-INF文件夹，删除MANIFEST.MF之外的所有其他文件即可。</p>
+<p>jarsigner方式只支持v1签名，apksigner方式支持v1和v2的方式。<br>v1和v2的区别，可以参考 <a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_32115439/article/details/55520012%E3%80%82">https://blog.csdn.net/qq_32115439/article/details/55520012。</a><br>方式一：</p>
+<pre class="line-numbers language-bash"><code class="language-bash">jarsigner -verbose -keystore <span class="token punctuation">[</span>您的私钥存放路径<span class="token punctuation">]</span> -signedjar <span class="token punctuation">[</span>签名后文件存放路径<span class="token punctuation">]</span> <span class="token punctuation">[</span>未签名的文件路径<span class="token punctuation">]</span> <span class="token punctuation">[</span>您的证书名称<span class="token punctuation">]</span>
+jarsigner -verbose -keystore ~/Workspace/mykeystore -signedjar ./signed.apk ./unsigned.apk xiaomi<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>方式二：</p>
+<p>apksigner sign –ks 密钥库名 –ks-key-alias 密钥别名 xxx.apk</p>
+<p>上述命令，签名后没有改变文件名称。如何判断是否签名成功？可以采用如下命令。</p>
+<p>打印签名信息命令：</p>
+<p>keytool -genkey -alias demo.keystore -keyalg RSA -validity 20000 -keystore demo.keystore<br>keytool -list -printcert -jarfile appname.apk</p>
+<hr>
+<h1 id="HOOK"><a href="#HOOK" class="headerlink" title="HOOK"></a>HOOK</h1><p>hook startActivity概念:<br>一个活动界面启动另一个活动界面,需要打印相关的日志内容.</p>
+<h2 id="hook-startActivity-的用法"><a href="#hook-startActivity-的用法" class="headerlink" title="hook startActivity 的用法"></a>hook startActivity 的用法</h2><p>(1) 定义两个活动界面,完成跳转<br>(2) 找到最终代理的地方来代理start activity<br>(3) 声明一个tag,以及代理类<br>(4) 定义ActivityThread里面的原始的Instrunmentation对象<br>(5) 定义原始方法里的真正启动的activity的方法<br>(6) 打印一些activity启动前后的日志信息,也可以修改相应参数信息<br>(7) 调用方法是否在底层,是否需要反射调用,以及设置可见.<br>(8) 进行代理在Application程序的入口点来写代码<br>(9) 在Application程序的入口点来写代码<br>(10) 获取当前的ActivityThread对象,然后进行调用<br>(11) 拿到在ActivityThread类里面的原始mInstrumentation对象<br>(12) 构建我们的代理对象<br>(13) 通过反射,换掉字段<br>(14) 做个标记,方便以后查看<br>(15) 运行完毕查看日志是否HOOk成功</p>
+<h2 id="Xpose"><a href="#Xpose" class="headerlink" title="Xpose"></a>Xpose</h2><h3 id="Xposed的优缺点"><a href="#Xposed的优缺点" class="headerlink" title="Xposed的优缺点"></a>Xposed的优缺点</h3><p>优点：在编写Java层hook插件的时候非常好用，这一点完全优越于Frida和SubstrateCydia，因为他也是Android项目，可以直接编写Java代码调用各类api进行操作。而且可以安装到手机上直接使用。</p>
+<h3 id="xposed框架的原理及常用函数"><a href="#xposed框架的原理及常用函数" class="headerlink" title="xposed框架的原理及常用函数"></a>xposed框架的原理及常用函数</h3><p>替换system/bin/app_process文件，app_process就是zygote进程文件，所以xposed通过替换zygote进程实现了控制手机上所有app进程<br>常用函数<br>（1）findAndHookMethod<br>（2）findAndHookConstructor hook构造函数<br>(3)findClass：使用指定的类加载器查找类<br>（4）findField : 在类中查找自动并将其设置为可访问<br>(5)CallMethod 调用给定对象的实例或静态方法<br>(6)newInstance 创建给定类的新实例</p>
+<h3 id="插件开发步骤"><a href="#插件开发步骤" class="headerlink" title="插件开发步骤:"></a>插件开发步骤:</h3><ul>
+<li>添加第三方jar包</li>
+<li>配置插件入口类</li>
+<li>编写hook代码</li>
+</ul>
+<h3 id="zygote启动流程"><a href="#zygote启动流程" class="headerlink" title="zygote启动流程"></a>zygote启动流程</h3><pre><code>   (1).init进程解析init.rc
+
+   安卓系统用户空间第一个进程init进程启动的时候会解析init.rc文件来确认使用那个一个init.zygotexx.rc文件来启动zygote进程。init.rc中相关内容如下:</code></pre>
+<p>import /init.${ro.zygote}.rc</p>
+<pre><code> 由以上内容可知需要根据ro.zygote属性来确认加载具体的zygote启动配置的rc 文件来启动32位还是64位的zygote进程。在文件路径"system\core\rootdir"存在多个zygote启动的配置文件，如下所示:</code></pre>
+<p>ro.zygote属性会有四种不同的取值：</p>
+<p>zygote32：代表32位模式运行zygote进程</p>
+<p>zygote32_64：代表32为主，64位为辅的方式启动zygote进程</p>
+<p>zygote64：代表64位方式启动zygote进程</p>
+<p>zygote64_32：代表64位为主，32位为辅的方式启动zygote进程</p>
+<h3 id="hook和注入有哪些"><a href="#hook和注入有哪些" class="headerlink" title="hook和注入有哪些"></a>hook和注入有哪些</h3><p> hook：反射（在程序运行的时候，对任意一个类，都可以获取其方法及变量）<br> java的动态代理（smali注入）</p>
+<h3 id="常见的hook框架，你怎么理解呢？"><a href="#常见的hook框架，你怎么理解呢？" class="headerlink" title="常见的hook框架，你怎么理解呢？"></a>常见的hook框架，你怎么理解呢？</h3><p> Xposed框架和frida都属于HOOK框架。<br> frida协议分析方向比较多，主要用于测试。JAVA层和SO层的HOOK，比较复杂，要会逆向分析，使用难度高。</p>
+<h2 id="Frida"><a href="#Frida" class="headerlink" title="Frida"></a>Frida</h2><h3 id="Frida-介绍"><a href="#Frida-介绍" class="headerlink" title="Frida 介绍"></a>Frida 介绍</h3><p>frida 是一款基于 python 和 java 的 hook 框架，是一种动态插桩工具，可以插入代码到原生App的内存空间中，动态的监视和修改其行行为，可运行在Android、iOS、Linux和windows等多个平台。</p>
+<p>插桩技术 是指将额外的代码注入程序中以收集运行时的信息，可分为两种：</p>
+<ol>
+<li>源代码插桩【Source Code Instrumentation(SCI)】：额外代码注入到程序源代码中。</li>
+<li>二进制插桩【Binary Instrumentation】：额外代码注入到二进制可执行文件中，其又可分为两种：<br> ● 静态二进制插桩  【 Static Binary Instrumentation(SBI) 】：<pre><code>         在程序执行前插入额外的代码和数据，生成一个永久改变的可执行文件。</code></pre>
+ ● 动态二进制插桩  【 Dynamic Binary Instrumentation(DBI) 】：<pre><code>         在程序运行时实时地插入额外代码和数据，对可执行文件没有任何永久改变。</code></pre>
+</li>
+</ol>
+<h3 id="Frida-作用"><a href="#Frida-作用" class="headerlink" title="Frida 作用"></a>Frida 作用</h3><p>访问进程的内存<br>应用程序运行时覆盖功能<br>从导入的类调用函数<br>动态Hook跟踪、拦截函数等</p>
+<h3 id="Frida-安装"><a href="#Frida-安装" class="headerlink" title="Frida 安装"></a>Frida 安装</h3><p>Frida 分为客户端和服务端。<br>客户端：PC（控制端）<br>服务器：手机设备（被控制端）</p>
+<p>客户端编写的 Python 代码，用于连接远程设备，提交要注入的 JS 代码到服务端，接受服务端发来的消息。</p>
+<p>服务端中需要用 JS 代码注入到目标进程，操作内存数据，给客户端发送消息。</p>
+<p>Frida 安装<br>客户端:</p>
+<pre><code>pip install frida-tools
+pip3 install colorama prompt-toolkit pygments
+frida --version
+frida-ps ：查看当前系统进程，表示安装成功。</code></pre>
+<p>查看系统架构</p>
+<pre><code>adb shell getprop ro.product.cpu.abi
+//cat /proc/cpuinfo</code></pre>
+<p>服务端的 Frida 版本必须和客户端的 Frida 版本一致。</p>
+<table>
+<thead>
+<tr>
+<th>API架构</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>armeabiv-v7a</td>
+<td>第7代及以上的 ARM 处理器。目前，大部分手机的CPU都支持此ABI交互规则</td>
+</tr>
+<tr>
+<td>arm64-v8a</td>
+<td>第8代64位ARM处理器，支持此ABI的手机近两年也逐渐增多了</td>
+</tr>
+<tr>
+<td>armeabi</td>
+<td>第5代、第6代的ARM处理器，早期手机用得较多</td>
+</tr>
+<tr>
+<td>x86</td>
+<td>平板、模拟器用得比较多</td>
+</tr>
+<tr>
+<td>x86_64</td>
+<td>64位的平板</td>
+</tr>
+</tbody></table>
+<p>ABI 与 CPU 的联系<br>在 Android 手机上安装一个应用时，只有手机CPU架构支持的ABI架构对应的.so文件会被安装。如果支持多个ABI架构，会按照优先级进行安装。<br>k<br>|CPU架构| 支持的ABI架构对应的.so文件安装优先级|<br>|–|–|<br>|ARMv5| armeabi|<br>|ARMv7| armeabi，armeabi-v7a|<br>|ARMv8| armeabi，armeabi-v7a，arm64-v8a|<br>|MIPS | mips|<br>|MIPS64|  mips，mips64|<br>|x86| x86，armeabi，armeabi-v7a|<br>|x86_64|  :armeabi，x86，x86_64|<br>服务端:<br><a target="_blank" rel="noopener" href="https://github.com/frida/frida/releases">https://github.com/frida/frida/releases</a></p>
+<ol>
+<li><p>下载:frida-server-14.2.13-android-arm64.xz</p>
+<pre class="line-numbers language-bash"><code class="language-bash">$ adb push frida-server-14.2.13-android-arm64 /data/local/tmp/frida-server
+$ xz -d frida-server-14.2.13-android-arm64.xz<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
+<li><p>运行frida-server</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token variable">$adb</span> shell
+<span class="token variable">$su</span>
+<span class="token variable">$cd</span>  /data/local/tmp
+<span class="token variable">$chmod</span>  755  frida-server
+$./frida-server <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ol>
+<p>如果使用的是模拟器应该下载frida-server-14.2.13-android-x86或64位<br>如果安装错误的版本，在执行frida-server时会提示报错，报错信息为sh: ./frida-server: not executable: 64-bit ELF file。<br>普通用户没有权限，需要su切换到root用户</p>
+<ol start="3">
+<li>检查是否正常<br>转发android TCP端口到本地<pre class="line-numbers language-bash"><code class="language-bash">adb forward tcp:27042 tcp:27043
+adb forward tcp:27043 tcp:27043
+Frida-ps -U   <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+运行结果如图：<br><img src="1.png"></li>
+</ol>
+<p>客户端：PC（控制端）<br>客户端编写的 Python 代码，用于连接远程设备，提交要注入的 JS代码到服务端，接受服务端发来的消息。 </p>
+<p>服务器：手机设备（被控制端）<br>服务端中需要用 JS 代码注入到目标进程，操作内存数据，给客户端发送消息。</p>
+<h3 id="Frida的优缺点"><a href="#Frida的优缺点" class="headerlink" title="Frida的优缺点"></a>Frida的优缺点</h3><p>优点：在上面我们可以看到他的优点在于配置环境很简单，操作也很便捷，对于破解者开发阶段非常好用。支持Java层和Native层hook操作，在Native层hook如果是非基本类型的话操作有点麻烦。</p>
+<p>缺点：因为他只适用于破解者在开发阶段，也就是他没法像Xposed用于实践生产中，比如我写一个微信外挂用Frida写肯定不行的，因为他无法在手机端运行。也就是破解者用的比较多。</p>
+<h4 id="Frida实例-https-q0o0p-top-2021-03-24-cydia-hook"><a href="#Frida实例-https-q0o0p-top-2021-03-24-cydia-hook" class="headerlink" title="Frida实例: https://q0o0p.top/2021/03/24/cydia-hook/"></a>Frida实例: <a href="https://q0o0p.top/2021/03/24/cydia-hook/">https://q0o0p.top/2021/03/24/cydia-hook/</a></h4><h3 id="SubstrateCydia的优缺点"><a href="#SubstrateCydia的优缺点" class="headerlink" title="SubstrateCydia的优缺点"></a>SubstrateCydia的优缺点</h3><p>优点：可以运行在手机端，和Xposed类似可以用于实践生产中。支持Java层和Native层的hook操作，但是Java层hook不怎么常用，用的比较多的是 Native 层 hook 操作，因为他也是Android工程可以引用系统api，操作更为方便。</p>
+<p>缺点：和Xposed一样安装配置环境繁琐，兼容性差。</p>
+<p>总结: <code>Java层Hook还是Xposed方便，写 Native 层 Hook 还是Cydia 了，而对于破解者开发那还是 Frida 最靠谱了。写外挂最难的也是最重要的不是写代码而是寻找 hook点，也就是逆向分析 app 找到那个地方，然后写 hook 代码实现插件功能。</code></p>
+<h3 id="ART模式下基于frida框架脱壳技术原理"><a href="#ART模式下基于frida框架脱壳技术原理" class="headerlink" title="ART模式下基于frida框架脱壳技术原理"></a>ART模式下基于frida框架脱壳技术原理</h3><p>不同于传统java应用层hook dump出dex文件，而是从系统层面拦截hook到OpenMemory函数进行dump。 一般安卓加载代码都是通过classloader来装取本地代码到内存中去的。<br>ClassLoader有两种加载方式：<br>1.通过路径寻找本地代码，然后装入内存<br>基本的源码顺序是BaseDexClassLoader——&gt;DexPathList——&gt;makeDexElement——&gt;loadDexFile—&gt;dDexFile.loadDex 最后DexFile中有个native方法，OpenDexFileNative对应了DexFile_openDexFileNative方法，其中的OpenDexFileFormOat就是最主要的方法了。<br>2.直接映射到内存中去<br>4.x中DexFile.loadDex这个方法已经摒弃了，使用的是</p>
+<p>native private static int openDexFile(byte[] fileContents);<br>然而这个方法在5.0中也已经摒弃了，在native层中依旧存在于/art/runtime/dex_file.cc中。其方法为OpenMemory函数。我们只需要hook 拦截到这个方法dump出dex文件就ok。下面就展开介绍下常见的几个针对这种脱壳模式的frida框架脱壳工具脚本。</p>
+<h3 id="基于Frida的工具"><a href="#基于Frida的工具" class="headerlink" title="基于Frida的工具"></a>基于Frida的工具</h3><p>FRIDA-DEXDUMP<br>github地址：<a target="_blank" rel="noopener" href="https://github.com/hluwa/FRIDA-DEXDump">https://github.com/hluwa/FRIDA-DEXDump</a><br>这个工具主要是暴力搜索内存dump dex方式。<br>对于完整的dex，采用暴力搜索dexn035即可找到。 而对于抹头的dex，通过匹配一些特征来找到，然后自动修复文件头，很强大的一个脚本工具。</p>
+<p>Frida-Apk-Unpack<br>github地址：<br><a target="_blank" rel="noopener" href="https://github.com/hluwa/FRIDA-DEXDump">https://github.com/hluwa/FRIDA-DEXDump</a><br><a target="_blank" rel="noopener" href="https://github.com/GuoQiang1993/Frida-Apk-Unpack">https://github.com/GuoQiang1993/Frida-Apk-Unpack</a><br>上面这三个工具都是优先找到OpenMemory和OpenCommon函数，在内存中，也就是app loader以后查找dex文件头dex035，然后根据dex size偏移量把dex整个dump下来。但这个工具在android7.1以上测试由于hook opencommon(libart.so中openmemory去掉了，只能用opencommon这个入口)函数，存在无法唤醒函数情况。</p>
+<hr>
+<h2 id="逆向思维"><a href="#逆向思维" class="headerlink" title="逆向思维"></a>逆向思维</h2><p>获取注册码<br>一般有三种方式，打 log，动态调试 smali，自己写注册机。<br>打 log 日志<br>其实在逆向过程中，注入 log 代码是很常见的操作。适当的打 log，可以很好的帮助我们理解代码执行流程。在这里例子中，最终会拿我们输入的注册码和正确的注册码进行比较，在比较的时候我们就可以通过打 log 把正确的注册码打印出来，这样我们就可以直接输入注册码进行注册了。</p>
+<p>打 log 的 smali 代码是固定的，一般格式如下：</p>
+<pre><code>const-string vX, "TAG"invoke-static &amp;#123;vX,vX&amp;#125;, Landroid/util/Log;-&gt;e(Ljava/lang/String;Ljava/lang/String;)I</code></pre>
+<p>vX 都是指寄存器。把这两行代码加到注册码的检验操作之前就可以了：</p>
+<pre><code>.line 63.local v6, "userSN":Ljava/lang/String;  # userSN = sb.toString()const-string v8, "TAG"invoke-static &amp;#123;v8,v6&amp;#125;, Landroid/util/Log;-&gt;e(Ljava/lang/String;Ljava/lang/String;)I# userSN.equalsIgnoreCase(sn)invoke-virtual &amp;#123;v6, p2&amp;#125;, Ljava/lang/String;-&gt;equalsIgnoreCase(Ljava/lang/String;)Z
+
+const-string v8, "TAG"
+invoke-static &amp;#123;v8,v6&amp;#125;, Landroid/util/Log;-&gt;e(Ljava/lang/String;Ljava/lang/String;)I
+
+# userSN.equalsIgnoreCase(sn)
+invoke-virtual &amp;#123;v6, p2&amp;#125;, Ljava/lang/String;-&gt;equalsIgnoreCase(Ljava/lang/String;)Z</code></pre>
+<p>再次重新打包运行，输入用户名和注册码，会得到日志</p>
+<p>动态调试 smali<br>动态调试 smali 来的更加直截了当。不管是你自己写程序，还是做逆向，debug 永远都是快速理清逻辑的好方法。smali 也是可以进行动态调试的，依赖于 Smalidea 插件，你可以在 Android Studio 的 Plugin 中进行安装，也可以下载下来本地安装。</p>
+<p>第一步，我们要保证我们的应用处于 debug 版本，在 AndroidManifest.xml 中加上 android:debuggable=”true” 即可，重打包再安装到手机上。</p>
+<p>第二步，将之前反编译得到的 smali 文件夹导入 Android Studio 或者 IDEA，并配置远程调试环境。选择 Run -&gt; Edit Configurations，点击左上角 + 号，选择 Remote，弹出配置窗口，如下图所示：<br><img src="2.png"></p>
+<p>注意记住自己填写的端口号，端口号不是固定的，只要未被占用即可。配置完成后，记得在合适的地方打上断点，我这里就在 checkSN() 方法内打上断点。</p>
+<p>第三步，命令行启动进程调试等待模式。首先执行：</p>
+<pre class="line-numbers language-bash"><code class="language-bash">adb shell am start -D -n com.droider.crackme0201/.MainActivity<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>然后建立端口转发，输入如下命令：</p>
+<pre><code>adb forward tcp:8700 jdwp:pid</code></pre>
+<p>用你自己的应用的 pid 替换进去。关于 pid 的获取，可以通过 ps 和 grep 组合：</p>
+<pre><code>adb shell ps | grep com.droider.crackme0201u0_a364   30110 537   2166480 30204 futex_wait 0000000000 S com.droider.crackme0201</code></pre>
+<p>这里的 pid 就是 30010 。</p>
+<p>最后在 Android Studio 或 IDEA 中启动 debug 。 点击 Run -&gt; Debug，应用就进入调试模式了。之后的操作就和开发中的 debug 模式一模一样了。我们可以在运行中看到寄存器中的值，运行逻辑一览无遗。运行至注册码校验处的断点，截图如下：</p>
+<p>640?wx_fmt=png<br>userName 是用户名，sn 是输入的注册码，userSN 是正确的注册码。</p>
+<hr>
+<h2 id="NDK开发"><a href="#NDK开发" class="headerlink" title="NDK开发"></a>NDK开发</h2><hr>
+<h1 id="汇编"><a href="#汇编" class="headerlink" title="汇编"></a>汇编</h1><h2 id="samli"><a href="#samli" class="headerlink" title="samli"></a>samli</h2><h2 id="arm汇编"><a href="#arm汇编" class="headerlink" title="arm汇编"></a>arm汇编</h2><hr>
+<h2 id="学习计划"><a href="#学习计划" class="headerlink" title="学习计划"></a>学习计划</h2><p>一. 安卓逆向基础（建议1周）</p>
+<ol>
+<li>学习安卓逆向第一步必须先把环境搭建好，这是你学习安卓逆向的开始，环境搭建好后表示正式迈入安卓逆向。在环境安装的工程中会遇到很多细节上的问题，针对这些坑老师专门录制工具使用教程，同学们只需要跟着老师教程操作就可以了。</li>
+<li>第二步就是要了解我们要分析的是什么文件，很多0基础的同学都不知道安卓逆向分析的什么文件。我们要分析的是应用程序或者安装包（就是.apk文件），了解apk是怎么生成的以及如何安装到我们的手机里面，apk是怎么运行的，也是我们探讨的内容。3. 第三步如何逆向分析.apk文件，掌握apk反编译及回编译，完成这个操作使用的工具是apktool。二. Java层逆向（建议3周）1. 掌握Java语法基础，达到能看懂Java代码。2. 了解smali语法，能看懂smali代码。3. 掌握逆向分析apk中常用的方法和技巧。三. Native层逆向（建议4周）1. 了解安卓操作系统和四大组件。2. 了解NDK开发流程，自己编写案例练习。3. 掌握常用ARM汇编指令，达到能看懂ARM汇编指令。4. 掌握ida工具的使用，熟练使用ida进行各种操作四. APK保护策略（建议1周）1. 了解Java代码混淆、资源混淆2. 掌握签名验证、文件校验、模拟器检测3. 本地验证、网络验证4. 案例练习五. 反调试与反-反调试（建议1周）1. 掌握常用反调试方法及过反调试技巧，比如关键文件检测、调试端口检测、进程名称检测、防附加、轮训检测TracerPid值、时间检测、信号检测等反调试。2. 掌握IDA过反调试思路3. 案例练习。六. HOOK框架（建议2周）1. 掌握HOOK插件开发。2. 掌握Xposed、Substrate、Fridad等框架。3. 案例练习。七. 常见加密算法（建议2周）1. 掌握编码算法、消息摘要算法、对称加密算法（Java加密与解密的艺术）。2. 掌握非对称加密算法、数字签名算法。八. 协议加解密分析（建议4周）1. 了解客户端与服务器如何进行交互的（OSI模型、TCP/IP模型）。2. 掌握常用的抓包工具及环境配置，HTTP协议与HTTPS安全协议，数字证书、SSL证书检测（计算机网络与通信、信息安全工程师）。3. 案例练习。九. 文件结构（建议2周）1. 掌握DEX、ELF、XML、ARSC等文件结构。2. 自编写文件解析工具。十. 系统源码分析（建议2周）1. 了解安卓操作系统启动流程、Zygote启动流程。2. 掌握Dalvik虚拟机、ART虚拟机、SO加载流程。十一. 加固与脱壳（建议4周）1. 了解dex文件整体加密、Dex代码抽取加密。2. 了解so文件整体加密、函数加密、区段加密、加壳、混淆。3. 分析通用脱壳机的实现原理及应用场景。4. 了解主流加固特点及对应的脱壳技巧。十二. 学习方法1. 每天学习时间3小时。2. 看一遍教程后自己实战操作，养成做笔记的习惯。3. 注重基础，一定要把Java层和Native层搞懂。4. 学习中不要纠结细节，要学会抓大放小。5. 学完后自己画脑图，回顾学习的过程中那些不理解在花时间去看，此过程就是查漏补缺。</li>
+</ol>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">q0o0p</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://q0o0p.top/2021/04/10/resume/">http://q0o0p.top/2021/04/10/resume/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint polocy. If reproduced, please indicate source
+                    <a href="/about" target="_blank">q0o0p</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/android/">
+                                    <span class="chip bg-color">android</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+    <div class="livere-card card" data-aos="fade-up">
+    <!-- 来必力City版安装代码 -->
+    <div id="lv-container" class="card-content" data-id="city" data-uid="">
+        <script type="text/javascript">
+            (function (d, s) {
+                let j, e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') {
+                    return;
+                }
+
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+        </script>
+        <noscript>为正常使用来必力评论功能请激活JavaScript。</noscript>
+    </div>
+    <!-- City版安装代码已完成 -->
+</div>
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: '',
+        appKey: '',
+        notify: 'false' === 'true',
+        verify: 'true' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'mm',
+        pageSize: '10',
+        lang: 'en',
+        placeholder: 'just go go'
+    });
+</script>
+
+    
+
+    
+        <style>
+    .mvaline-card {
+        margin: 1.5rem auto;
+    }
+
+    .mvaline-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+</style>
+
+<div class="card mvaline-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="mvcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/minivaline/dist/MiniValine.min.js"></script>
+<script>
+    new MiniValine({
+        el: '#mvcomments',
+        appId: 'zhM0AOiqle17oPoE84CoYw1e-gzGzoHsz',
+        appKey: 'itmzT1JbXfAjVwMqDhGPzU45',
+        mode: 'DesertsP',
+        placeholder: 'Write a Comment',
+        pathname: window.location.pathname,
+        lang: '',
+        adminEmailMd5: 'de8a7aa53d07e6b6bceb45c64027763d',
+        tagMeta: ["管理员", "小伙伴", "访客"],
+        master: ["de8a7aa53d07e6b6bceb45c64027763d"],
+        friends: ["b5bd5d836c7a0091aa8473e79ed4c25e", "adb7d1cd192658a55c0ad22a3309cecf", "3ce1e6c77b4910f1871106cb30dc62b0", "cfce8dc43725cc14ffcd9fb4892d5bfc"],
+        math: true,
+        md: true,
+        enableQQ: false,
+        NoRecordIP: false,
+        visitor: true,
+        maxNest: 6,
+        pageSize: 6,
+        serverURLs: '',
+        emoticonUrl: ["https://cdn.jsdelivr.net/npm/alus@latest", "https://cdn.jsdelivr.net/gh/MiniValine/qq@latest", "https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest", "https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest", "https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest", "https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest"],
+    });
+</script>
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
+            <div class="card">
+                <a href="/2021/04/10/resume/">
+                    <div class="card-image">
+                        
+                        <img src="/images/6.jpg" class="responsive-img" alt="kali-tools">
+                        
+                        <span class="card-title">kali-tools</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            This is the content of
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-10
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            q0o0p
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/android/">
+                        <span class="chip bg-color">android</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/11/26/sqli-labs/">
+                    <div class="card-image">
+                        
+                        <img src="/images/6.jpg" class="responsive-img" alt="sqli-labs靶场搭建和练习">
+                        
+                        <span class="card-title">sqli-labs靶场搭建和练习</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            This is the content of
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-26
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            q0o0p
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/kali/">
+                        <span class="chip bg-color">kali</span>
+                    </a>
+                    
+                    <a href="/tags/sql/">
+                        <span class="chip bg-color">sql</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('2'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">q0o0p</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">28k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/monody61" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2944518598@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2944518598" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2944518598" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+
+# 2020.8.18
+
+
+    <a href="https://github.com/monody61" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

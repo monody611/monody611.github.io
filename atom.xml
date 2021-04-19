@@ -6,7 +6,7 @@
   <link href="http://q0o0p.top/atom.xml" rel="self"/>
   
   <link href="http://q0o0p.top/"/>
-  <updated>2020-11-25T21:41:39.448Z</updated>
+  <updated>2021-04-19T21:42:37.749Z</updated>
   <id>http://q0o0p.top/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>kali-tools</title>
+    <link href="http://q0o0p.top/2021/04/10/resume/"/>
+    <id>http://q0o0p.top/2021/04/10/resume/</id>
+    <published>2021-04-09T16:16:21.000Z</published>
+    <updated>2021-04-19T21:42:37.749Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;学习逆向的主要原因-从多个方面考虑过-：&quot;&gt;&lt;a href=&quot;#学习逆向的主要原因-从多个方面考虑过-：&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="android" scheme="http://q0o0p.top/tags/android/"/>
+    
+  </entry>
   
   <entry>
     <title>sqli-labs靶场搭建和练习</title>
@@ -121,7 +144,7 @@
     <link href="http://q0o0p.top/2020/10/10/kali-tools/"/>
     <id>http://q0o0p.top/2020/10/10/kali-tools/</id>
     <published>2020-10-09T16:16:21.000Z</published>
-    <updated>2020-11-15T19:29:12.089Z</updated>
+    <updated>2021-03-30T21:39:10.708Z</updated>
     
     
       
@@ -167,46 +190,21 @@
     <link href="http://q0o0p.top/2020/10/03/ecjtu/"/>
     <id>http://q0o0p.top/2020/10/03/ecjtu/</id>
     <published>2020-10-03T09:40:49.000Z</published>
-    <updated>2020-10-03T13:10:31.487Z</updated>
+    <updated>2021-02-17T15:35:31.856Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;202.101.209.157 //企业云盘&lt;br&gt; 202.101.209.187 //&lt;a href=&quot;https://mobile.ecjtu.edu.cn/#/&quot;&gt;https://mobile.ecjtu.edu.cn/#/&lt;/a&gt; </summary>
+    <summary type="html">&lt;h2 id=&quot;shodan&quot;&gt;&lt;a href=&quot;#shodan&quot; class=&quot;headerlink&quot; title=&quot;shodan&quot;&gt;&lt;/a&gt;shodan&lt;/h2&gt;&lt;p&gt;ip地址信息收集&lt;br&gt;cas.ecjtu.edu.cn&lt;br&gt;&lt;code&gt;202.101.209.143</summary>
         
       
     
     
     
     
-    <category term="mysql" scheme="http://q0o0p.top/tags/mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>windows提权</title>
-    <link href="http://q0o0p.top/2020/09/20/windows-privilge-escalation/"/>
-    <id>http://q0o0p.top/2020/09/20/windows-privilge-escalation/</id>
-    <published>2020-09-19T17:25:09.000Z</published>
-    <updated>2020-09-20T09:22:53.911Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;0x01-查看windows版本号&quot;&gt;&lt;a href=&quot;#0x01-查看windows版本号&quot; class=&quot;headerlink&quot; title=&quot;0x01 查看windows版本号&quot;&gt;&lt;/a&gt;0x01 查看windows版本号&lt;/h2&gt;&lt;figure</summary>
-        
-      
-    
-    
-    
-    
-    <category term="privilge escalation" scheme="http://q0o0p.top/tags/privilge-escalation/"/>
-    
-    <category term="windows 10" scheme="http://q0o0p.top/tags/windows-10/"/>
+    <category term="ecjtu" scheme="http://q0o0p.top/tags/ecjtu/"/>
     
   </entry>
   
@@ -232,6 +230,31 @@
     <category term="privilge escalation" scheme="http://q0o0p.top/tags/privilge-escalation/"/>
     
     <category term="linux" scheme="http://q0o0p.top/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>windows提权</title>
+    <link href="http://q0o0p.top/2020/09/20/windows-privilge-escalation/"/>
+    <id>http://q0o0p.top/2020/09/20/windows-privilge-escalation/</id>
+    <published>2020-09-19T17:25:09.000Z</published>
+    <updated>2020-09-20T09:22:53.911Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;0x01-查看windows版本号&quot;&gt;&lt;a href=&quot;#0x01-查看windows版本号&quot; class=&quot;headerlink&quot; title=&quot;0x01 查看windows版本号&quot;&gt;&lt;/a&gt;0x01 查看windows版本号&lt;/h2&gt;&lt;figure</summary>
+        
+      
+    
+    
+    
+    
+    <category term="privilge escalation" scheme="http://q0o0p.top/tags/privilge-escalation/"/>
+    
+    <category term="windows 10" scheme="http://q0o0p.top/tags/windows-10/"/>
     
   </entry>
   
