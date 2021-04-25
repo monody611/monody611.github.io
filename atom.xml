@@ -6,7 +6,7 @@
   <link href="http://q0o0p.top/atom.xml" rel="self"/>
   
   <link href="http://q0o0p.top/"/>
-  <updated>2021-04-25T13:40:24.640Z</updated>
+  <updated>2021-04-25T18:59:34.635Z</updated>
   <id>http://q0o0p.top/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>monody</title>
+    <link href="http://q0o0p.top/2021/04/26/monody/"/>
+    <id>http://q0o0p.top/2021/04/26/monody/</id>
+    <published>2021-04-25T18:59:34.000Z</published>
+    <updated>2021-04-25T18:59:34.635Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+       </summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>byte</title>
@@ -40,8 +65,8 @@
   
   <entry>
     <title>monody</title>
-    <link href="http://q0o0p.top/2021/04/23/monody/"/>
-    <id>http://q0o0p.top/2021/04/23/monody/</id>
+    <link href="http://q0o0p.top/2021/04/23/monody1/"/>
+    <id>http://q0o0p.top/2021/04/23/monody1/</id>
     <published>2021-04-23T07:52:33.000Z</published>
     <updated>2021-04-24T15:48:29.316Z</updated>
     
