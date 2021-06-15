@@ -569,14 +569,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    16.4k
+                    18.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    61 Min
+                    69 Min
                 </div>
                 
 
@@ -685,7 +685,7 @@ adb forward tcp:23946 tcp:23946<span aria-hidden="true" class="line-numbers-rows
 </blockquote>
 </li>
 </ul>
-<h2 id="MT管理器"><a href="#MT管理器" class="headerlink" title="MT管理器"></a>MT管理器</h2><p>基于压缩包反编译，可以绕过对资源文件的触发</p>
+<h3 id="MT管理器"><a href="#MT管理器" class="headerlink" title="MT管理器"></a>MT管理器</h3><p>基于压缩包反编译，可以绕过对资源文件的触发</p>
 <hr>
 <h2 id="gdb"><a href="#gdb" class="headerlink" title="gdb"></a>gdb</h2><p>GDB主要功能：<br>1、启动你的程序，可以按照你的自定义的要求随心所欲的运行程序。<br>2、可让被调试的程序在你所指定的调置的断点处停住。（断点可以是条件表达式）<br>3、当程序被停住时，可以检查此时你的程序中所发生的事。<br>4、动态的改变你程序的执行环境。 </p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/zlmm741/article/details/105511833">https://blog.csdn.net/zlmm741/article/details/105511833</a></p>
@@ -992,6 +992,34 @@ adb shell dumpsys dbinfo packagename //获取数据库文件
 adb shell  pm list packages //列出当前所有已安装的程序包名
 adb shell pm path packagename //获取指定程序所在的路径
 adb shell dumpsys window <span class="token operator">|</span> findstr mCurrentFocus //当前应用包名<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<hr>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="并发"><a href="#并发" class="headerlink" title="并发"></a>并发</h3><p>并发（Concurrent），在操作系统中，是指一个时间段中有几个程序都处于已启动运行到运行完毕之间，且这几个程序都是在同一个处理机上运行。</p>
+<p>就想前面提到的操作系统的时间片分时调度。打游戏和听音乐两件事情在同一个时间段内都是在同一台电脑上完成了从开始到结束的动作。那么，就可以说听音乐和打游戏是并发的。</p>
+<h3 id="并行"><a href="#并行" class="headerlink" title="并行"></a>并行</h3><p>并行（Parallel），当系统有一个以上CPU时，当一个CPU执行一个进程时，另一个CPU可以执行另一个进程，两个进程互不抢占CPU资源，可以同时进行，这种方式我们称之为并行(Parallel)。<br>这里面有一个很重要的点，那就是系统要有多个CPU才会出现并行。在有多个CPU的情况下，才会出现真正意义上的『同时进行』。</p>
+<h3 id="并发与并行"><a href="#并发与并行" class="headerlink" title="并发与并行"></a>并发与并行</h3><p>我们两个人在吃午饭。你在吃饭的整个过程中，吃了米饭、吃了蔬菜、吃了牛肉。吃米饭、吃蔬菜、吃牛肉这三件事其实就是并发执行的。对于你来说，整个过程中看似是同时完成的的。但其实你是在吃不同的东西之间来回切换的。</p>
+<p>还是我们两个人吃午饭。在吃饭过程中，你吃了米饭、蔬菜、牛肉。我也吃了米饭、蔬菜和牛肉。我们两个人之间的吃饭就是并行的。两个人之间可以在同一时间点一起吃牛肉，或者一个吃牛肉，一个吃蔬菜。之间是互不影响的。</p>
+<h3 id="并发和并行的区别"><a href="#并发和并行的区别" class="headerlink" title="并发和并行的区别"></a>并发和并行的区别</h3><p>并发，指的是多个事情，在同一时间段内同时发生了。<br>并行，指的是多个事情，在同一时间点上同时发生了。</p>
+<p>并发的多个任务之间是互相抢占资源的。<br>并行的多个任务之间是不互相抢占资源的、</p>
+<p>只有在多CPU的情况中，才会发生并行。否则，看似同时发生的事情，其实都是并发执行的。</p>
+<hr>
+<h3 id="TCP三次握手"><a href="#TCP三次握手" class="headerlink" title="TCP三次握手"></a>TCP三次握手</h3><p>第一次握手:<br>客户端发送一个TCP的SYN标志位置1的包指明客户打算连接的服务器的端口，以及初始序号X,保存在包头的序列号(Sequence Number)字段里。</p>
+<p>第二次握手:<br>服务器发回确认包(ACK)应答。即SYN标志位和ACK标志位均为1同时，将确认序号(Acknowledgement Number)设置为客户的I S N加1以.即X+1。</p>
+<p>第三次握手.<br>客户端再次发送确认包(ACK) SYN标志位为0,ACK标志位为1.并且把服务器发来ACK的序号字段+1,放在确定字段中发送给对方.并且在数据段放写ISN的+1</p>
+<h4 id="SYN攻击"><a href="#SYN攻击" class="headerlink" title="SYN攻击"></a>SYN攻击</h4><p>在三次握手过程中，服务器发送SYN-ACK之后，收到客户端的ACK之前的TCP连接称为半连接(half-open connect).此时服务器处于Syn_RECV状态.当收到ACK后，服务器转入ESTABLISHED状态.<br>Syn攻击就是 攻击客户端 在短时间内伪造大量不存在的IP地址，向服务器不断地发送syn包，服务器回复确认包，并等待客户的确认，由于源地址是不存在的，服务器需要不断的重发直 至超时，这些伪造的SYN包将长时间占用未连接队列，正常的SYN请求被丢弃，目标系统运行缓慢，严重者引起网络堵塞甚至系统瘫痪。<br>Syn攻击是一个典型的DDOS攻击。检测SYN攻击非常的方便，当你在服务器上看到大量的半连接状态时，特别是源IP地址是随机的，基本上可以断定这是一次SYN攻击.在Linux下可以如下命令检测是否被Syn攻击<br>netstat -n -p TCP | grep SYN_RECV<br>一般较新的TCP/IP协议栈都对这一过程进行修正来防范Syn攻击，修改tcp协议实现。主要方法有SynAttackProtect保护机制、SYN cookies技术、增加最大半连接和缩短超时时间等.<br>但是不能完全防范syn攻击。</p>
+<h3 id="TCP-四次挥手"><a href="#TCP-四次挥手" class="headerlink" title="TCP 四次挥手"></a>TCP 四次挥手</h3><p>（1）客户端A发送一个FIN，用来关闭客户A到服务器B的数据传送(报文段4)。<br>（2）服务器B收到这个FIN，它发回一个ACK，确认序号为收到的序号加1(报文段5)。和SYN一样，一个FIN将占用一个序号。<br>（3）服务器B关闭与客户端A的连接，发送一个FIN给客户端A(报文段6)。<br>（4）客户端A发回ACK报文确认，并将确认序号设置为收到序号加1(报文段7)。<br>TCP采用四次挥手关闭连接。</p>
+<ul>
+<li><p>1．为什么建立连接协议是三次握手，而关闭连接却是四次握手呢？<br>这是因为服务端的LISTEN状态下的SOCKET当收到SYN报文的连接请求后，它可以把ACK和SYN(ACK起应答作用，而SYN起同步作用)放在一个报文里来发送。但关闭连接时，当收到对方的FIN报文通知时，它仅仅表示对方没有数据发送给你了；但未必你所有的数据都全部发送给对方了，所以你可能未必会马上会关闭SOCKET,也即你可能还需要发送一些数据给对方之后，再发送FIN报文给对方来表示你同意现在可以关闭连接了，所以它这里的ACK报文和FIN报文多数情况下都是分开发送的。</p>
+</li>
+<li><p>2．为什么TIME_WAIT状态还需要等2MSL后才能返回到CLOSED状态？<br>这个问题可以参考《unix 网络编程》（第三版，2.7 TIME_WAIT状态）。<br>TIME_WAIT状态由两个存在的理由。<br>（1）可靠的实现TCP全双工链接的终止。</p>
+</li>
+</ul>
+<p>这是因为虽然双方都同意关闭连接了，而且握手的4个报文也都协调和发送完毕，按理可以直接回到CLOSED状态（就好比从SYN_SEND状态到ESTABLISH状态那样）；但是因为我们必须要假想网络是不可靠的，你无法保证你最后发送的ACK报文会一定被对方收到，因此对方处于LAST_ACK状态下的SOCKET可能会因为超时未收到ACK报文，而重发FIN报文，所以这个TIME_WAIT状态的作用就是用来重发可能丢失的ACK报文。<br>（2）允许老的重复的分节在网络中消逝。<br>假 设在12.106.32.254的1500端口和206.168.1.112.219的21端口之间有一个TCP连接。我们关闭这个链接，过一段时间后在 相同的IP地址和端口建立另一个连接。后一个链接成为前一个的化身。因为它们的IP地址和端口号都相同。TCP必须防止来自某一个连接的老的重复分组在连 接已经终止后再现，从而被误解成属于同一链接的某一个某一个新的化身。为做到这一点，TCP将不给处于TIME_WAIT状态的链接发起新的化身。既然 TIME_WAIT状态的持续时间是MSL的2倍，这就足以让某个方向上的分组最多存活msl秒即被丢弃，另一个方向上的应答最多存活msl秒也被丢弃。 通过实施这个规则，我们就能保证每成功建立一个TCP连接时。来自该链接先前化身的重复分组都已经在网络中消逝了。</p>
+<ul>
+<li><ol start="3">
+<li>为什么不能用两次握手进行连接？<br>3次握手完成两个重要的功能，既要双方做好发送数据的准备工作(双方都知道彼此已准备好)，也要允许双方就初始序列号进行协商，这个序列号在握手过程中被发送和确认。<br>现在把三次握手改成仅需要两次握手，死锁是可能发生的。作为例子，考虑计算机S和C之间的通信，假定C给S发送一个连接请求分组，S收到了这个分组，并发 送了确认应答分组。按照两次握手的协定，S认为连接已经成功地建立了，可以开始发送数据分组。可是，C在S的应答分组在传输中被丢失的情况下，将不知道S 是否已准备好，不知道S建立什么样的序列号，C甚至怀疑S是否收到自己的连接请求分组。在这种情况下，C认为连接还未建立成功，将忽略S发来的任何数据分 组，只等待连接确认应答分组。而S在发出的分组超时后，重复发送同样的分组。这样就形成了死锁。</li>
+</ol>
+</li>
+</ul>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -1853,7 +1881,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">68.8k</span>&nbsp;字
+                class="white-color">71.1k</span>&nbsp;字
             
             
             
