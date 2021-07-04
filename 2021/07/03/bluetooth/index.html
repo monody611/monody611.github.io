@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="sqli-labs靶场搭建和练习, q0o0p">
+    <meta name="keywords" content="bluetooth, q0o0p">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>sqli-labs靶场搭建和练习 | q0o0p</title>
+    <title>bluetooth | q0o0p</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -417,12 +417,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">sqli-labs靶场搭建和练习</h1>
+                    <h1 class="description center-align post-title">bluetooth</h1>
                 </div>
             </div>
         </div>
@@ -537,17 +537,9 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/kali/">
-                                <span class="chip bg-color">kali</span>
-                            </a>
-                        
-                            <a href="/tags/sql/">
-                                <span class="chip bg-color">sql</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -559,21 +551,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-11-26
+                    2021-07-03
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2021-05-25
+                    2021-07-05
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    112
+                    198
                 </div>
                 
 
@@ -595,12 +587,19 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>下载sqli-labs<br><code>git clone https://github.com/mukkul007/sqli-labs-kali2 sqli-labs</code><br>下载到：<br><code>root@q0o0p:/www/admin/q0o0p.com_80/wwwroot/sqli</code></p>
-<p>修改配置文件</p>
-<p>dvwa靶场:<br><a target="_blank" rel="noopener" href="http://dvwa.com/DVWA/setup.php">http://dvwa.com/DVWA/setup.php</a><br>sqli-labs 靶场：<br><a target="_blank" rel="noopener" href="http://dvwa.com/sqli-labs/">http://dvwa.com/sqli-labs/</a></p>
-<p>挑战界面：<br><a target="_blank" rel="noopener" href="http://dvwa.com/sqli-labs/#fm_imagemap">http://dvwa.com/sqli-labs/#fm_imagemap</a></p>
+                <pre class="line-numbers language-bash"><code class="language-bash">hciconfig dev  <span class="token comment" spellcheck="true"># 查看电脑的当前适配器设备</span>
+hciconfig hci0 up <span class="token comment" spellcheck="true">#激活蓝牙适配器</span>
+hcitool lescan <span class="token comment" spellcheck="true">#搜索周围的蓝牙设备</span>
+gatttool -b 74:E1:82:04:63:3B -I <span class="token comment" spellcheck="true"># 使用GattTool与BLE设备通讯</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-bash"><code class="language-bash">-connect                           与BLE设备连接。
+-primary                           寻找BLE中可用的服务。
+-characteristics                   查看设备服务的特征值。
+-char-read-hnd 0x0026              读取特征值对应句柄的数值。
+-char-write-req 0x0029 55100144   发送55100144命令到句柄0x0029（控制挂锁开锁）
+-sec-level high                    设置安全等级为高，可以让手环长时间保持连接。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <hr>
-<h2 id="Less-1"><a href="#Less-1" class="headerlink" title="Less-1"></a>Less-1</h2><script>
+<p>参考：<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/45717775">https://zhuanlan.zhihu.com/p/45717775</a></p>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -643,7 +642,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://q0o0p.top/2020/11/26/sqli-labs/">http://q0o0p.top/2020/11/26/sqli-labs/</a>
+                    <a href="http://q0o0p.top/2021/07/03/bluetooth/">http://q0o0p.top/2021/07/03/bluetooth/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -680,15 +679,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/kali/">
-                                    <span class="chip bg-color">kali</span>
-                                </a>
-                            
-                                <a href="/tags/sql/">
-                                    <span class="chip bg-color">sql</span>
-                                </a>
-                            
+                            <span class="chip bg-color">No tag</span>
                         </div>
                     
                 </div>
@@ -1189,23 +1180,26 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2021/04/10/resume/">
+                <a href="/2021/07/04/iot-secruity/">
                     <div class="card-image">
                         
-                        <img src="/images/6.jpg" class="responsive-img" alt="android 逆向">
                         
-                        <span class="card-title">android 逆向</span>
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="iot-secruity">
+                        
+                        <span class="card-title">iot-secruity</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            This is the content of
+                            由于最近遇到一些左右为难的事情，颓废了一段时间。。。。今天偶然间看到某位师傅的博客，瞬间心血来潮，决定在水一篇博客（看一下以前的，都是一直水来的，以后的某一天一定重造高质量博客。。。）。下面今日正题。。。
+
+kali太久没更新的话记得更新一
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-04-10
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-04
                         </span>
                         <span class="publish-author">
                             
@@ -1214,14 +1208,6 @@
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/android/">
-                        <span class="chip bg-color">android</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -1233,23 +1219,25 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/11/21/dns-hijacking/">
+                <a href="/2021/06/20/deep-learning/">
                     <div class="card-image">
                         
-                        <img src="/images/6.jpg" class="responsive-img" alt="DNS劫持">
                         
-                        <span class="card-title">DNS劫持</span>
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Deep-Learning">
+                        
+                        <span class="card-title">Deep-Learning</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            This is the content of
+                            使用机器学习检测软件源代码中的漏洞https://zhuanlan.zhihu.com/p/266608010
+CodeCMRCodeCMR:跨模态二进制代码匹配https://zhuanlan.zhihu.com/p/341763798h
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-21
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-20
                             </span>
                         <span class="publish-author">
                             
@@ -1258,18 +1246,6 @@
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Android/">
-                        <span class="chip bg-color">Android</span>
-                    </a>
-                    
-                    <a href="/tags/DNS-Hijacking/">
-                        <span class="chip bg-color">DNS-Hijacking</span>
-                    </a>
-                    
                 </div>
                 
             </div>

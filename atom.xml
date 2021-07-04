@@ -6,7 +6,7 @@
   <link href="http://q0o0p.top/atom.xml" rel="self"/>
   
   <link href="http://q0o0p.top/"/>
-  <updated>2021-06-12T10:24:36.445Z</updated>
+  <updated>2021-07-04T21:30:18.618Z</updated>
   <id>http://q0o0p.top/</id>
   
   <author>
@@ -15,6 +15,71 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>iot-secruity</title>
+    <link href="http://q0o0p.top/2021/07/04/iot-secruity/"/>
+    <id>http://q0o0p.top/2021/07/04/iot-secruity/</id>
+    <published>2021-07-03T18:16:50.000Z</published>
+    <updated>2021-07-04T21:30:18.618Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;由于最近遇到一些左右为难的事情，颓废了一段时间。。。。&lt;br&gt;今天偶然间看到某位师傅的博客，瞬间心血来潮，决定在水一篇博客（看一下以前的，都是一直水来的，以后的某一天一定重造高质量博客。。。）。&lt;br&gt;下面今日正题。。。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;kali太久没更新的话记得更</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>bluetooth</title>
+    <link href="http://q0o0p.top/2021/07/03/bluetooth/"/>
+    <id>http://q0o0p.top/2021/07/03/bluetooth/</id>
+    <published>2021-07-02T22:20:08.000Z</published>
+    <updated>2021-07-04T21:30:21.022Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;hciconfig dev  &lt;span class=&quot;token comment&quot; spellcheck=&quot;true&quot;&gt;#</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Deep-Learning</title>
+    <link href="http://q0o0p.top/2021/06/20/deep-learning/"/>
+    <id>http://q0o0p.top/2021/06/20/deep-learning/</id>
+    <published>2021-06-19T23:27:21.000Z</published>
+    <updated>2021-07-03T12:53:40.744Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;使用机器学习检测软件源代码中的漏洞&lt;br&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>arp</title>
@@ -212,7 +277,7 @@
     <link href="http://q0o0p.top/2020/10/10/kali-tools/"/>
     <id>http://q0o0p.top/2020/10/10/kali-tools/</id>
     <published>2020-10-09T16:16:21.000Z</published>
-    <updated>2021-05-22T16:59:54.353Z</updated>
+    <updated>2021-07-04T21:30:20.047Z</updated>
     
     
       
@@ -428,79 +493,6 @@
     <category term="privilge escalation" scheme="http://q0o0p.top/tags/privilge-escalation/"/>
     
     <category term="linux" scheme="http://q0o0p.top/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>payload</title>
-    <link href="http://q0o0p.top/2020/08/18/payload/"/>
-    <id>http://q0o0p.top/2020/08/18/payload/</id>
-    <published>2020-08-18T01:30:17.000Z</published>
-    <updated>2020-10-12T20:27:15.294Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;#Android payload&lt;/p&gt;
-&lt;h2 id=&quot;开启端口&quot;&gt;&lt;a href=&quot;#开启端口&quot; class=&quot;headerlink&quot; title=&quot;开启端口&quot;&gt;&lt;/a&gt;开启端口&lt;/h2&gt;&lt;p&gt;打开终端，安装ufw防火墙，开启5555端口&lt;/p&gt;
-&lt;pre</summary>
-        
-      
-    
-    
-    
-    <category term="Payload" scheme="http://q0o0p.top/categories/Payload/"/>
-    
-    
-    <category term="Android" scheme="http://q0o0p.top/tags/Android/"/>
-    
-    <category term="Payload" scheme="http://q0o0p.top/tags/Payload/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>android基础篇</title>
-    <link href="http://q0o0p.top/2019/04/15/byte/"/>
-    <id>http://q0o0p.top/2019/04/15/byte/</id>
-    <published>2019-04-15T08:58:26.000Z</published>
-    <updated>2021-04-20T06:18:12.046Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;三次握手四次挥手&lt;/p&gt;
-&lt;p&gt;TCP核心机制&lt;/p&gt;
-&lt;h2 id=&quot;HTTP和HTTPS及其区别&quot;&gt;&lt;a href=&quot;#HTTP和HTTPS及其区别&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://q0o0p.top/1970/01/01/hello-world/"/>
-    <id>http://q0o0p.top/1970/01/01/hello-world/</id>
-    <published>1970-01-01T00:00:00.000Z</published>
-    <updated>2020-09-19T21:15:41.946Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
     
   </entry>
   

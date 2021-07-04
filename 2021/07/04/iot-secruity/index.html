@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="sqli-labs靶场搭建和练习, q0o0p">
+    <meta name="keywords" content="iot-secruity, q0o0p">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>sqli-labs靶场搭建和练习 | q0o0p</title>
+    <title>iot-secruity | q0o0p</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -417,12 +417,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">sqli-labs靶场搭建和练习</h1>
+                    <h1 class="description center-align post-title">iot-secruity</h1>
                 </div>
             </div>
         </div>
@@ -537,17 +537,9 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/kali/">
-                                <span class="chip bg-color">kali</span>
-                            </a>
-                        
-                            <a href="/tags/sql/">
-                                <span class="chip bg-color">sql</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -559,28 +551,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-11-26
+                    2021-07-04
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2021-05-25
+                    2021-07-05
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    112
+                    2.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    1 Min
+                    9 Min
                 </div>
                 
 
@@ -595,12 +587,112 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>下载sqli-labs<br><code>git clone https://github.com/mukkul007/sqli-labs-kali2 sqli-labs</code><br>下载到：<br><code>root@q0o0p:/www/admin/q0o0p.com_80/wwwroot/sqli</code></p>
-<p>修改配置文件</p>
-<p>dvwa靶场:<br><a target="_blank" rel="noopener" href="http://dvwa.com/DVWA/setup.php">http://dvwa.com/DVWA/setup.php</a><br>sqli-labs 靶场：<br><a target="_blank" rel="noopener" href="http://dvwa.com/sqli-labs/">http://dvwa.com/sqli-labs/</a></p>
-<p>挑战界面：<br><a target="_blank" rel="noopener" href="http://dvwa.com/sqli-labs/#fm_imagemap">http://dvwa.com/sqli-labs/#fm_imagemap</a></p>
+                <p>由于最近遇到一些左右为难的事情，颓废了一段时间。。。。<br>今天偶然间看到某位师傅的博客，瞬间心血来潮，决定在水一篇博客（看一下以前的，都是一直水来的，以后的某一天一定重造高质量博客。。。）。<br>下面今日正题。。。</p>
 <hr>
-<h2 id="Less-1"><a href="#Less-1" class="headerlink" title="Less-1"></a>Less-1</h2><script>
+<p>kali太久没更新的话记得更新一下</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> dist-upgrade
+<span class="token comment" spellcheck="true"># 下载已经编译好的</span>
+<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> gqrx gnuradio gr-osmosdr hackrf<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>手动编译：</p>
+<pre><code>git clone --progress http://github.com/mossmann/hackrf.git
+cd hackrf/host
+mkdir build
+cd build
+cmake ../ -DINSTALL_UDEV_RULES=ON
+make
+sudo make install
+sudo ldconfig</code></pre>
+<hr>
+<h2 id="sparrow"><a href="#sparrow" class="headerlink" title="sparrow"></a>sparrow</h2><h3 id="适用场景"><a href="#适用场景" class="headerlink" title="适用场景"></a>适用场景</h3><p>1、基本的WiFi SSID识别；<br>2、WiFi源捕捉；<br>3、2.4GHz和5GHz频谱查看；<br>4、蓝牙识别；<br>5、蓝牙源捕捉；<br>6、iBeacon广播；<br>7、远程操作（通过GUI）；<br>8、可挂载到无人机，支持树莓派；<br>9、远程代理基于JSON，可整合进其他应用；<br>10、CSV和JSON数据导出/导入；<br>11、可根据GPS坐标生成google地图；</p>
+<ul>
+<li><p>安装</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">apt-get</span> <span class="token function">install</span> python3-pip gpsd gpsd-clients python3-tk python3-setuptools
+
+pip3 <span class="token function">install</span> QScintilla PyQtChart gps3 dronekit manuf python-dateutil numpy matplotlib
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
+<p>git clone <a target="_blank" rel="noopener" href="https://github.com/ghostop14/sparrow-wifi">https://github.com/ghostop14/sparrow-wifi</a></p>
+<pre><code>
+- 运行图形界面
+```bash
+python3 sparrow-wifi.py</code></pre>
+<h3 id="GPS通信"><a href="#GPS通信" class="headerlink" title="GPS通信"></a>GPS通信</h3><p>Sparrow-wifi基于gpsd来提供标准的GPS通信功能，我们可以使用下列命令来进行快速的GPS测试：</p>
+<pre class="line-numbers language-bash"><code class="language-bash">gpsd -D 2 -N /dev/ttyUSB0<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="Sparrow-wifi远程代理"><a href="#Sparrow-wifi远程代理" class="headerlink" title="Sparrow-wifi远程代理"></a>Sparrow-wifi远程代理</h3><p>由于代理所需的权限跟GUI工具的运行权限相同，因此这里我们同样需要使用到root权限：</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">sudo</span> ./sparrowwifiagent.py
+
+<span class="token comment" spellcheck="true"># 默认配置下，代理会监听端口8020。我们也可以使用下列命令来指定其他端口：</span>
+<span class="token function">sudo</span> ./sparrowwifiagent.py --port<span class="token operator">=</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<hr>
+<h2 id="hcitool"><a href="#hcitool" class="headerlink" title="hcitool"></a>hcitool</h2><p>蓝牙信息收集利用</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 使用-a参数显示蓝牙设备信息</span>
+ hciconfig -a
+<span class="token comment" spellcheck="true"># 开启蓝牙</span>
+ hciconfig hci0 up
+
+<span class="token comment" spellcheck="true"># 关闭蓝牙</span>
+hciconfig hci0 down
+hcitool scan 
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>调用方式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>–help</td>
+<td>进入帮助</td>
+<td>hcitool –help</td>
+</tr>
+<tr>
+<td>-i</td>
+<td>在host插有多个蓝牙适配器的情况下，可以通过该参数来指定某控制某一适配器</td>
+<td>hcitool -i [dbaddr] [command]</td>
+</tr>
+<tr>
+<td>dev</td>
+<td>同hciconfig一样，显示当前适配器设备，输出格式为[hciid MAC]</td>
+<td>hcitool dev</td>
+</tr>
+<tr>
+<td>inq</td>
+<td>查询可发现的远程设备，与scan不同的是，除了能查询出MAC以外，还可以查出远程设备的时钟偏移值“clock offset”与设备类型“class”，scan是不会输出相关设备的类型，这可以让我们区分设备是蓝牙耳机，或蓝牙鼠标</td>
+<td>hcitool inq</td>
+</tr>
+</tbody></table>
+<pre><code>        hcitool inq [–length=N]设置最大查询时间
+        hcitool inq [–numrsp=N]设置最大查询数量
+        hcitool inq [–iac=lap]指定查询的lac码
+        hcitool inq [–flush]清除缓存|</code></pre>
+<p>|scan|     查询可发现的远程设备，与inq不同的是，除了能查询出MAC以外，还可以输出设备的名字【名字写在标准的module中，若查询不到该key对应的values则会输出N/A】,可以通过设置参数来获取设备的类型，信息等     |hcitool scan<br>            hcitool scan[–length=N]设置最大查询时间<br>            hcitool scan[–numrsp=N]设置最大查询数量<br>            hcitool scan[–iac=lap]指定查询的lac码<br>            hcitool scan[–class]查询设备类型<br>            hcitool scan[–info]查询设备信息<br>            hcitool scan[–oui]查询设备唯一标识<br>            hcitool scan[–flush]清除缓存|<br>|name     |通过指定MAC地址来获取设备的名称，该命令可以补全inq查询时无法输出设备名称的问题.|     hcitool name [dbaddr]|<br>|info|     通过指定MAC地址来获取设备的相关信息。|     hcitool info [dbaddr]|<br>|spinq|     开启定期查询，使设备被发现，没有则无输出|     hcitool spinq|<br>|epinq|     关闭定期查询，没有则无输出|     hcitool epinq|<br>|cmd|     向远程设备发送命令|     hcitool cmd &lt; ogf &gt; &lt; ocf &gt; [parameters]|<br>|con|     显示当前连接信息|     hcitool con|<br>|cc|     连接设备，可以设置数据类型，与主从关系|     hcitool cc &lt; bdaddr &gt;<br>            hcitool cc [–ptype=pkt_types] &lt; bdaddr &gt; 可以设置接收数据的类型，数据类型包括[DM1, DM3, DM5,DH1,DH3,DH5, HV1, HV2, HV3]，可以设置多个类型，类型中间以逗号分隔，默认接收所有类型数据<br>            hcitool cc [–role=m/s] &lt; bdaddr &gt;可以设置设备的主从关系，M为master，S为slave，默认为s<br>      Example:     hcitool cc –ptype=dm1,dh3,dh5 01:02:03:04:05:06<br>            cc –role=m 01:02:03:04:05:06|<br>|dc |    断开远程设备连接 |    hcitool dc &lt; bdaddr &gt; [reason]|<br>|sr |    设置设备的主从关系|     hcitool sr &lt; bdaddr &gt; &lt; role &gt;|<br>|cpt |    设置远程设备数据类型|     hcitool cpt &lt; bdaddr &gt; &lt; packet_types &gt;|可以设置接收数据的类型，数据类型包括[DM1, DM3, DM5,DH1,DH3,DH5, HV1, HV2, HV3]，可以设置多个类型，类型中间以逗号分隔|<br>|rssi     |显示设备的信号强度     |hcitool rssi &lt; bdaddr&gt;|<br>|lq     |显示设备的链路质量     |hcitool lq &lt; bdaddr&gt;|<br>|tpl|     显示设备的发射功率级别|     hcitool tpl &lt; bdaddr&gt; [type]|<br>|afh|     显示设备的AFH（适应性跳频）的信道地图|     hcitool afh &lt; bdaddr&gt;<br>|lp|     设置或显示设备的链路     hcitool lp &lt; bdaddr&gt; [link policy]<br>|lst |    设置或显示连接超时时间，默认情况下连接超时断开连接为20s可以设置超时时间来缩短超时断开连接的时间 |    hcitool lst &lt; bdaddr&gt; [new value in slots]|<br>|auth|     请求设备配对认证|     hcitool auth &lt; bdaddr&gt;|<br>|enc|     设置连接加密，同样可以关闭连接加密|     hcitool enc &lt; bdaddr&gt; [encrypt enable]|<br>|key|     更新与远程设备的link| key |    hcitool key &lt; bdaddr&gt;|<br>|clkoff |    读取远程设备的时钟偏移量，不过这个变量不太靠谱 |    hcitool clkoff &lt; bdaddr&gt;|<br>|clock |读取本地时钟或远程设备的时钟 |    hcitool clock [bdaddr] [which clock]|</p>
+<p>以下命令需要root权限才能执行<br>|命令参数|说明|调用方式|<br>|–|–|–|<br>|lescan |    搜索BLE设备 |    hcitool lescan<br>            hcitool lescan[–privacy]启用隐私搜索<br>            hcitool lescan [–passive]默认参数，设置被动扫描<br>            hcitool lescan [–discovery=g/l] 设置搜索条件为综合设备或限制设备<br>            hcitool lescan [–duplicates]过滤重复的设备|<br>|lewladd |    将设备加入BLE白名单|     hcitool lewladd [–random] &lt; bdaddr&gt;可声明该设备的MAC地址为随机地址，有的BLE设备可以被设置为随机MAC地址以增加私密性，为以后也能连接到该MAC地址，需要声明MAC地址是随机，这样才能用旧的MAC地址连接到设备|<br>|lewlrm |    将设备移除BLE白名单|     hcitool lewlrm &lt; bdaddr&gt;|<br>|lewlsz |    输出白名单设备列表|     hcitool lewlsz|<br>|lewlclr|     清空白名单列表|     hcitool lewlclr|<br>|lecc |    连接BLE设备 |    hcitool lecc &lt; bdaddr&gt;<br>            hcitool lecc [–random] &lt; bdaddr&gt;随机MAC地址连接<br>            hcitool lecc –whitelist 连接所有白名单设备|<br>|ledc|     断开BLE设备的连接。在通过lecc链接后，hci工具会随机分配给该设备一个handle名，断开连接时需要使用该handle，因为在蓝牙4.0以后，一个蓝牙适配器可以连接7个BLE设备 |    hcitool ledc &lt; handle&gt; [reason]|<br>|lecup|     更新BLE设备的连接及状态||</p>
+<hr>
+<p>当汽车钥匙在点火开关被打开时，在汽车上的发动机控制单元（ECU）就会发出一组加密电子编码信号给汽车钥匙里的芯片，只有当汽车ECU单元能读取反馈接受到正确的防盗编码信号才允许车辆启动。</p>
+<p>ECU的攻击方法</p>
+<ol>
+<li>通信攻击：是指私密通信监听，信息堵塞攻击，中间人攻击等。</li>
+<li>暴露的功能模块攻击：Rowhammer，存储器溢出，栈溢出等软件攻击。</li>
+<li>非侵入式攻击：时序攻击，SPA，DPA，EMA等。</li>
+<li>半侵入式攻击：激光攻击，电压毛刺攻击等。</li>
+<li>侵入式攻击：修改PCB的连线，FIB攻击等。</li>
+</ol>
+<h2 id="CANalyse进行汽车网络分析和攻击"><a href="#CANalyse进行汽车网络分析和攻击" class="headerlink" title="CANalyse进行汽车网络分析和攻击"></a>CANalyse进行汽车网络分析和攻击</h2><p>CANalyse是一款针对汽车车辆安全的网络分析和攻击工具。CANalyse可以用来分析日志文件，它可以自动寻找唯一的数据集，并能够连接到简单的用户接口，比如说Telegram等等。基本上来说，在使用此工具时，攻击者可以提供一个bot-ID，并通过telegram-bot在互联网上使用该工具。CANalyse支持在树莓派种使用，能够通过telegram-bot记录并分析汽车的网络流量以及数据日志，并通过这些数据来攻击和利用汽车漏洞，就好比向一台汽车植入了硬件后门一样。</p>
+<p>使用此工具的先决条件是，硬件植入物已安装在车内，并且能够与车辆内部的网络/通信信道进行通信。</p>
+<h3 id="工具安装"><a href="#工具安装" class="headerlink" title="工具安装"></a>工具安装</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> clone https://github.com/KartheekLade/CANalyse.git
+
+<span class="token function">cd</span> CANalyse
+
+pip3 <span class="token function">install</span> -r requirements.txt<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="工具使用"><a href="#工具使用" class="headerlink" title="工具使用"></a>工具使用</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">cd</span> CANalyse/
+
+python3 canalyse_tool.py
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>参考：<br><a target="_blank" rel="noopener" href="https://www.freebuf.com/articles/endpoint/272168.html">https://www.freebuf.com/articles/endpoint/272168.html</a></p>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -643,7 +735,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://q0o0p.top/2020/11/26/sqli-labs/">http://q0o0p.top/2020/11/26/sqli-labs/</a>
+                    <a href="http://q0o0p.top/2021/07/04/iot-secruity/">http://q0o0p.top/2021/07/04/iot-secruity/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -680,15 +772,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/kali/">
-                                    <span class="chip bg-color">kali</span>
-                                </a>
-                            
-                                <a href="/tags/sql/">
-                                    <span class="chip bg-color">sql</span>
-                                </a>
-                            
+                            <span class="chip bg-color">No tag</span>
                         </div>
                     
                 </div>
@@ -1185,28 +1269,32 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2021/04/10/resume/">
+                <a href="/2021/07/04/iot-secruity/">
                     <div class="card-image">
                         
-                        <img src="/images/6.jpg" class="responsive-img" alt="android 逆向">
                         
-                        <span class="card-title">android 逆向</span>
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="iot-secruity">
+                        
+                        <span class="card-title">iot-secruity</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            This is the content of
+                            由于最近遇到一些左右为难的事情，颓废了一段时间。。。。今天偶然间看到某位师傅的博客，瞬间心血来潮，决定在水一篇博客（看一下以前的，都是一直水来的，以后的某一天一定重造高质量博客。。。）。下面今日正题。。。
+
+kali太久没更新的话记得更新一
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-04-10
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-04
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1215,14 +1303,7 @@
                         </span>
                     </div>
                 </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/android/">
-                        <span class="chip bg-color">android</span>
-                    </a>
-                    
-                </div>
+
                 
             </div>
         </div>
@@ -1233,23 +1314,27 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/11/21/dns-hijacking/">
+                <a href="/2021/07/03/bluetooth/">
                     <div class="card-image">
                         
-                        <img src="/images/6.jpg" class="responsive-img" alt="DNS劫持">
                         
-                        <span class="card-title">DNS劫持</span>
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="bluetooth">
+                        
+                        <span class="card-title">bluetooth</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            This is the content of
+                            hciconfig dev  # 查看电脑的当前适配器设备
+hciconfig hci0 up #激活蓝牙适配器
+hcitool lescan #搜索周围的蓝牙设备
+gatttool -b 74:E1:82:04:63:3B -I # 使用
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-21
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-03
                             </span>
                         <span class="publish-author">
                             
@@ -1258,18 +1343,6 @@
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Android/">
-                        <span class="chip bg-color">Android</span>
-                    </a>
-                    
-                    <a href="/tags/DNS-Hijacking/">
-                        <span class="chip bg-color">DNS-Hijacking</span>
-                    </a>
-                    
                 </div>
                 
             </div>
