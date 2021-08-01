@@ -6,7 +6,7 @@
   <link href="http://q0o0p.top/atom.xml" rel="self"/>
   
   <link href="http://q0o0p.top/"/>
-  <updated>2021-07-04T21:30:18.618Z</updated>
+  <updated>2021-08-01T21:29:43.473Z</updated>
   <id>http://q0o0p.top/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>RaspberryPi</title>
+    <link href="http://q0o0p.top/2021/08/02/raspberrypi/"/>
+    <id>http://q0o0p.top/2021/08/02/raspberrypi/</id>
+    <published>2021-08-01T21:25:21.000Z</published>
+    <updated>2021-08-01T21:29:43.473Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;/media/q0o0p/ROOTFS/etc/wpa_supplicant/wpa_supplicant.conf&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>iot-secruity</title>
@@ -277,7 +299,7 @@
     <link href="http://q0o0p.top/2020/10/10/kali-tools/"/>
     <id>http://q0o0p.top/2020/10/10/kali-tools/</id>
     <published>2020-10-09T16:16:21.000Z</published>
-    <updated>2021-07-04T21:30:20.047Z</updated>
+    <updated>2021-07-29T22:14:34.013Z</updated>
     
     
       
@@ -419,15 +441,14 @@
     <link href="http://q0o0p.top/2020/08/28/kali-update/"/>
     <id>http://q0o0p.top/2020/08/28/kali-update/</id>
     <published>2020-08-28T00:05:50.000Z</published>
-    <updated>2021-05-24T12:47:22.590Z</updated>
+    <updated>2021-07-29T22:00:40.364Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;//删除C++快捷方式
-&lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;修改环境配置&quot;&gt;&lt;a href=&quot;#修改环境配置&quot; class=&quot;headerlink&quot; title=&quot;修改环境配置&quot;&gt;&lt;/a&gt;修改环境配置&lt;/h2&gt;&lt;h3 id=&quot;设置静态ip地址&quot;&gt;&lt;a href=&quot;#设置静态ip地址&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -464,35 +485,6 @@
     <category term="adb" scheme="http://q0o0p.top/tags/adb/"/>
     
     <category term="uiautomator2" scheme="http://q0o0p.top/tags/uiautomator2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>termux</title>
-    <link href="http://q0o0p.top/2020/08/18/termux/"/>
-    <id>http://q0o0p.top/2020/08/18/termux/</id>
-    <published>2020-08-18T02:01:24.000Z</published>
-    <updated>2020-09-19T21:06:29.331Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return; }
-       </summary>
-        
-      
-    
-    
-    
-    
-    <category term="privilge escalation" scheme="http://q0o0p.top/tags/privilge-escalation/"/>
-    
-    <category term="linux" scheme="http://q0o0p.top/tags/linux/"/>
     
   </entry>
   

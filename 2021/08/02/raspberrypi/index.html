@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="termux, q0o0p">
+    <meta name="keywords" content="RaspberryPi, q0o0p">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>termux | q0o0p</title>
+    <title>RaspberryPi | q0o0p</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -417,12 +417,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/4.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">termux</h1>
+                    <h1 class="description center-align post-title">RaspberryPi</h1>
                 </div>
             </div>
         </div>
@@ -537,17 +537,9 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/privilge-escalation/">
-                                <span class="chip bg-color">privilge escalation</span>
-                            </a>
-                        
-                            <a href="/tags/linux/">
-                                <span class="chip bg-color">linux</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -559,21 +551,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-08-18
+                    2021-08-02
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-09-20
+                    2021-08-02
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    52
+                    107
                 </div>
                 
 
@@ -595,7 +587,29 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <script>
+                <p>/media/q0o0p/ROOTFS/etc/wpa_supplicant/wpa_supplicant.conf</p>
+<pre class="line-numbers language-bash"><code class="language-bash">country<span class="token operator">=</span>GB
+
+ctrl_interface<span class="token operator">=</span>DIR<span class="token operator">=</span>/var/run/wpa_supplicant GROUP<span class="token operator">=</span>netdev
+update_config<span class="token operator">=</span>1
+
+network<span class="token operator">=</span><span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
+
+    ssid<span class="token operator">=</span><span class="token string">"q0o0p"</span>
+    psk<span class="token operator">=</span><span class="token string">"1234567"</span>
+    priority<span class="token operator">=</span>1
+<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>/media/q0o0p/ROOTFS/etc/network/interfaces</p>
+<pre class="line-numbers language-bash"><code class="language-bash">auto lo 
+iface lo inet loopback
+
+auto wlan0
+allow-hotplug wlan0
+iface wlan0 inet dhcp
+wpa_conf /etc/wpa_supplicant/wpa_supplicant.conf
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -638,7 +652,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://q0o0p.top/2020/08/18/termux/">http://q0o0p.top/2020/08/18/termux/</a>
+                    <a href="http://q0o0p.top/2021/08/02/raspberrypi/">http://q0o0p.top/2021/08/02/raspberrypi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -675,15 +689,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/privilge-escalation/">
-                                    <span class="chip bg-color">privilge escalation</span>
-                                </a>
-                            
-                                <a href="/tags/linux/">
-                                    <span class="chip bg-color">linux</span>
-                                </a>
-                            
+                            <span class="chip bg-color">No tag</span>
                         </div>
                     
                 </div>
@@ -1180,28 +1186,33 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2020/08/19/adb/">
+                <a href="/2021/08/02/raspberrypi/">
                     <div class="card-image">
                         
-                        <img src="/images/6.jpg" class="responsive-img" alt="Android 自动化测试">
                         
-                        <span class="card-title">Android 自动化测试</span>
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="RaspberryPi">
+                        
+                        <span class="card-title">RaspberryPi</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            This is the content of
+                            /media/q0o0p/ROOTFS/etc/wpa_supplicant/wpa_supplicant.conf
+country=GB
+
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-08-19
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-02
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1210,22 +1221,7 @@
                         </span>
                     </div>
                 </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Android/">
-                        <span class="chip bg-color">Android</span>
-                    </a>
-                    
-                    <a href="/tags/adb/">
-                        <span class="chip bg-color">adb</span>
-                    </a>
-                    
-                    <a href="/tags/uiautomator2/">
-                        <span class="chip bg-color">uiautomator2</span>
-                    </a>
-                    
-                </div>
+
                 
             </div>
         </div>
@@ -1236,47 +1232,34 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/08/18/payload/">
+                <a href="/2021/07/04/iot-secruity/">
                     <div class="card-image">
                         
-                        <img src="/images/1.jpg" class="responsive-img" alt="payload">
                         
-                        <span class="card-title">payload</span>
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="iot-secruity">
+                        
+                        <span class="card-title">iot-secruity</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            This is the content of your custom post summary. If there is a value for this attribute, the post card summary will display the text, otherwise the program will automatically intercept part of the post content as a summary.
+                            由于最近遇到一些左右为难的事情，颓废了一段时间。。。。今天偶然间看到某位师傅的博客，瞬间心血来潮，决定在水一篇博客（看一下以前的，都是一直水来的，以后的某一天一定重造高质量博客。。。）。下面今日正题。。。
+
+kali太久没更新的话记得更新一
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-18
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-04
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Payload/" class="post-category">
-                                    Payload
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            q0o0p
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Android/">
-                        <span class="chip bg-color">Android</span>
-                    </a>
-                    
-                    <a href="/tags/Payload/">
-                        <span class="chip bg-color">Payload</span>
-                    </a>
-                    
                 </div>
                 
             </div>

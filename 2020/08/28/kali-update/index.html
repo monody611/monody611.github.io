@@ -566,14 +566,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2021-05-24
+                    2021-07-30
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    1.3k
+                    1.4k
                 </div>
                 
 
@@ -595,7 +595,13 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <pre class="line-numbers language-bash"><code class="language-bash">//删除C++快捷方式
+                <h2 id="修改环境配置"><a href="#修改环境配置" class="headerlink" title="修改环境配置"></a>修改环境配置</h2><h3 id="设置静态ip地址"><a href="#设置静态ip地址" class="headerlink" title="设置静态ip地址"></a>设置静态ip地址</h3><pre class="line-numbers language-bash"><code class="language-bash">vim /etc/network/interfaces
+auto wlan0 
+iface wlan0 inet static
+address 192.168.1.210
+netmask 255.255.255.0 <span class="token comment" spellcheck="true">#子网掩码</span>
+gateway 192.168.1.1 <span class="token comment" spellcheck="true">#网关</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-bash"><code class="language-bash">//删除C++快捷方式
 <span class="token function">sudo</span> update-alternatives --remove-all gcc
 <span class="token function">sudo</span> update-alternatives --remove-all g++<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <h2 id="安装常用工具"><a href="#安装常用工具" class="headerlink" title="安装常用工具"></a>安装常用工具</h2><h3 id="配置java环境变量"><a href="#配置java环境变量" class="headerlink" title="配置java环境变量"></a>配置java环境变量</h3><h3 id="phpstudy"><a href="#phpstudy" class="headerlink" title="phpstudy"></a>phpstudy</h3><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">wget</span> -O install.sh https://download.xp.cn/install.sh <span class="token operator">&amp;&amp;</span> <span class="token function">sudo</span> <span class="token function">bash</span> install.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -711,6 +717,9 @@ airodump-ng wlan0mon //扫描周围的基站信息<span aria-hidden="true" class
 <li><p>wifiPhiser</p>
 </li>
 </ul>
+<p>进入页面自动检索周围存在的WiFi，选择你想钓鱼的WiFi</p>
+<pre class="line-numbers language-bash"><code class="language-bash">wifiphisher<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>  ifconfig wlan0 up<br>  airmon-ng start wlan0<br>  airodump-ng -w q0o0p wlan0<br> airodump-ng -c 2 –bssid  B4:61:8C:DF:BE:61 -w q0o0p wlan0</p>
 <hr>
 <h2 id="AndroidStudio"><a href="#AndroidStudio" class="headerlink" title="AndroidStudio"></a>AndroidStudio</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 创建引用链接</span>
 <span class="token function">ln</span> -s /media/q0o0p/C14D581BDA18EBFA1/software/android-studio/bin/studio.sh /usr/bin/android-studio
@@ -1629,7 +1638,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">79.4k</span>&nbsp;字
+                class="white-color">79.6k</span>&nbsp;字
             
             
             
