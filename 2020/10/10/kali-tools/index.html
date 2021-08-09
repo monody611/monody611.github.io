@@ -562,21 +562,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2021-07-30
+                    2021-08-10
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    803
+                    946
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    3 Min
+                    4 Min
                 </div>
                 
 
@@ -657,7 +657,17 @@ P            暂停扫描<span aria-hidden="true" class="line-numbers-rows"><spa
 <p>GTK1/2：图形处理工具，处理用户的输入输出显示，最终存储至Harddisk硬盘中。</p>
 <hr>
 <h2 id="CiLocks"><a href="#CiLocks" class="headerlink" title="CiLocks"></a>CiLocks</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> clone https://github.com/tegal1337/CiLocks<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="nmap"><a href="#nmap" class="headerlink" title="nmap"></a>nmap</h2><script>
+<h2 id="nmap"><a href="#nmap" class="headerlink" title="nmap"></a>nmap</h2><pre class="line-numbers language-bash"><code class="language-bash">nmap 192.168.1.0/24 <span class="token comment" spellcheck="true">#scan period of c</span>
+nmap -sP 192.168.1.0/24 <span class="token comment" spellcheck="true"># 扫描网络，找出当前运行的服务器和设备</span>
+nmap -iflist <span class="token comment" spellcheck="true">#显示主机接口和路由</span>
+nmap -sV 192.168.1.1 <span class="token comment" spellcheck="true">#检测远程服务器的具体版本号 </span>
+nmap -sS 192.168.174.1 <span class="token comment" spellcheck="true"># 隐秘模式的tcp syn扫描</span>
+nmap -sO 192.168.1.1 <span class="token comment" spellcheck="true"># 进行ip协议扫描</span>
+nmap -192.168.1.239 <span class="token operator">></span> output.txt <span class="token comment" spellcheck="true">#扫描结果保存到output.txt</span>
+nmap -sA 192.168.1.1 <span class="token comment" spellcheck="true">#检查主机是否受防火墙保护</span>
+nmap -PN 192.168.1.1 <span class="token comment" spellcheck="true"># 受防火墙保护时的扫描模式</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -1528,7 +1538,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">79.6k</span>&nbsp;字
+                class="white-color">80.2k</span>&nbsp;字
             
             
             

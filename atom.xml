@@ -6,7 +6,7 @@
   <link href="http://q0o0p.top/atom.xml" rel="self"/>
   
   <link href="http://q0o0p.top/"/>
-  <updated>2021-08-01T21:29:43.473Z</updated>
+  <updated>2021-08-09T17:46:23.889Z</updated>
   <id>http://q0o0p.top/</id>
   
   <author>
@@ -21,20 +21,22 @@
     <link href="http://q0o0p.top/2021/08/02/raspberrypi/"/>
     <id>http://q0o0p.top/2021/08/02/raspberrypi/</id>
     <published>2021-08-01T21:25:21.000Z</published>
-    <updated>2021-08-01T21:29:43.473Z</updated>
+    <updated>2021-08-09T17:46:23.889Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;/media/q0o0p/ROOTFS/etc/wpa_supplicant/wpa_supplicant.conf&lt;/p&gt;
-&lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code</summary>
+    <summary type="html">&lt;h1 id=&quot;基础配置&quot;&gt;&lt;a href=&quot;#基础配置&quot; class=&quot;headerlink&quot; title=&quot;基础配置&quot;&gt;&lt;/a&gt;基础配置&lt;/h1&gt;&lt;p&gt;linux下安装kali&lt;/p&gt;
+&lt;pre class=&quot;line-numbers</summary>
         
       
     
     
     
+    
+    <category term="Raspberry Pi" scheme="http://q0o0p.top/tags/Raspberry-Pi/"/>
     
   </entry>
   
@@ -299,7 +301,7 @@
     <link href="http://q0o0p.top/2020/10/10/kali-tools/"/>
     <id>http://q0o0p.top/2020/10/10/kali-tools/</id>
     <published>2020-10-09T16:16:21.000Z</published>
-    <updated>2021-07-29T22:14:34.013Z</updated>
+    <updated>2021-08-09T17:46:29.374Z</updated>
     
     
       
@@ -441,14 +443,14 @@
     <link href="http://q0o0p.top/2020/08/28/kali-update/"/>
     <id>http://q0o0p.top/2020/08/28/kali-update/</id>
     <published>2020-08-28T00:05:50.000Z</published>
-    <updated>2021-07-29T22:00:40.364Z</updated>
+    <updated>2021-08-09T17:46:26.876Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;修改环境配置&quot;&gt;&lt;a href=&quot;#修改环境配置&quot; class=&quot;headerlink&quot; title=&quot;修改环境配置&quot;&gt;&lt;/a&gt;修改环境配置&lt;/h2&gt;&lt;h3 id=&quot;设置静态ip地址&quot;&gt;&lt;a href=&quot;#设置静态ip地址&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;修改时区&quot;&gt;&lt;a href=&quot;#修改时区&quot; class=&quot;headerlink&quot; title=&quot;修改时区&quot;&gt;&lt;/a&gt;修改时区&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code</summary>
         
       
     

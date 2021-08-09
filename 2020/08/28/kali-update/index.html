@@ -566,21 +566,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2021-07-30
+                    2021-08-10
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    1.4k
+                    1.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    6 Min
+                    7 Min
                 </div>
                 
 
@@ -595,12 +595,29 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="修改环境配置"><a href="#修改环境配置" class="headerlink" title="修改环境配置"></a>修改环境配置</h2><h3 id="设置静态ip地址"><a href="#设置静态ip地址" class="headerlink" title="设置静态ip地址"></a>设置静态ip地址</h3><pre class="line-numbers language-bash"><code class="language-bash">vim /etc/network/interfaces
+                <h2 id="修改时区"><a href="#修改时区" class="headerlink" title="修改时区"></a>修改时区</h2><pre class="line-numbers language-bash"><code class="language-bash">tzselect <span class="token comment" spellcheck="true">#Asia–>China–>Beijing Time–Yes</span>
+<span class="token keyword">echo</span> “ZONE<span class="token operator">=</span>Asia/Shanghai” <span class="token operator">>></span> /etc/sysconfig
+<span class="token function">rm</span> -f /etc/localtime <span class="token comment" spellcheck="true"># 链接到上海时区文件</span>
+<span class="token function">ln</span> -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+<span class="token function">date</span> <span class="token comment" spellcheck="true">#查看时间</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="修改环境配置"><a href="#修改环境配置" class="headerlink" title="修改环境配置"></a>修改环境配置</h2><h3 id="设置静态ip地址"><a href="#设置静态ip地址" class="headerlink" title="设置静态ip地址"></a>设置静态ip地址</h3><pre class="line-numbers language-bash"><code class="language-bash">vim /etc/network/interfaces
 auto wlan0 
 iface wlan0 inet static
 address 192.168.1.210
 netmask 255.255.255.0 <span class="token comment" spellcheck="true">#子网掩码</span>
 gateway 192.168.1.1 <span class="token comment" spellcheck="true">#网关</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="设置代理"><a href="#设置代理" class="headerlink" title="设置代理"></a>设置代理</h3><p>下载clash（<a target="_blank" rel="noopener" href="https://github.com/Dreamacro/clash/releases%EF%BC%89">https://github.com/Dreamacro/clash/releases）</a><br>最新版clash-linux-amd64-v1.6.5.gz</p>
+<pre class="line-numbers language-bash"><code class="language-bash">gunzip clash-linux-amd64-v1.6.5.gz
+<span class="token function">mv</span> clash-linux-amd64-v1.6.5 clash
+<span class="token function">chmod</span> +x clash
+<span class="token function">cd</span> /root/.config/clash/ <span class="token comment" spellcheck="true"># 如果.config中没有clash，先运行一次./clash</span>
+<span class="token function">rm</span> -rf config.yaml
+<span class="token comment" spellcheck="true"># 在Clash目录下，从你的[subscirbe_links]下载config.yaml配置文件</span>
+<span class="token function">wget</span> -O config.yaml <span class="token punctuation">[</span>subscirbe_links<span class="token punctuation">]</span>
+ /clash -t <span class="token comment" spellcheck="true"># 检查是否可以运行</span>
+ ./clash<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>选择代理节点<br>进入图形化界面<a target="_blank" rel="noopener" href="http://clash.razord.top/#/proxies">http://clash.razord.top/#/proxies</a><br>最后在浏览器中配置代理端口就大功告成了。。。<br>参考：<br><a target="_blank" rel="noopener" href="https://www.iculture.cc/cybersecurity/pig=265">https://www.iculture.cc/cybersecurity/pig=265</a></p>
+<hr>
 <pre class="line-numbers language-bash"><code class="language-bash">//删除C++快捷方式
 <span class="token function">sudo</span> update-alternatives --remove-all gcc
 <span class="token function">sudo</span> update-alternatives --remove-all g++<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
@@ -1638,7 +1655,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">79.6k</span>&nbsp;字
+                class="white-color">80.2k</span>&nbsp;字
             
             
             

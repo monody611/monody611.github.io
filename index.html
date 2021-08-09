@@ -642,11 +642,9 @@
                             <div class="title center-align">kali-update</div>
                             <div class="description center-align">
                                 
-                                    修改环境配置设置静态ip地址vim /etc/network/interfaces
-auto wlan0 
-iface wlan0 inet static
-address 192.168.1.210
-netmask 255.255.255.
+                                    修改时区tzselect #Asia–>China–>Beijing Time–Yes
+echo “ZONE=Asia/Shanghai” >> /etc/sysconfig
+rm -f /etc/localtime # 链接到上海时区文件
                                 
                             </div>
                             <div class="cover-btns">
@@ -869,6 +867,29 @@ censys.ioip地址信息收集https://censys.
                 </div>
             </div>
         
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('/images/1.jpg');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">RaspberryPi</div>
+                            <div class="description center-align">
+                                
+                                    This is the content of
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/2021/08/02/raspberrypi/" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>Read more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
     
 </div>
 
@@ -988,8 +1009,7 @@ censys.ioip地址信息收集https://censys.
                     <a href="/2021/08/02/raspberrypi/">
                         <div class="card-image">
                             
-                            
-                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="RaspberryPi">
+                            <img src="/images/3.jpg" class="responsive-img" alt="RaspberryPi">
                             
                             <span class="card-title">RaspberryPi</span>
                         </div>
@@ -998,10 +1018,7 @@ censys.ioip地址信息收集https://censys.
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                /media/q0o0p/ROOTFS/etc/wpa_supplicant/wpa_supplicant.conf
-country=GB
-
-ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=
+                                This is the content of
                             
                         </div>
                         <div class="publish-info">
@@ -1017,6 +1034,14 @@ ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=
                         </div>
                     </div>
 
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Raspberry-Pi/">
+                            <span class="chip bg-color">Raspberry Pi</span>
+                        </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -1475,7 +1500,7 @@ arpspoof -i wlan0 -t 192.168.100 192.168.1.1
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">79.6k</span>&nbsp;字
+                class="white-color">80.2k</span>&nbsp;字
             
             
             
