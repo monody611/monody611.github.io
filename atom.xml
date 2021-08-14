@@ -110,7 +110,7 @@
     <link href="http://q0o0p.top/2021/06/05/arp/"/>
     <id>http://q0o0p.top/2021/06/05/arp/</id>
     <published>2021-06-04T18:35:22.000Z</published>
-    <updated>2021-06-12T10:24:36.445Z</updated>
+    <updated>2021-08-13T00:16:13.543Z</updated>
     
     
       
@@ -118,10 +118,7 @@
         
         
     <summary type="html">&lt;p&gt;1.查看局域网中的主机&lt;/p&gt;
-&lt;p&gt;fping –asg 192.168.1.0/24&lt;/p&gt;
-&lt;p&gt;2.断网&lt;/p&gt;
-&lt;p&gt;arpspoof -i wlan0 -t 192.168.100 192.168.1.1&lt;/p&gt;
-&lt;p&gt;(arpspoof  -i 网卡 -t</summary>
+&lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;fping –asg 192.168.1.0/24&lt;span aria-hidden=&quot;true&quot;</summary>
         
       
     
@@ -301,7 +298,7 @@
     <link href="http://q0o0p.top/2020/10/10/kali-tools/"/>
     <id>http://q0o0p.top/2020/10/10/kali-tools/</id>
     <published>2020-10-09T16:16:21.000Z</published>
-    <updated>2021-08-09T17:46:29.374Z</updated>
+    <updated>2021-08-13T23:41:01.549Z</updated>
     
     
       
@@ -443,14 +440,14 @@
     <link href="http://q0o0p.top/2020/08/28/kali-update/"/>
     <id>http://q0o0p.top/2020/08/28/kali-update/</id>
     <published>2020-08-28T00:05:50.000Z</published>
-    <updated>2021-08-09T17:46:26.876Z</updated>
+    <updated>2021-08-14T00:34:24.689Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;修改时区&quot;&gt;&lt;a href=&quot;#修改时区&quot; class=&quot;headerlink&quot; title=&quot;修改时区&quot;&gt;&lt;/a&gt;修改时区&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code</summary>
+    <summary type="html">&lt;h2 id=&quot;WiFi密码默认路径&quot;&gt;&lt;a href=&quot;#WiFi密码默认路径&quot; class=&quot;headerlink&quot;</summary>
         
       
     

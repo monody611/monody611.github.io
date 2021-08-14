@@ -642,9 +642,9 @@
                             <div class="title center-align">kali-update</div>
                             <div class="description center-align">
                                 
-                                    修改时区tzselect #Asia–>China–>Beijing Time–Yes
-echo “ZONE=Asia/Shanghai” >> /etc/sysconfig
-rm -f /etc/localtime # 链接到上海时区文件
+                                    WiFi密码默认路径/etc/NetworkManager/system-connections
+修改时区tzselect #Asia–&gt;China–&gt;Beijing Time–Yes
+echo “ZONE=Asia/Shang
                                 
                             </div>
                             <div class="cover-btns">
@@ -1174,10 +1174,13 @@ CodeCMRCodeCMR:跨模态二进制代码匹配https://zhuanlan.zhihu.com/p/341763
                             
                                 1.查看局域网中的主机
 fping –asg 192.168.1.0/24
-2.断网
-arpspoof -i wlan0 -t 192.168.100 192.168.1.1
-(arpspoof  -i 网卡 -t 目标IP 网关)
-3.流
+查看网关
+netstat -nr
+
+图片嗅探
+
+使用命令进行流量转发：要使用ip重定向才能进行arp欺骗
+echo 1 &gt;/proc/sys/net/ipv4
                             
                         </div>
                         <div class="publish-info">
@@ -1500,7 +1503,7 @@ arpspoof -i wlan0 -t 192.168.100 192.168.1.1
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">80.2k</span>&nbsp;字
+                class="white-color">80.6k</span>&nbsp;字
             
             
             

